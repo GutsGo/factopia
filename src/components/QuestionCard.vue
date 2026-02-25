@@ -2,6 +2,12 @@
   <div class="question-card" :class="{ 'shake': animState === 'wrong', 'pop': animState === 'right' }">
     <div class="card-inner">
       <div class="question-header">
+        <div class="header-top">
+          <!-- 这里使用 emoji 简单实现星形按钮 -->
+          <button class="favorite-btn" :class="{ active: isFavorite }" @click="toggleFav" title="收藏/取消收藏">
+            {{ isFavorite ? '⭐' : '☆' }}
+          </button>
+        </div>
         <!-- 兼容 URL 或者 emoji -->
         <div v-if="question.image" class="image-wrapper cute-shadow">
           <template v-if="isUrl(question.image)">
@@ -83,13 +89,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch, computed } from 'vue'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useSettingsStore } from '@/stores/useSettingsStore'
+import { useProgressStore } from '@/stores/useProgressStore'
 import type { Question } from '@/types/question'
 
 const props = defineProps<{
   question: Question
+  categoryId: string
 }>()
 
 const emit = defineEmits<{
@@ -98,12 +106,19 @@ const emit = defineEmits<{
 }>()
 
 const quizStore = useQuizStore()
+const progressStore = useProgressStore()
 const settingsStore = useSettingsStore()
 
 const hasAnswered = ref(false)
 const selectedOption = ref<any>(null)
 const isCorrect = ref(false)
 const animState = ref<'idle' | 'right' | 'wrong'>('idle')
+
+const isFavorite = computed(() => progressStore.isFavorite(props.categoryId, String(props.question.id)))
+
+function toggleFav() {
+  progressStore.toggleFavorite(props.categoryId, String(props.question.id))
+}
 
 // Reset state when next question arrives
 watch(() => props.question.id, () => {
@@ -169,6 +184,7 @@ function emitNext() {
   border: 2px solid #5E4C41;
   padding: 6px;
   box-shadow: 0 8px 16px rgba(94, 76, 65, 0.08); /* 柔和阴影 */
+  position: relative;
 }
 
 .card-inner {
@@ -181,6 +197,41 @@ function emitNext() {
 .question-header {
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  outline: none;
+  color: #CFD8DC;
+  transition: all 0.2s;
+  padding: 5px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+.favorite-btn:active {
+  transform: scale(0.9);
+}
+
+.favorite-btn.active {
+  color: #F1C40F;
+  animation: popIn 0.3s;
 }
 
 .emoji-wrapper {

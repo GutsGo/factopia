@@ -19,6 +19,24 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/Game.vue'),
     props: true,
   },
+  {
+    path: '/mistakes',
+    name: 'Mistakes',
+    component: () => import('@/views/Mistakes.vue'),
+    meta: { title: 'Factopia - 错题本' },
+  },
+  {
+    path: '/favorites',
+    name: 'Favorites',
+    component: () => import('@/views/Favorites.vue'),
+    meta: { title: 'Factopia - 收藏夹' },
+  },
+  {
+    path: '/statistics',
+    name: 'Statistics',
+    component: () => import('@/views/Statistics.vue'),
+    meta: { title: 'Factopia - 统计中心' },
+  },
 ];
 
 const router = createRouter({

@@ -53,6 +53,16 @@ export const useQuizStore = defineStore('quiz', () => {
     return Math.max(0, Math.round(((totalAnswered - totalMistakes) / totalAnswered) * 100));
   }
 
+  function getCurrentCorrectCount() {
+    const totalAnswered = isAnswered.value ? currentQuestionIndex.value + 1 : currentQuestionIndex.value;
+    const totalMistakes = currentMistakes.value.length;
+    return Math.max(0, totalAnswered - totalMistakes);
+  }
+
+  function getAnsweredCount() {
+    return isAnswered.value ? currentQuestionIndex.value + 1 : currentQuestionIndex.value;
+  }
+
   return {
     currentScore,
     currentQuestionIndex,
@@ -63,5 +73,7 @@ export const useQuizStore = defineStore('quiz', () => {
     submitAnswer,
     nextQuestion,
     getCurrentAccuracy,
+    getCurrentCorrectCount,
+    getAnsweredCount,
   };
 });

@@ -63,6 +63,7 @@
       <QuestionCard
         v-else-if="currentQuestion"
         :question="currentQuestion"
+        :category-id="category"
         @answer="handleAnswer"
         @next="nextQuestion"
       />
@@ -141,7 +142,8 @@ function nextQuestion() {
 async function handleGameOver() {
   // 写入持久化记录
   progressStore.updateLevelProgress(props.category, props.level, quizStore.currentScore, quizStore.getCurrentAccuracy())
-  progressStore.addMistakes(quizStore.currentMistakes)
+  progressStore.addMistakes(props.category, quizStore.currentMistakes)
+  progressStore.addStats(quizStore.getAnsweredCount(), quizStore.getCurrentCorrectCount())
   
   // 解锁下一关
   try {

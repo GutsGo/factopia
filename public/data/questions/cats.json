@@ -2,18 +2,385 @@
   {
     "id": "ct_1",
     "type": "single_image_to_text",
-    "prompt": "这只毛色分布像蓝色的猫品种是？",
-    "image": "🐈",
-    "options": ["英国短毛猫", "布偶猫", "暹罗猫", "加菲猫"],
+    "prompt": "这只毛色呈蓝灰色、脸盘大而圆、体型圆润的猫品种是？",
+    "image": "/images/cats/british_shorthair.webp",
+    "options": [
+      "孟买猫",
+      "缅甸猫",
+      "英国短毛猫",
+      "俄罗斯蓝猫"
+    ],
     "answer": "英国短毛猫",
-    "explanation": "英短蓝猫毛色呈灰蓝色，不仅可爱而且性格圆融温顺。"
+    "explanation": "英国短毛猫（British Shorthair）以圆润的脸庞、密实的蓝灰色短毛著称，是世界最受欢迎的猫品种之一，性格温顺独立。"
   },
   {
     "id": "ct_2",
+    "type": "single_image_to_text",
+    "prompt": "这只有着经典银色虎斑纹、体型匀称、原产北美的家猫品种是？",
+    "image": "/images/cats/american_shorthair.webp",
+    "options": [
+      "阿比西尼亚猫",
+      "美国短毛猫",
+      "孟加拉豹猫",
+      "埃及猫"
+    ],
+    "answer": "美国短毛猫",
+    "explanation": "美国短毛猫（American Shorthair）以经典银色虎斑纹最为知名，体型中等健壮，由早期欧洲移民携带至北美，是优秀的家庭伴侣猫。"
+  },
+  {
+    "id": "ct_3",
+    "type": "single_image_to_text",
+    "prompt": "这只拥有蓝色双眼、重点色半长毛、被抱起时会完全放松的大型猫品种是？",
+    "image": "/images/cats/ragdoll.webp",
+    "options": [
+      "巴厘猫",
+      "布偶猫",
+      "暹罗猫",
+      "伯曼猫"
+    ],
+    "answer": "布偶猫",
+    "explanation": "布偶猫（Ragdoll）因被抱起时会像布偶一样放松而得名，拥有迷人的蓝色眼睛和重点色半长毛，性格温顺亲人，是大型家庭猫的代表品种。"
+  },
+  {
+    "id": "ct_4",
+    "type": "single_image_to_text",
+    "prompt": "这只身形修长、面部及四肢末端呈重点色、眼睛为杏仁形蓝色、原产泰国的猫品种是？",
+    "image": "/images/cats/siamese.webp",
+    "options": [
+      "布偶猫",
+      "暹罗猫",
+      "伯曼猫",
+      "雪鞋猫"
+    ],
+    "answer": "暹罗猫",
+    "explanation": "暹罗猫（Siamese）是最古老的猫品种之一，源自泰国，以重点色花纹和清澈的蓝色杏仁眼著称，性格活泼健谈，是最爱叫唤互动的猫咪之一。"
+  },
+  {
+    "id": "ct_5",
+    "type": "single_image_to_text",
+    "prompt": "这只体型巨大、毛发蓬松、耳尖有丛毛、被誉为猫中犬的美国本土猫品种是？",
+    "image": "/images/cats/maine_coon.webp",
+    "options": [
+      "挪威森林猫",
+      "土耳其安哥拉猫",
+      "西伯利亚猫",
+      "缅因猫"
+    ],
+    "answer": "缅因猫",
+    "explanation": "缅因猫（Maine Coon）是美国最古老的自然猫品种，体型巨大，长毛浓密，耳尖有山猫式丛毛，尾巴如羽毛般华美，因性格友善亲人被誉为猫中犬。"
+  },
+  {
+    "id": "ct_6",
+    "type": "single_image_to_text",
+    "prompt": "这只毛发长而浓密、脸部极为扁平、鼻子短小的古老长毛猫品种是？",
+    "image": "/images/cats/persian.webp",
+    "options": [
+      "金吉拉猫",
+      "土耳其安哥拉猫",
+      "波斯猫",
+      "异国短毛猫"
+    ],
+    "answer": "波斯猫",
+    "explanation": "波斯猫（Persian）是世界最古老的长毛猫品种之一，以浓密华丽的长毛、极扁平的面部和温顺优雅的气质著称，被誉为猫中贵族。"
+  },
+  {
+    "id": "ct_7",
+    "type": "single_image_to_text",
+    "prompt": "这只外形酷似波斯猫但毛短、脸部极扁平、俗称加菲猫的品种正式名称是？",
+    "image": "/images/cats/exotic_shorthair.webp",
+    "options": [
+      "英国短毛猫",
+      "异国短毛猫（加菲猫）",
+      "苏格兰折耳猫",
+      "孟买猫"
+    ],
+    "answer": "异国短毛猫（加菲猫）",
+    "explanation": "异国短毛猫（Exotic Shorthair）由波斯猫与美国短毛猫杂交培育，继承波斯猫的扁脸特征但毛发更短易打理，因外形酷似漫画角色加菲猫而广受喜爱。"
+  },
+  {
+    "id": "ct_8",
+    "type": "single_image_to_text",
+    "prompt": "这只毛色呈蓝灰色、眼睛为亮绿色、来自俄罗斯的优雅短毛猫品种是？",
+    "image": "/images/cats/russian_blue.webp",
+    "options": [
+      "俄罗斯蓝猫",
+      "科拉特猫",
+      "孟买猫",
+      "英国短毛猫"
+    ],
+    "answer": "俄罗斯蓝猫",
+    "explanation": "俄罗斯蓝猫（Russian Blue）以其独特的蓝灰色双层短毛和深绿色眼睛著称，性格害羞敏感但对主人忠诚，在俄罗斯民间传说中被视为能带来好运的猫咪。"
+  },
+  {
+    "id": "ct_9",
+    "type": "single_image_to_text",
+    "prompt": "这只毛发银白色、毛尖呈深色渐变光泽、面部五官精致秀气的长毛猫品种是？",
+    "image": "/images/cats/chinchilla.webp",
+    "options": [
+      "波斯猫",
+      "金吉拉猫",
+      "土耳其安哥拉猫",
+      "巴厘猫"
+    ],
+    "answer": "金吉拉猫",
+    "explanation": "金吉拉猫（Chinchilla）是波斯猫的变种，以银白色毛发搭配黑色或金色毛尖形成独特金属光泽著称，面部精致秀气，眼睛通常为翠绿色，气质高雅迷人。"
+  },
+  {
+    "id": "ct_10",
+    "type": "single_image_to_text",
+    "prompt": "这只全身漆黑发亮、眼睛铜金色、被誉为迷你黑豹的猫品种是？",
+    "image": "/images/cats/bombay.webp",
+    "options": [
+      "英国短毛猫",
+      "孟买猫",
+      "哈瓦那猫",
+      "缅甸猫"
+    ],
+    "answer": "孟买猫",
+    "explanation": "孟买猫（Bombay）全身覆盖光亮的纯黑短毛，搭配铜金色眼睛，外形酷似小型黑豹，由缅甸猫与美国短毛猫杂交培育，性格聪明活泼亲人。"
+  },
+  {
+    "id": "ct_11",
+    "type": "single_image_to_text",
+    "prompt": "这只毛发短而卷曲、耳朵大且低位、脸型如精灵般独特的英国猫品种是？",
+    "image": "/images/cats/devon_rex.webp",
+    "options": [
+      "斯芬克斯猫",
+      "柯尼斯卷毛猫",
+      "阿比西尼亚猫",
+      "德文卷毛猫"
+    ],
+    "answer": "德文卷毛猫",
+    "explanation": "德文卷毛猫（Devon Rex）以卷曲的短毛、超大耳朵和独特的精灵脸型著称，毛质纤细柔软，性格活泼好奇，喜欢黏着主人，常被亲切地称为精灵猫。"
+  },
+  {
+    "id": "ct_12",
+    "type": "single_image_to_text",
+    "prompt": "这只几乎没有毛发、皮肤褶皱明显、外形神秘奇特的猫品种是？",
+    "image": "/images/cats/sphynx.webp",
+    "options": [
+      "顿斯科伊猫",
+      "德文卷毛猫",
+      "斯芬克斯无毛猫",
+      "彼得秃猫"
+    ],
+    "answer": "斯芬克斯无毛猫",
+    "explanation": "斯芬克斯猫（Sphynx）是最著名的无毛猫品种，皮肤上仅有一层极细绒毛，皱纹明显，体温偏高，性格极度亲人热情，常被描述为像狗一样的猫。"
+  },
+  {
+    "id": "ct_13",
+    "type": "single_image_to_text",
+    "prompt": "这只耳朵向前自然折叠、脸盘圆润可爱、来自苏格兰的独特猫品种是？",
+    "image": "/images/cats/scottish_fold.webp",
+    "options": [
+      "苏格兰折耳猫",
+      "美国卷耳猫",
+      "英国短毛猫",
+      "异国短毛猫"
+    ],
+    "answer": "苏格兰折耳猫",
+    "explanation": "苏格兰折耳猫（Scottish Fold）因天然基因突变导致耳朵软骨向前折叠而得名，圆脸折耳的外形极具辨识度，但该基因也可能引发关节问题，需关注健康护理。"
+  },
+  {
+    "id": "ct_14",
+    "type": "single_image_to_text",
+    "prompt": "这只毛发带有豹纹斑点、体型修长有力、由家猫与野生亚洲豹猫杂交培育的品种是？",
+    "image": "/images/cats/bengal.webp",
+    "options": [
+      "埃及猫",
+      "塞伦盖蒂猫",
+      "孟加拉豹猫",
+      "奥西猫"
+    ],
+    "answer": "孟加拉豹猫",
+    "explanation": "孟加拉豹猫（Bengal）由家猫与野生亚洲豹猫杂交培育而来，拥有野性的豹纹斑点或大理石花纹，毛发柔软有光泽，性格活泼好动，是少数喜欢玩水的家猫品种。"
+  },
+  {
+    "id": "ct_15",
+    "type": "single_image_to_text",
+    "prompt": "这只被称为缅甸圣猫、四爪纯白如白手套、拥有蓝色眼睛和重点色半长毛的猫品种是？",
+    "image": "/images/cats/birman.webp",
+    "options": [
+      "伯曼猫",
+      "土耳其安哥拉猫",
+      "雪鞋猫",
+      "布偶猫"
+    ],
+    "answer": "伯曼猫",
+    "explanation": "伯曼猫（Birman）又称缅甸圣猫，最显著特征是四爪纯白（白手套），兼具重点色半长毛和蓝色眼睛，传说源自缅甸寺庙，性格温顺安静，举止优雅。"
+  },
+  {
+    "id": "ct_16",
+    "type": "single_image_to_text",
+    "prompt": "这只毛色暖棕色、每根毛有多色分布（勾状纹）、体型修长活泼的东非猫品种是？",
+    "image": "/images/cats/abyssinian.webp",
+    "options": [
+      "新加坡猫",
+      "阿比西尼亚猫",
+      "索马里猫",
+      "埃及猫"
+    ],
+    "answer": "阿比西尼亚猫",
+    "explanation": "阿比西尼亚猫（Abyssinian）以特有的勾状毛色（每根毛上有多个深浅层次）著称，体型修长，性格好奇活泼，运动能力极强，被誉为猫中运动员。"
+  },
+  {
+    "id": "ct_17",
+    "type": "single_image_to_text",
+    "prompt": "这只来自英国康沃尔、毛发呈规则波浪卷曲、体型纤细耳大腿长的猫品种是？",
+    "image": "/images/cats/cornish_rex.webp",
+    "options": [
+      "美国卷耳猫",
+      "柯尼斯卷毛猫",
+      "德文卷毛猫",
+      "拉邦猫"
+    ],
+    "answer": "柯尼斯卷毛猫",
+    "explanation": "柯尼斯卷毛猫（Cornish Rex）源自英国康沃尔，毛发仅有底绒层并呈规则波浪卷曲，体型修长，耳大腿长，性格外向活泼，非常喜欢奔跑和互动玩耍。"
+  },
+  {
+    "id": "ct_18",
+    "type": "single_image_to_text",
+    "prompt": "这只原产挪威、毛发浓密双层防水、体型大而结实的北欧森林猫品种是？",
+    "image": "/images/cats/norwegian_forest_cat.webp",
+    "options": [
+      "西伯利亚猫",
+      "缅因猫",
+      "挪威森林猫",
+      "芬兰猫"
+    ],
+    "answer": "挪威森林猫",
+    "explanation": "挪威森林猫（Norwegian Forest Cat）是北欧古老猫种，拥有浓密的双层防水被毛以适应严寒气候，体型大而结实，性格独立，对家人友善，曾是维京人船上的工作猫。"
+  },
+  {
+    "id": "ct_19",
+    "type": "single_image_to_text",
+    "prompt": "这只耳朵独特地向后自然卷曲、源自美国加州基因突变的猫品种是？",
+    "image": "/images/cats/american_curl.webp",
+    "options": [
+      "德文卷毛猫",
+      "柯尼斯卷毛猫",
+      "苏格兰折耳猫",
+      "美国卷耳猫"
+    ],
+    "answer": "美国卷耳猫",
+    "explanation": "美国卷耳猫（American Curl）因天然基因突变导致耳朵向后卷曲而得名，于1981年在美国加州首次发现，卷耳程度越大越受重视，性格活泼外向，喜欢与人互动。"
+  },
+  {
+    "id": "ct_20",
+    "type": "single_image_to_text",
+    "prompt": "这只原产土耳其安卡拉、毛发丝滑飘逸、眼睛常呈蓝色或鸳鸯眼的古老长毛猫品种是？",
+    "image": "/images/cats/turkish_angora.webp",
+    "options": [
+      "金吉拉猫",
+      "巴厘猫",
+      "波斯猫",
+      "土耳其安哥拉猫"
+    ],
+    "answer": "土耳其安哥拉猫",
+    "explanation": "土耳其安哥拉猫（Turkish Angora）是世界最古老的长毛猫品种之一，源自土耳其安卡拉，毛发丝般顺滑，白色个体常见鸳鸯眼（一蓝一琥珀），优雅灵动。"
+  },
+  {
+    "id": "ct_21",
     "type": "true_false_image",
-    "prompt": "这通常代表布偶猫的优雅外表吗？",
-    "image": "🐱",
+    "prompt": "西伯利亚猫（Siberian）是原产俄罗斯的大型半长毛猫，其产生的Fel d 1过敏原含量相对较少，对猫过敏人群相对友好，这个描述正确吗？",
+    "image": "/images/cats/siberian.webp",
     "answer": true,
-    "explanation": "布偶猫有着蓝色的眼睛和长毛，如同仙女一般。"
+    "explanation": "西伯利亚猫（Siberian）确实源自俄罗斯西伯利亚，体型大、毛发浓密，但其产生的Fel d 1过敏原相对较少，是公认的低过敏性猫品种之一，对轻度过敏者较为友好。"
+  },
+  {
+    "id": "ct_22",
+    "type": "true_false_image",
+    "prompt": "新加坡猫（Singapura）是世界上体型最大的家猫品种之一，以其壮硕体型著称，这个描述正确吗？",
+    "image": "/images/cats/singapura.webp",
+    "answer": false,
+    "explanation": "新加坡猫（Singapura）实际上是世界上最小的家猫品种之一，平均体重仅2~3公斤，以小巧玲珑、大眼睛和暖棕勾状毛色著称，与体型最大的描述完全相反。"
+  },
+  {
+    "id": "ct_23",
+    "type": "single_image_to_text",
+    "prompt": "这只天然具有斑点纹（非人工选育）、被古埃及人视为神圣、跑速极快的古老猫品种是？",
+    "image": "/images/cats/egyptian_mau.webp",
+    "options": [
+      "奥西猫",
+      "埃及猫",
+      "孟加拉豹猫",
+      "阿比西尼亚猫"
+    ],
+    "answer": "埃及猫",
+    "explanation": "埃及猫（Egyptian Mau）是少数天然拥有斑点纹的家猫品种，也是最快的家猫之一（时速可超过45公里），在古埃及文化中被视为神圣动物，额头有独特的圣甲虫纹路。"
+  },
+  {
+    "id": "ct_24",
+    "type": "true_false_image",
+    "prompt": "巴厘猫（Balinese）实际上是长毛版的暹罗猫，两者有着相似的重点色花纹和蓝色眼睛，这个描述正确吗？",
+    "image": "/images/cats/balinese.webp",
+    "answer": true,
+    "explanation": "巴厘猫（Balinese）确实是长毛版的暹罗猫，由暹罗猫的长毛基因突变培育而来，拥有相同的重点色花纹和蓝色眼睛，但毛发更长更飘逸，性格同样活泼多话。"
+  },
+  {
+    "id": "ct_25",
+    "type": "single_image_to_text",
+    "prompt": "这只毛发蓬松、外形如小狐狸、实为阿比西尼亚猫长毛变种的活泼猫品种是？",
+    "image": "/images/cats/somali.webp",
+    "options": [
+      "索马里猫",
+      "缅因猫",
+      "阿比西尼亚猫",
+      "挪威森林猫"
+    ],
+    "answer": "索马里猫",
+    "explanation": "索马里猫（Somali）是阿比西尼亚猫的长毛变种，拥有相同的勾状毛色，但毛发更长更蓬松，尾巴毛量丰富，形似小狐狸，性格活泼爱探索，精力充沛。"
+  },
+  {
+    "id": "ct_26",
+    "type": "true_false_image",
+    "prompt": "日本短尾猫（Japanese Bobtail）的短尾特征是由人工手术截尾形成的，这个说法正确吗？",
+    "image": "/images/cats/japanese_bobtail.webp",
+    "answer": false,
+    "explanation": "日本短尾猫（Japanese Bobtail）的短尾完全是天然基因突变的结果，与人工手术无关，这一特征在日本延续了数百年。日本传统招财猫的原型正是这一品种。"
+  },
+  {
+    "id": "ct_27",
+    "type": "single_image_to_text",
+    "prompt": "这只四肢特别短小、身体滚圆、被称为猫界腊肠狗的可爱猫品种是？",
+    "image": "/images/cats/munchkin.webp",
+    "options": [
+      "新加坡猫",
+      "曼基康矮脚猫",
+      "马恩岛猫",
+      "德文卷毛猫"
+    ],
+    "answer": "曼基康矮脚猫",
+    "explanation": "曼基康猫（Munchkin）因基因突变导致四肢极短而著称，外形酷似腊肠犬，故称猫界腊肠狗，尽管四肢短小，奔跑仍然灵活，性格外向友好，适合家庭饲养。"
+  },
+  {
+    "id": "ct_28",
+    "type": "true_false_image",
+    "prompt": "马恩岛猫（Manx）原产于英国马恩岛，其最显著特征是天生无尾或极短尾，这个描述正确吗？",
+    "image": "/images/cats/manx.webp",
+    "answer": true,
+    "explanation": "马恩岛猫（Manx）确实原产于英国与爱尔兰之间的马恩岛，天生无尾（Rumpy型）或短尾（Stumpy型）是其最显著特征，由长期岛屿近亲繁殖导致的基因突变所形成。"
+  },
+  {
+    "id": "ct_29",
+    "type": "single_image_to_text",
+    "prompt": "这只来自缅甸、毛色呈深棕（黑貂色）、眼睛金黄圆润的紧凑型短毛猫品种是？",
+    "image": "/images/cats/burmese.webp",
+    "options": [
+      "新加坡猫",
+      "暹罗猫",
+      "缅甸猫",
+      "孟买猫"
+    ],
+    "answer": "缅甸猫",
+    "explanation": "缅甸猫（Burmese）原产缅甸，以光滑紧密的深棕（黑貂色）短毛和圆润金色眼睛著称，性格活泼热情，极度依恋主人，常被描述为永远长不大的小猫。"
+  },
+  {
+    "id": "ct_30",
+    "type": "true_false_image",
+    "prompt": "雪鞋猫（Snowshoe）由暹罗猫与美国短毛猫杂交培育，最显著特征是重点色花纹且四爪带白色斑块（如穿白雪鞋），这个描述正确吗？",
+    "image": "/images/cats/snowshoe.webp",
+    "answer": true,
+    "explanation": "雪鞋猫（Snowshoe）确实由暹罗猫和美国短毛猫杂交培育，继承了暹罗猫的重点色特征，同时四爪有白色斑块，犹如穿着白色雪鞋，蓝色眼睛，性格温和友善。"
   }
 ]

@@ -36,12 +36,24 @@
         <p class="subtitle">探索有趣的常识，挑战你的认知！</p>
       </header>
 
+      <div class="actions-bar">
+        <router-link to="/mistakes" class="action-btn">
+          <span class="emoji">📖</span> 错题本
+        </router-link>
+        <router-link to="/favorites" class="action-btn">
+          <span class="emoji">⭐</span> 收藏夹
+        </router-link>
+        <router-link to="/statistics" class="action-btn">
+          <span class="emoji">📊</span> 统计中心
+        </router-link>
+      </div>
+
       <div class="settings-bar">
         <button class="settings-btn" @click="settingsStore.toggleSound" :class="{ disabled: !settingsStore.soundEnabled }">
           音效: {{ settingsStore.soundEnabled ? '开启 🔊' : '关闭 🔇' }}
         </button>
         <div class="global-stats">
-          总得分: <span>{{ progressStore.totalScore }}</span>
+          生涯总得分: <span>{{ progressStore.totalScore }}</span>
         </div>
       </div>
       
@@ -260,6 +272,45 @@ onMounted(async () => {
   font-size: 1.1rem;
   color: #5E4C41;
   font-weight: 600;
+}
+
+.actions-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background: white;
+  border: 2px solid #5E4C41;
+  border-radius: 16px;
+  padding: 0.8rem 1.5rem;
+  color: #5E4C41;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 0 rgba(94, 76, 65, 0.08); /* 轻阴影 */
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 0 rgba(94, 76, 65, 0.12);
+  background: #FAFAFA;
+}
+
+.action-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(94, 76, 65, 0.05);
+}
+
+.action-btn .emoji {
+  font-size: 1.3rem;
 }
 
 .settings-bar {

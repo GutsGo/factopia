@@ -28,3 +28,9 @@ export interface QuizDatabase {
   categories: CategoryData[];
   questions: Question[];
 }
+
+export interface MistakeRecord {
+  categoryId: string;
+  questionId: string;
+  timestamp: number;
+}
