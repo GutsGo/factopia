@@ -3,36 +3,520 @@
     "id": "fw_1",
     "type": "single_image_to_text",
     "prompt": "这是什么花？",
-    "image": "🌹",
-    "options": [
-      "玫瑰",
-      "百合",
-      "菊花",
-      "牡丹"
-    ],
-    "answer": "玫瑰",
-    "explanation": "红玫瑰通常象征爱情。"
+    "image": "images/flowers/peony.webp",
+    "options": ["牡丹", "芍药", "月季", "茶花"],
+    "answer": "牡丹",
+    "explanation": "牡丹被称为'花中之王'，是中国的传统名花，象征富贵吉祥。🧠 口诀：'花王牡丹大又圆，富贵满堂春意暖。'"
   },
   {
     "id": "fw_2",
-    "type": "single_image_to_text",
-    "prompt": "这是什么花？",
-    "image": "🌻",
-    "options": [
-      "向日葵",
-      "太阳花",
-      "雏菊",
-      "蒲公英"
-    ],
-    "answer": "向日葵",
-    "explanation": "向日葵的花语是太阳。"
+    "type": "true_false_image",
+    "prompt": "这是睡莲吗？",
+    "image": "images/flowers/lotus.webp",
+    "answer": false,
+    "explanation": "这是荷花。荷花的叶子和花朵通常挺出水面，而睡莲大多浮在水面上。🧠 口诀：'荷花挺立出水面，睡莲懒卧水面间——站着是荷，躺着是莲。'"
   },
   {
     "id": "fw_3",
+    "type": "single_image_to_text",
+    "prompt": "这是哪种在严冬开放的花？",
+    "image": "images/flowers/plum_blossom.webp",
+    "options": ["桃花", "樱花", "梅花", "梨花"],
+    "answer": "梅花",
+    "explanation": "梅花在严冬绽放，常被用来象征坚韧不拔的品格。🧠 口诀：'冰天雪地独自开，百花未动我先来——越冷越开是梅花。'"
+  },
+  {
+    "id": "fw_4",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/orchid.webp",
+    "options": ["百合", "兰花", "水仙", "鸢尾"],
+    "answer": "兰花",
+    "explanation": "兰花被称为'花中君子'，以其淡雅的香气和优美的姿态著称。🧠 口诀：'空谷幽兰不争艳，君子之交淡如兰——记住兰=君子+淡香。'"
+  },
+  {
+    "id": "fw_5",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/chrysanthemum.webp",
+    "options": ["万寿菊", "向日葵", "雏菊", "菊花"],
+    "answer": "菊花",
+    "explanation": "菊花是秋季的代表花卉，在中国传统文化中象征高洁和长寿。🧠 口诀：'秋风一吹菊花黄，陶渊明东篱下采菊忙——秋天+篱笆=菊花。'"
+  },
+  {
+    "id": "fw_6",
     "type": "true_false_image",
-    "prompt": "这是梅花吗？",
-    "image": "🌸",
+    "prompt": "这种在秋季盛开并带有浓郁甜香的花是桂花吗？",
+    "image": "images/flowers/osmanthus.webp",
+    "answer": true,
+    "explanation": "桂花在秋季开放，香气扑鼻，常被用来制作糕点和酿酒。🧠 口诀：'中秋月圆桂花香，嫦娥月宫桂树旁——中秋+月亮+甜香=桂花。'"
+  },
+  {
+    "id": "fw_7",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/camellia.webp",
+    "options": ["月季", "茶花", "海棠", "木槿"],
+    "answer": "茶花",
+    "explanation": "茶花是中国传统名花，花期极长，从秋季一直开到春季。🧠 口诀：'秋来开花春才谢，四季不休是茶花——记住花期最长=茶花。'"
+  },
+  {
+    "id": "fw_8",
+    "type": "single_image_to_text",
+    "prompt": "这种常被误认为是玫瑰的花叫什么？",
+    "image": "images/flowers/chinese_rose.webp",
+    "options": ["月季", "蔷薇", "牡丹", "扶桑"],
+    "answer": "月季",
+    "explanation": "月季被称为'花中皇后'，品种繁多且四季开花，花店里的'玫瑰'大多是现代月季。🧠 口诀：'月月都开花不停，花店玫瑰多是它——月季=月月有花季。'"
+  },
+  {
+    "id": "fw_9",
+    "type": "true_false_image",
+    "prompt": "这是白玉兰吗？",
+    "image": "images/flowers/narcissus.webp",
     "answer": false,
-    "explanation": "这其实是樱花的 emoji。"
+    "explanation": "这是水仙花，常在春节前后开花，被称为'凌波仙子'。🧠 口诀：'年年春节清水养，一盆水仙满屋香——水仙=水养+过年+淡香。'"
+  },
+  {
+    "id": "fw_10",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/azalea.webp",
+    "options": ["夹竹桃", "杜鹃", "三角梅", "紫薇"],
+    "answer": "杜鹃",
+    "explanation": "杜鹃花在中国分布极广，被誉为'花中西施'，常在春季满山盛开。🧠 口诀：'春到山野杜鹃红，杜鹃鸟叫杜鹃花——鸟名花名共一个。'"
+  },
+  {
+    "id": "fw_11",
+    "type": "single_image_to_text",
+    "prompt": "这种常用来窨制花茶的白色小花是什么？",
+    "image": "images/flowers/jasmine.webp",
+    "options": ["白兰", "栀子", "茉莉", "铃兰"],
+    "answer": "茉莉",
+    "explanation": "茉莉花香气清婉柔淑，是制作茉莉花茶的主要原料。🧠 口诀：'好一朵美丽的茉莉花——会唱这首歌，就记住茉莉了！'"
+  },
+  {
+    "id": "fw_12",
+    "type": "true_false_image",
+    "prompt": "这是栀子花吗？",
+    "image": "images/flowers/gardenia.webp",
+    "answer": true,
+    "explanation": "栀子花在初夏盛开，花朵洁白，具有非常浓郁的芳香。🧠 口诀：'夏日胸前别一朵，浓香扑鼻沁心脾——白花浓香=栀子花。'"
+  },
+  {
+    "id": "fw_13",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/chinese_flowering_crabapple.webp",
+    "options": ["海棠", "樱花", "李花", "梨花"],
+    "answer": "海棠",
+    "explanation": "海棠花姿态优美，被古代文人雅士称为'花中神仙'。🧠 口诀：'苏东坡写海棠诗，花中神仙不睡觉——文人爱海棠，雅致又飘逸。'"
+  },
+  {
+    "id": "fw_14",
+    "type": "single_image_to_text",
+    "prompt": "这种先开花后长叶的早春花卉是什么？",
+    "image": "images/flowers/magnolia.webp",
+    "options": ["玉兰", "丁香", "紫薇", "合欢"],
+    "answer": "玉兰",
+    "explanation": "玉兰在早春绽放，花朵硕大洁白，寓意高洁芬芳。🧠 口诀：'先开花来后长叶，光秃枝头白如玉——记住先花后叶大白花=玉兰。'"
+  },
+  {
+    "id": "fw_15",
+    "type": "true_false_image",
+    "prompt": "这是荷兰的国花郁金香吗？",
+    "image": "images/flowers/tulip.webp",
+    "answer": true,
+    "explanation": "郁金香不仅是荷兰的国花，也是世界著名的球根花卉。🧠 口诀：'风车木鞋郁金香，三样一起想荷兰——荷兰国花=郁金香。'"
+  },
+  {
+    "id": "fw_16",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/sunflower.webp",
+    "options": ["向日葵", "太阳花", "雏菊", "金盏菊"],
+    "answer": "向日葵",
+    "explanation": "向日葵的花序会随着太阳转动，象征着阳光和希望。🧠 口诀：'太阳走到哪，我的脸朝哪——向日葵=一直向着太阳的花。'"
+  },
+  {
+    "id": "fw_17",
+    "type": "single_image_to_text",
+    "prompt": "这种以紫色花穗和独特香气闻名的花是什么？",
+    "image": "images/flowers/lavender.webp",
+    "options": ["鼠尾草", "马鞭草", "薰衣草", "桔梗"],
+    "answer": "薰衣草",
+    "explanation": "薰衣草常用于提取精油，法国普罗旺斯以种植薰衣草闻名。🧠 口诀：'紫色花海普罗旺斯，香枕助眠薰衣草——紫色+香味+助眠=薰衣草。'"
+  },
+  {
+    "id": "fw_18",
+    "type": "true_false_image",
+    "prompt": "这是向日葵吗？",
+    "image": "images/flowers/daisy.webp",
+    "answer": false,
+    "explanation": "这是雏菊，虽然都是菊科，但雏菊植株矮小，花朵也小巧可爱。🧠 口诀：'迷你版菊花草地开，小巧玲珑叫雏菊——雏=幼小，雏菊是菊花的迷你版。'"
+  },
+  {
+    "id": "fw_19",
+    "type": "single_image_to_text",
+    "prompt": "这种形似小钟的白色花朵叫什么？",
+    "image": "images/flowers/lily_of_the_valley.webp",
+    "options": ["风信子", "铃兰", "雪滴花", "水仙"],
+    "answer": "铃兰",
+    "explanation": "铃兰的花朵像一串串白色的小铃铛，花语是'幸福归来'。🧠 口诀：'叮叮当白铃铛挂，幸福归来是铃兰——形状记忆：铃=铃铛，兰=高雅。'"
+  },
+  {
+    "id": "fw_20",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/hydrangea.webp",
+    "options": ["琼花", "荚蒾", "绣球", "紫藤"],
+    "answer": "绣球",
+    "explanation": "绣球花的花色常会随土壤的酸碱度改变，酸性开蓝色，碱性开粉红色。🧠 口诀：'酸蓝碱粉会变色，一团圆球像绣球——绣球=土壤酸碱度的晴雨表。'"
+  },
+  {
+    "id": "fw_21",
+    "type": "true_false_image",
+    "prompt": "这是风信子吗？",
+    "image": "images/flowers/hyacinth.webp",
+    "answer": true,
+    "explanation": "风信子是著名的早春球根花卉，花序丰满，香气非常浓郁。🧠 口诀：'穗状花序圆又胖，浓香扑鼻早春来——风信子=春天的消息使者。'"
+  },
+  {
+    "id": "fw_22",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/lily.webp",
+    "options": ["百合", "水仙", "马蹄莲", "朱顶红"],
+    "answer": "百合",
+    "explanation": "百合在中国传统文化中常被赋予'百年好合'的美好寓意。🧠 口诀：'百年好合百合花，婚礼必备送一束——百合=百+合，取百年好合之意。'"
+  },
+  {
+    "id": "fw_23",
+    "type": "single_image_to_text",
+    "prompt": "常在母亲节赠送的这种花是什么？",
+    "image": "images/flowers/carnation.webp",
+    "options": ["石竹", "康乃馨", "玫瑰", "勿忘我"],
+    "answer": "康乃馨",
+    "explanation": "康乃馨是世界公认的母亲节之花，象征着母爱与宽容。🧠 口诀：'母亲节送妈妈，花边锯齿皱边边——母亲节+锯齿花边=康乃馨。'"
+  },
+  {
+    "id": "fw_24",
+    "type": "true_false_image",
+    "prompt": "这是雪滴花吗？",
+    "image": "images/flowers/baby's_breath.webp",
+    "answer": false,
+    "explanation": "这是满天星，常作为花束的配花，像夜空中的繁星般小巧密集。🧠 口诀：'细细小小密密麻，花束配角点繁星——满天星=花束中的配角明星。'"
+  },
+  {
+    "id": "fw_25",
+    "type": "single_image_to_text",
+    "prompt": "这种花瓣上有类似人脸斑纹的花是什么？",
+    "image": "images/flowers/pansy.webp",
+    "options": ["牵牛花", "三色堇", "蝴蝶兰", "鸢尾"],
+    "answer": "三色堇",
+    "explanation": "三色堇通常每朵花有紫、白、黄三色，花瓣上的斑纹像一张猫脸或者人脸。🧠 口诀：'三种颜色一朵花，中间花纹像猫脸——三色堇=3色+猫脸纹路。'"
+  },
+  {
+    "id": "fw_26",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/corn_poppy.webp",
+    "options": ["罂粟", "虞美人", "郁金香", "玫瑰"],
+    "answer": "虞美人",
+    "explanation": "虞美人是一种观赏花卉，与罂粟同科，但植株全身有绒毛且不含毒品成分。🧠 口诀：'虞姬魂化薄翼花，全身绒毛随风摇——虞美人=楚汉传说+轻薄花瓣+绒毛茎。'"
+  },
+  {
+    "id": "fw_27",
+    "type": "true_false_image",
+    "prompt": "这是石竹吗？",
+    "image": "images/flowers/carnation_dianthus.webp",
+    "answer": true,
+    "explanation": "石竹因其茎有节、形如竹而得名，康乃馨其实也是石竹科的一种。🧠 口诀：'茎有节来像竹子，康乃馨是它亲戚——石竹=竹节茎+康乃馨一家人。'"
+  },
+  {
+    "id": "fw_28",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/iris.webp",
+    "options": ["鸢尾", "蝴蝶兰", "桔梗", "百合"],
+    "answer": "鸢尾",
+    "explanation": "鸢尾的花瓣形如鸢鸟的尾巴，法国将其作为国花。🧠 口诀：'法国国花三色旗，鸢尾花瓣像鸟尾——鸢尾=老鹰尾巴+法国国花。'"
+  },
+  {
+    "id": "fw_29",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/eustoma.webp",
+    "options": ["洋桔梗", "玫瑰", "牡丹", "康乃馨"],
+    "answer": "洋桔梗",
+    "explanation": "洋桔梗花形酷似玫瑰，但边缘常常带有迷人的波浪褶皱，是流行的切花。🧠 口诀：'像玫瑰却非玫瑰，花边皱皱像裙摆——洋桔梗=假玫瑰+波浪花边。'"
+  },
+  {
+    "id": "fw_30",
+    "type": "true_false_image",
+    "prompt": "这是洋水仙吗？",
+    "image": "images/flowers/freesia.webp",
+    "answer": false,
+    "explanation": "这是小苍兰（香雪兰），以其清新幽雅的独特香气深受人们喜爱。🧠 口诀：'香雪兰名字含两宝：雪=洁白，兰=幽香——小苍兰=香气最独特的小型兰状花。'"
+  },
+  {
+    "id": "fw_31",
+    "type": "single_image_to_text",
+    "prompt": "这种有一片红色佛焰苞的花叫什么？",
+    "image": "images/flowers/anthurium.webp",
+    "options": ["一品红", "红掌", "白掌", "朱顶红"],
+    "answer": "红掌",
+    "explanation": "红掌的红色部分其实是它的苞片，真正的花是中间那根黄色的肉穗。🧠 口诀：'一巴掌红光光，中间小棒是真花——红掌=大红苞片像手掌+中间肉穗才是花。'"
+  },
+  {
+    "id": "fw_32",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/strelitzia.webp",
+    "options": ["鹤望兰", "红掌", "炮仗花", "鸢尾"],
+    "answer": "鹤望兰",
+    "explanation": "鹤望兰因其花形酷似展翅飞翔的仙鹤而得名，也常被称为天堂鸟。🧠 口诀：'花形像仙鹤展翅，又名天堂鸟起飞——鹤望兰=仙鹤+天堂鸟，同一朵花两个名。'"
+  },
+  {
+    "id": "fw_33",
+    "type": "true_false_image",
+    "prompt": "这是蝴蝶兰吗？",
+    "image": "images/flowers/phalaenopsis.webp",
+    "answer": true,
+    "explanation": "蝴蝶兰的花朵形如飞舞的蝴蝶，素有'洋兰王后'的美誉。🧠 口诀：'洋兰王后蝴蝶飞，新年礼品最相宜——蝴蝶兰=蝴蝶形状+洋兰中最尊贵。'"
+  },
+  {
+    "id": "fw_34",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/dahlia.webp",
+    "options": ["菊花", "芍药", "大丽花", "牡丹"],
+    "answer": "大丽花",
+    "explanation": "大丽花品种繁多、花型多样且色彩艳丽，是世界名花之一。🧠 口诀：'大大的花型艳丽丽，品种千百说不完——大丽花=大+丽，名字即特征。'"
+  },
+  {
+    "id": "fw_35",
+    "type": "single_image_to_text",
+    "prompt": "这种开出巨大喇叭形花朵的球根植物是什么？",
+    "image": "images/flowers/hippeastrum.webp",
+    "options": ["百合", "风信子", "郁金香", "朱顶红"],
+    "answer": "朱顶红",
+    "explanation": "朱顶红常在春季开花，花朵极大，非常具有观赏价值。🧠 口诀：'顶部朱红花超大，喇叭向上冲天开——朱顶红=顶端+红色+大喇叭花。'"
+  },
+  {
+    "id": "fw_36",
+    "type": "true_false_image",
+    "prompt": "这是木槿吗？",
+    "image": "images/flowers/hibiscus_rosa_sinensis.webp",
+    "answer": false,
+    "explanation": "这是扶桑（朱槿），常年开花，也是夏威夷的州花和马来西亚的国花。🧠 口诀：'夏威夷草裙配扶桑，马来西亚国花它——扶桑=热带风情+夏威夷+马来西亚。'"
+  },
+  {
+    "id": "fw_37",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/bougainvillea.webp",
+    "options": ["三角梅", "紫薇", "杜鹃", "凌霄"],
+    "answer": "三角梅",
+    "explanation": "三角梅色彩鲜艳的部分其实是它的苞片，真正的花非常小，长在苞片中间。🧠 口诀：'三片苞叶似花瓣，真花藏在中间小——三角梅=三角形苞片+藏在里面的真花。'"
+  },
+  {
+    "id": "fw_38",
+    "type": "single_image_to_text",
+    "prompt": "这种花瓣外白内黄、常被用来做花环的花叫什么？",
+    "image": "images/flowers/plumeria.webp",
+    "options": ["白兰", "茉莉", "鸡蛋花", "水仙"],
+    "answer": "鸡蛋花",
+    "explanation": "鸡蛋花因花冠外部洁白、中心鲜黄而得名，在热带地区非常常见。🧠 口诀：'外白内黄像鸡蛋，夏威夷花环它最多——鸡蛋花=鸡蛋配色+热带花环必备。'"
+  },
+  {
+    "id": "fw_39",
+    "type": "true_false_image",
+    "prompt": "这是龙船花吗？",
+    "image": "images/flowers/ixora.webp",
+    "answer": true,
+    "explanation": "龙船花是一种热带灌木，花朵密集呈伞房状，花期极长。🧠 口诀：'端午赛龙舟龙船花，四季不歇密密开——龙船花=端午节+全年花期+密集小花。'"
+  },
+  {
+    "id": "fw_40",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/desert_rose.webp",
+    "options": ["月季", "沙漠玫瑰", "夹竹桃", "杜鹃"],
+    "answer": "沙漠玫瑰",
+    "explanation": "沙漠玫瑰原产于非洲干旱地区，并不是真正的玫瑰，属于夹竹桃科。🧠 口诀：'名叫玫瑰非玫瑰，沙漠喝水靠肥根——沙漠玫瑰=假玫瑰+非洲旱地+粗壮根茎。'"
+  },
+  {
+    "id": "fw_41",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/bird_of_paradise.webp",
+    "options": ["天堂鸟", "凤凰花", "炮仗花", "金莲花"],
+    "answer": "天堂鸟",
+    "explanation": "天堂鸟即鹤望兰，因其花朵造型如一只准备起飞的神奇鸟类而得此俗名。🧠 口诀：'天堂飞来奇异鸟，其实就是鹤望兰——天堂鸟=鹤望兰的另一个名字，记住两个名字是同一朵花。'"
+  },
+  {
+    "id": "fw_42",
+    "type": "true_false_image",
+    "prompt": "这是石斛兰吗？",
+    "image": "images/flowers/cattleya.webp",
+    "answer": false,
+    "explanation": "这是卡特兰，花朵硕大且色彩艳丽，被称为'洋兰之王'。🧠 口诀：'洋兰之王卡特兰，花朵硕大色最艳——卡特兰=洋兰中体型最大最艳的那个。'"
+  },
+  {
+    "id": "fw_43",
+    "type": "single_image_to_text",
+    "prompt": "这种花型似跳舞的女郎的兰花叫什么？",
+    "image": "images/flowers/oncidium.webp",
+    "options": ["建兰", "蝴蝶兰", "文心兰", "兜兰"],
+    "answer": "文心兰",
+    "explanation": "文心兰由于花朵的特殊形状，常被形象地称为'跳舞兰'（Dancing Lady）。🧠 口诀：'裙摆飞扬跳舞女，英文名叫跳舞兰——文心兰=兰中的舞蹈家。'"
+  },
+  {
+    "id": "fw_44",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/pyrostegia_venusta.webp",
+    "options": ["炮仗花", "凌霄花", "红掌", "扶桑"],
+    "answer": "炮仗花",
+    "explanation": "炮仗花在春季开花，花朵密集如串串鞭炮，常用来装饰庭院墙壁。🧠 口诀：'一串橙红挂墙上，像过年放鞭炮一样——炮仗花=过年鞭炮+橙红色+爬墙植物。'"
+  },
+  {
+    "id": "fw_45",
+    "type": "true_false_image",
+    "prompt": "这是凤凰花吗？",
+    "image": "images/flowers/delonix_regia.webp",
+    "answer": true,
+    "explanation": "凤凰花开时满树如火，'叶如飞凰之羽，花若丹凤之冠'，常在毕业季盛开。🧠 口诀：'六月毕业骊歌响，满树凤凰红似火——凤凰花=毕业季+满树火红=南方学生的毕业记忆。'"
+  },
+  {
+    "id": "fw_46",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/dandelion.webp",
+    "options": ["菊花", "向日葵", "雏菊", "蒲公英"],
+    "answer": "蒲公英",
+    "explanation": "蒲公英开着黄色的小花，结籽后形成白色的毛球，种子随风飘散。🧠 口诀：'吹一口白绒球飘散，黄花变白球是蒲公英——蒲公英=可以许愿吹的白色毛球。'"
+  },
+  {
+    "id": "fw_47",
+    "type": "single_image_to_text",
+    "prompt": "这种秋季盛开、花叶不相见的红色花朵叫什么？",
+    "image": "images/flowers/spider_lily.webp",
+    "options": ["曼陀罗", "彼岸花", "合欢", "郁金香"],
+    "answer": "彼岸花",
+    "explanation": "彼岸花又称石蒜，它的特点是'花开不见叶，叶生不见花'。🧠 口诀：'花开叶落两不见，秋彼岸上血红开——彼岸花=花叶永远不相遇的悲剧花朵。'"
+  },
+  {
+    "id": "fw_48",
+    "type": "true_false_image",
+    "prompt": "这是蓝花楹吗？",
+    "image": "images/flowers/wisteria.webp",
+    "answer": false,
+    "explanation": "这是紫藤。紫藤是一种攀援缠绕性大藤本植物，春季开出一串串紫色的花朵。🧠 口诀：'紫色葡萄串串挂，藤蔓缠树爬墙壁——紫藤=紫色花穗+爬树缠绕的大藤本。'"
+  },
+  {
+    "id": "fw_49",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/silk_tree.webp",
+    "options": ["合欢", "紫薇", "含羞草", "木槿"],
+    "answer": "合欢",
+    "explanation": "合欢花呈粉红色绒毛状，它的叶子在夜间会闭合。🧠 口诀：'叶合欢快入睡觉，粉红绒毛如烟花——合欢=叶子会合拢+粉红烟火状花朵。'"
+  },
+  {
+    "id": "fw_50",
+    "type": "single_image_to_text",
+    "prompt": "这是韩国的国花，请问它叫什么？",
+    "image": "images/flowers/hibiscus.webp",
+    "options": ["扶桑", "木槿", "蜀葵", "桔梗"],
+    "answer": "木槿",
+    "explanation": "木槿花朝开暮落，生命力顽强，被称为'无穷花'，也是韩国的国花。🧠 口诀：'韩国国花叫无穷，朝开暮落不断绝——木槿=韩国+无穷花+朝开暮谢却生生不息。'"
+  },
+  {
+    "id": "fw_51",
+    "type": "true_false_image",
+    "prompt": "这种带有香蕉味道的花是含笑吗？",
+    "image": "images/flowers/banana_shrub.webp",
+    "answer": true,
+    "explanation": "含笑花在未完全开放时带有独特的香蕉香味，非常清新。🧠 口诀：'花开半合含羞笑，香气飘来像香蕉——含笑=半开的花+香蕉味道。'"
+  },
+  {
+    "id": "fw_52",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/honeysuckle.webp",
+    "options": ["迎春花", "茉莉", "连翘", "金银花"],
+    "answer": "金银花",
+    "explanation": "金银花初开为白色，后转为黄色，因一蒂二花且黄白相映而得名，也是常用中药材。🧠 口诀：'同一枝头黄白花，金色银色共一家——金银花=黄白双色+清热解毒中药。'"
+  },
+  {
+    "id": "fw_53",
+    "type": "single_image_to_text",
+    "prompt": "这种漏斗形、常攀援在墙上的橘红色花是什么？",
+    "image": "images/flowers/chinese_trumpet_vine.webp",
+    "options": ["炮仗花", "牵牛花", "凌霄", "锦带花"],
+    "answer": "凌霄",
+    "explanation": "凌霄花生命力强，常攀附于树木或墙壁生长，是优良的垂直绿化植物。🧠 口诀：'凌云直上爬高墙，橘红喇叭朝天吹——凌霄=凌云之志+橘红喇叭形+爬墙高手。'"
+  },
+  {
+    "id": "fw_54",
+    "type": "true_false_image",
+    "prompt": "这是锦葵吗？",
+    "image": "images/flowers/hollyhock.webp",
+    "answer": false,
+    "explanation": "这是蜀葵，植株高大可达2米以上，也被俗称为'一丈红'。🧠 口诀：'高大如人一丈红，花开沿茎自下上——蜀葵=高达2米+别名一丈红+从下往上依次开花。'"
+  },
+  {
+    "id": "fw_55",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/mallow.webp",
+    "options": ["木槿", "蜀葵", "锦葵", "扶桑"],
+    "answer": "锦葵",
+    "explanation": "锦葵花朵通常呈紫粉色，带有深色的脉纹，是一种适应性很强的花卉。🧠 口诀：'锦上添花紫粉色，花瓣上有深色纹——锦葵=锦=有纹路，紫粉色+深色脉纹。'"
+  },
+  {
+    "id": "fw_56",
+    "type": "single_image_to_text",
+    "prompt": "这种花形如飞鸟的蓝紫色花序叫什么？",
+    "image": "images/flowers/larkspur.webp",
+    "options": ["紫藤", "风铃草", "鲁冰花", "飞燕草"],
+    "answer": "飞燕草",
+    "explanation": "飞燕草因其花形酷似一只只正在飞翔的燕子而得名，是优美的切花材料。🧠 口诀：'蓝紫花穗燕子飞，春燕归来是飞燕草——飞燕草=燕子形花朵+蓝紫花穗。'"
+  },
+  {
+    "id": "fw_57",
+    "type": "true_false_image",
+    "prompt": "这是鲁冰花（羽扇豆）吗？",
+    "image": "images/flowers/lupin.webp",
+    "answer": true,
+    "explanation": "鲁冰花学名羽扇豆，花序挺拔，常被用来象征母爱。🧠 口诀：'《鲁冰花》妈妈的爱，叶子像扇子花穗高——鲁冰花=那首催泪的台湾儿歌+羽扇形叶片。'"
+  },
+  {
+    "id": "fw_58",
+    "type": "single_image_to_text",
+    "prompt": "这是什么花？",
+    "image": "images/flowers/columbine.webp",
+    "options": ["耧斗菜", "风铃草", "金莲花", "荷包牡丹"],
+    "answer": "耧斗菜",
+    "explanation": "耧斗菜的花瓣带有细长的距，造型独特，像一个个小漏斗。🧠 口诀：'花瓣后有细长距，像古代播种耧的斗——耧斗菜=耧车的斗形+细长的花距=造型独特。'"
+  },
+  {
+    "id": "fw_59",
+    "type": "single_image_to_text",
+    "prompt": "这种形如滴血心形的花朵叫什么？",
+    "image": "images/flowers/bleeding_heart.webp",
+    "options": ["灯笼草", "倒挂金钟", "铃兰", "荷包牡丹"],
+    "answer": "荷包牡丹",
+    "explanation": "荷包牡丹的花朵像一个个小荷包或者悬挂的心，因此英文名为Bleeding Heart。🧠 口诀：'粉色爱心串串挂，英文名叫滴血心——荷包牡丹=心形花朵+荷包形状+浪漫英文名。'"
+  },
+  {
+    "id": "fw_60",
+    "type": "true_false_image",
+    "prompt": "这是绣球花吗？",
+    "image": "images/flowers/lilac.webp",
+    "answer": false,
+    "explanation": "这是紫丁香，在春季盛开，花朵细小繁茂，散发出浓郁的芳香。🧠 口诀：'小花密密紫成团，春风一吹香满园——紫丁香=细小密集的紫花+浓郁的独特香气。'"
   }
 ]
