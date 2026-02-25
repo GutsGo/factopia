@@ -9,12 +9,27 @@
           </button>
         </div>
         <!-- 兼容 URL 或者 emoji -->
-        <div v-if="question.image" class="image-wrapper cute-shadow">
-          <template v-if="isUrl(question.image)">
-            <img :src="question.image" :alt="question.prompt" class="question-image" />
-          </template>
-          <template v-else>
-            <div class="emoji-wrapper">{{ question.image }}</div>
+        <div v-if="question.image || !imageLoaded" class="image-wrapper cute-shadow">
+          <!-- 加载转圈动画 -->
+          <div v-if="!imageLoaded" class="loader-container">
+            <div class="loader"></div>
+          </div>
+          
+          <template v-if="question.image">
+            <template v-if="isUrl(question.image)">
+              <img 
+                v-show="imageLoaded"
+                :src="question.image" 
+                :key="question.id"
+                :alt="question.prompt" 
+                class="question-image" 
+                @load="onImageLoad"
+                @error="onImageLoad"
+              />
+            </template>
+            <template v-else>
+              <div v-if="imageLoaded" class="emoji-wrapper">{{ question.image }}</div>
+            </template>
           </template>
         </div>
         <h2 class="question-title">{{ question.prompt }}</h2>
@@ -113,8 +128,17 @@ const hasAnswered = ref(false)
 const selectedOption = ref<any>(null)
 const isCorrect = ref(false)
 const animState = ref<'idle' | 'right' | 'wrong'>('idle')
+const imageLoaded = ref(false)
 
 const isFavorite = computed(() => progressStore.isFavorite(props.categoryId, String(props.question.id)))
+
+function isUrl(str: any) {
+  return typeof str === 'string' && (str.startsWith('http') || str.startsWith('/'))
+}
+
+function onImageLoad() {
+  imageLoaded.value = true
+}
 
 function toggleFav() {
   progressStore.toggleFavorite(props.categoryId, String(props.question.id))
@@ -126,11 +150,13 @@ watch(() => props.question.id, () => {
   selectedOption.value = null
   isCorrect.value = false
   animState.value = 'idle'
-})
-
-function isUrl(str: string) {
-  return typeof str === 'string' && (str.startsWith('http') || str.startsWith('/'))
-}
+  
+  if (props.question.image && isUrl(props.question.image)) {
+    imageLoaded.value = false
+  } else {
+    imageLoaded.value = true
+  }
+}, { immediate: true })
 
 // NOTE: MVP 为了轻量不直接引入实际音频资源文件，只做Audio对象预埋和逻辑分支
 function playSound(type: 'right' | 'wrong') {
@@ -170,6 +196,7 @@ function selectOption(option: any) {
 }
 
 function emitNext() {
+  imageLoaded.value = false // 立即清理上一题的显示状态
   emit('next')
 }
 </script>
@@ -249,6 +276,32 @@ function emitNext() {
 
 .image-wrapper {
   margin-bottom: 1.5rem;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.loader {
+  border: 4px solid rgba(94, 76, 65, 0.1);
+  border-top: 4px solid #F8B182;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .cute-shadow {
