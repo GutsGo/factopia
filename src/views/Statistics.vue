@@ -264,7 +264,6 @@ function getEvaluation() {
   font-weight: 900;
   color: #A3D1E6;
   margin-bottom: 0.5rem;
-  -webkit-text-stroke: 1px #1A5276;
 }
 
 .eval-desc {

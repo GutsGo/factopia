@@ -126,7 +126,13 @@ onUnmounted(() => {
 
 function handleAnswer(isCorrect: boolean) {
   if (!currentQuestion.value) return
-  quizStore.submitAnswer(isCorrect, String(currentQuestion.value.id))
+  const qId = String(currentQuestion.value.id)
+  quizStore.submitAnswer(isCorrect, qId)
+  
+  if (!isCorrect) {
+    // 立即存入错题本，防止中途退出丢失
+    progressStore.addMistakes(props.category, [qId])
+  }
 }
 
 function nextQuestion() {
