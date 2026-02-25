@@ -1,0 +1,2604 @@
+[
+  {
+    "id": "cc_1",
+    "type": "single_image_to_text",
+    "prompt": "被称为“火车拉来的城市”的是哪个城市？",
+    "image": "🚂",
+    "options": [
+      "大连",
+      "上海",
+      "随州",
+      "石家庄"
+    ],
+    "answer": "石家庄",
+    "explanation": "正确答案是石家庄。石家庄被称为“火车拉来的城市”。"
+  },
+  {
+    "id": "cc_2",
+    "type": "true_false_image",
+    "prompt": "素有“京畿重地”、“首都南大门”之称的是保定吗？",
+    "image": "⛩️",
+    "answer": true,
+    "explanation": "是的。保定素有“京畿重地”、“首都南大门”之称。"
+  },
+  {
+    "id": "cc_3",
+    "type": "true_false_image",
+    "prompt": "被称为“中国近代工业的摇篮”的是唐山吗？",
+    "image": "🏭",
+    "answer": true,
+    "explanation": "是的。唐山被称为“中国近代工业的摇篮”。"
+  },
+  {
+    "id": "cc_4",
+    "type": "true_false_image",
+    "prompt": "中国唯一因皇帝帝号而得名的城市的是秦皇岛吗？",
+    "image": "🌊",
+    "answer": true,
+    "explanation": "是的。秦皇岛是中国唯一因皇帝帝号而得名的城市。"
+  },
+  {
+    "id": "cc_5",
+    "type": "true_false_image",
+    "prompt": "曾与北京联合举办2022年冬奥会的是汉中吗？",
+    "image": "🎿",
+    "answer": false,
+    "explanation": "不是。曾与北京联合举办2022年冬奥会的是张家口。"
+  },
+  {
+    "id": "cc_6",
+    "type": "single_image_to_text",
+    "prompt": "拥有世界现存最大的皇家园林（避暑山庄）的是哪个城市？",
+    "image": "🏯",
+    "options": [
+      "吉安",
+      "铜仁",
+      "承德",
+      "曲靖"
+    ],
+    "answer": "承德",
+    "explanation": "正确答案是承德。承德拥有世界现存最大的皇家园林（避暑山庄）。"
+  },
+  {
+    "id": "cc_7",
+    "type": "true_false_image",
+    "prompt": "被称为“武术之乡”、“杂技之乡”的是邵阳吗？",
+    "image": "🤹",
+    "answer": false,
+    "explanation": "不是。被称为“武术之乡”、“杂技之乡”的是沧州。"
+  },
+  {
+    "id": "cc_8",
+    "type": "single_image_to_text",
+    "prompt": "成语典故之都，三千年未改名的是哪个城市？",
+    "image": "📜",
+    "options": [
+      "吴忠",
+      "邯郸",
+      "佳木斯",
+      "西宁"
+    ],
+    "answer": "邯郸",
+    "explanation": "正确答案是邯郸。邯郸是成语典故之都，三千年未改名。"
+  },
+  {
+    "id": "cc_9",
+    "type": "true_false_image",
+    "prompt": "古称沙丘，被称为“燕赵第一城”的是泰安吗？",
+    "image": "🐎",
+    "answer": false,
+    "explanation": "不是。古称沙丘，被称为“燕赵第一城”的是邢台。"
+  },
+  {
+    "id": "cc_10",
+    "type": "single_image_to_text",
+    "prompt": "以老白干酒和著名的中学教育模式闻名的是哪个城市？",
+    "image": "🍶",
+    "options": [
+      "衡水",
+      "那曲",
+      "鄂州",
+      "呼伦贝尔"
+    ],
+    "answer": "衡水",
+    "explanation": "正确答案是衡水。衡水以老白干酒和著名的中学教育模式闻名。"
+  },
+  {
+    "id": "cc_11",
+    "type": "single_image_to_text",
+    "prompt": "地处京津之间，被称为“京津走廊上的明珠”的是哪个城市？",
+    "image": "📿",
+    "options": [
+      "林芝",
+      "固原",
+      "廊坊",
+      "新竹"
+    ],
+    "answer": "廊坊",
+    "explanation": "正确答案是廊坊。廊坊地处京津之间，被称为“京津走廊上的明珠”。"
+  },
+  {
+    "id": "cc_12",
+    "type": "true_false_image",
+    "prompt": "古称晋阳，别称“龙城”的是东莞吗？",
+    "image": "🐉",
+    "answer": false,
+    "explanation": "不是。古称晋阳，别称“龙城”的是太原。"
+  },
+  {
+    "id": "cc_13",
+    "type": "single_image_to_text",
+    "prompt": "被称为“中国煤都”，拥有云冈石窟的是哪个城市？",
+    "image": "⛏️",
+    "options": [
+      "铜陵",
+      "大同",
+      "台南",
+      "南阳"
+    ],
+    "answer": "大同",
+    "explanation": "正确答案是大同。大同被称为“中国煤都”，拥有云冈石窟。"
+  },
+  {
+    "id": "cc_14",
+    "type": "single_image_to_text",
+    "prompt": "拥有世界上现存最高、最古老的木结构佛塔（应县木塔）的是哪个城市？",
+    "image": "🗼",
+    "options": [
+      "长治",
+      "马鞍山",
+      "自贡",
+      "朔州"
+    ],
+    "answer": "朔州",
+    "explanation": "正确答案是朔州。朔州拥有世界上现存最高、最古老的木结构佛塔（应县木塔）。"
+  },
+  {
+    "id": "cc_15",
+    "type": "single_image_to_text",
+    "prompt": "被称为“摔跤之乡”，拥有五台山的是哪个城市？",
+    "image": "🤼",
+    "options": [
+      "金华",
+      "张家界",
+      "宁波",
+      "忻州"
+    ],
+    "answer": "忻州",
+    "explanation": "正确答案是忻州。忻州被称为“摔跤之乡”，拥有五台山。"
+  },
+  {
+    "id": "cc_16",
+    "type": "single_image_to_text",
+    "prompt": "平遥古城所在的城市的是哪个城市？",
+    "image": "🧱",
+    "options": [
+      "惠州",
+      "绵阳",
+      "邯郸",
+      "晋中"
+    ],
+    "answer": "晋中",
+    "explanation": "正确答案是晋中。晋中是平遥古城所在的城市。"
+  },
+  {
+    "id": "cc_17",
+    "type": "true_false_image",
+    "prompt": "被称为“华夏第一都”，是尧都所在地的是秦皇岛吗？",
+    "image": "🏛️",
+    "answer": false,
+    "explanation": "不是。被称为“华夏第一都”，是尧都所在地的是临汾。"
+  },
+  {
+    "id": "cc_18",
+    "type": "single_image_to_text",
+    "prompt": "关羽的故乡，拥有中国死海（运城盐湖）的是哪个城市？",
+    "image": "🧂",
+    "options": [
+      "运城",
+      "邯郸",
+      "六盘水",
+      "保定"
+    ],
+    "answer": "运城",
+    "explanation": "正确答案是运城。运城是关羽的故乡，拥有中国死海（运城盐湖）。"
+  },
+  {
+    "id": "cc_19",
+    "type": "true_false_image",
+    "prompt": "古称上党，拥有太行山大峡谷的是梧州吗？",
+    "image": "⛰️",
+    "answer": false,
+    "explanation": "不是。古称上党，拥有太行山大峡谷的是长治。"
+  },
+  {
+    "id": "cc_20",
+    "type": "true_false_image",
+    "prompt": "有“一朝发祥地，两代帝王都”之称的是淮安吗？",
+    "image": "👑",
+    "answer": false,
+    "explanation": "不是。有“一朝发祥地，两代帝王都”之称的是沈阳。"
+  },
+  {
+    "id": "cc_21",
+    "type": "true_false_image",
+    "prompt": "素有“浪漫之都”称号的海滨城市的是常州吗？",
+    "image": "🏖️",
+    "answer": false,
+    "explanation": "不是。素有“浪漫之都”称号的海滨城市的是大连。"
+  },
+  {
+    "id": "cc_22",
+    "type": "true_false_image",
+    "prompt": "被称为“共和国钢都”的是台州吗？",
+    "image": "🏗️",
+    "answer": false,
+    "explanation": "不是。被称为“共和国钢都”的是鞍山。"
+  },
+  {
+    "id": "cc_23",
+    "type": "single_image_to_text",
+    "prompt": "被称为“雷锋的第二故乡”和“煤都”的是哪个城市？",
+    "image": "⭐",
+    "options": [
+      "湘潭",
+      "抚顺",
+      "包头",
+      "安康"
+    ],
+    "answer": "抚顺",
+    "explanation": "正确答案是抚顺。抚顺被称为“雷锋的第二故乡”和“煤都”。"
+  },
+  {
+    "id": "cc_24",
+    "type": "single_image_to_text",
+    "prompt": "中国最大最美的边境城市，与朝鲜隔江相望的是哪个城市？",
+    "image": "🌉",
+    "options": [
+      "曲靖",
+      "海北",
+      "丹东",
+      "青岛"
+    ],
+    "answer": "丹东",
+    "explanation": "正确答案是丹东。丹东是中国最大最美的边境城市，与朝鲜隔江相望。"
+  },
+  {
+    "id": "cc_25",
+    "type": "true_false_image",
+    "prompt": "辽沈战役的关键节点，以烧烤闻名的是许昌吗？",
+    "image": "🍢",
+    "answer": false,
+    "explanation": "不是。辽沈战役的关键节点，以烧烤闻名的是锦州。"
+  },
+  {
+    "id": "cc_26",
+    "type": "single_image_to_text",
+    "prompt": "中国红十字运动的发源地，有“关外上海”之称的是哪个城市？",
+    "image": "🏥",
+    "options": [
+      "营口",
+      "芜湖",
+      "宜昌",
+      "保山"
+    ],
+    "answer": "营口",
+    "explanation": "正确答案是营口。营口是中国红十字运动的发源地，有“关外上海”之称。"
+  },
+  {
+    "id": "cc_27",
+    "type": "true_false_image",
+    "prompt": "以红海滩和特产大米、河蟹闻名的是台州吗？",
+    "image": "🦀",
+    "answer": false,
+    "explanation": "不是。以红海滩和特产大米、河蟹闻名的是盘锦。"
+  },
+  {
+    "id": "cc_28",
+    "type": "true_false_image",
+    "prompt": "拥有兴城古城和九门口水上长城的是葫芦岛吗？",
+    "image": "🧱",
+    "answer": true,
+    "explanation": "是的。葫芦岛拥有兴城古城和九门口水上长城。"
+  },
+  {
+    "id": "cc_29",
+    "type": "single_image_to_text",
+    "prompt": "被称为“北国春城”及“中国汽车工业的摇篮”的是哪个城市？",
+    "image": "🚗",
+    "options": [
+      "随州",
+      "玉溪",
+      "长春",
+      "哈尔滨"
+    ],
+    "answer": "长春",
+    "explanation": "正确答案是长春。长春被称为“北国春城”及“中国汽车工业的摇篮”。"
+  },
+  {
+    "id": "cc_30",
+    "type": "true_false_image",
+    "prompt": "中国唯一省市同名的城市，因雾凇奇观闻名的是淮安吗？",
+    "image": "❄️",
+    "answer": false,
+    "explanation": "不是。中国唯一省市同名的城市，因雾凇奇观闻名的是吉林市。"
+  },
+  {
+    "id": "cc_31",
+    "type": "true_false_image",
+    "prompt": "被称为“东方马德里”，是著名的英雄城的是那曲吗？",
+    "image": "🎖️",
+    "answer": false,
+    "explanation": "不是。被称为“东方马德里”，是著名的英雄城的是四平。"
+  },
+  {
+    "id": "cc_32",
+    "type": "single_image_to_text",
+    "prompt": "查干湖冬捕闻名全国的城市的是哪个城市？",
+    "image": "🐟",
+    "options": [
+      "芜湖",
+      "松原",
+      "广元",
+      "临沂"
+    ],
+    "answer": "松原",
+    "explanation": "正确答案是松原。松原是查干湖冬捕闻名全国的城市。"
+  },
+  {
+    "id": "cc_33",
+    "type": "single_image_to_text",
+    "prompt": "以冷面、打糕等朝鲜族特色美食闻名的城市的是哪个城市？",
+    "image": "🍜",
+    "options": [
+      "盘锦",
+      "绍兴",
+      "延吉",
+      "合肥"
+    ],
+    "answer": "延吉",
+    "explanation": "正确答案是延吉。延吉是以冷面、打糕等朝鲜族特色美食闻名的城市。"
+  },
+  {
+    "id": "cc_34",
+    "type": "true_false_image",
+    "prompt": "拥有长白山保护开发区，盛产人参的是白山吗？",
+    "image": "🌿",
+    "answer": true,
+    "explanation": "是的。白山拥有长白山保护开发区，盛产人参。"
+  },
+  {
+    "id": "cc_35",
+    "type": "single_image_to_text",
+    "prompt": "以向海国家级自然保护区和莫莫格湿地闻名的是哪个城市？",
+    "image": "🦢",
+    "options": [
+      "白城",
+      "洛阳",
+      "保山",
+      "秦皇岛"
+    ],
+    "answer": "白城",
+    "explanation": "正确答案是白城。白城以向海国家级自然保护区和莫莫格湿地闻名。"
+  },
+  {
+    "id": "cc_36",
+    "type": "true_false_image",
+    "prompt": "因冰雪文化闻名，被称为“冰城”和“东方小巴黎”的是哈尔滨吗？",
+    "image": "🧊",
+    "answer": true,
+    "explanation": "是的。哈尔滨因冰雪文化闻名，被称为“冰城”和“东方小巴黎”。"
+  },
+  {
+    "id": "cc_37",
+    "type": "single_image_to_text",
+    "prompt": "被称为“鹤城”，拥有扎龙自然保护区的是哪个城市？",
+    "image": "🦢",
+    "options": [
+      "南阳",
+      "潮州",
+      "合肥",
+      "齐齐哈尔"
+    ],
+    "answer": "齐齐哈尔",
+    "explanation": "正确答案是齐齐哈尔。齐齐哈尔被称为“鹤城”，拥有扎龙自然保护区。"
+  },
+  {
+    "id": "cc_38",
+    "type": "true_false_image",
+    "prompt": "中国雪乡（双峰林场）和镜泊湖所在的城市的是牡丹江吗？",
+    "image": "🏔️",
+    "answer": true,
+    "explanation": "是的。牡丹江是中国雪乡（双峰林场）和镜泊湖所在的城市。"
+  },
+  {
+    "id": "cc_39",
+    "type": "single_image_to_text",
+    "prompt": "被称为“百湖之城”和中国著名的“石油之城”的是哪个城市？",
+    "image": "🛢️",
+    "options": [
+      "大庆",
+      "南京",
+      "鞍山",
+      "南充"
+    ],
+    "answer": "大庆",
+    "explanation": "正确答案是大庆。大庆被称为“百湖之城”和中国著名的“石油之城”。"
+  },
+  {
+    "id": "cc_40",
+    "type": "single_image_to_text",
+    "prompt": "与俄罗斯布拉戈维申斯克隔江相望的双子城的是哪个城市？",
+    "image": "🇷🇺",
+    "options": [
+      "徐州",
+      "安康",
+      "大同",
+      "黑河"
+    ],
+    "answer": "黑河",
+    "explanation": "正确答案是黑河。黑河是与俄罗斯布拉戈维申斯克隔江相望的双子城。"
+  },
+  {
+    "id": "cc_41",
+    "type": "true_false_image",
+    "prompt": "被誉为“华夏东极”，迎接中国第一缕阳光的是佳木斯吗？",
+    "image": "🌅",
+    "answer": true,
+    "explanation": "是的。佳木斯被誉为“华夏东极”，迎接中国第一缕阳光。"
+  },
+  {
+    "id": "cc_42",
+    "type": "single_image_to_text",
+    "prompt": "被称为“中国林都”，是中国最大的红松故乡的是哪个城市？",
+    "image": "🌲",
+    "options": [
+      "福州",
+      "伊春",
+      "锦州",
+      "台南"
+    ],
+    "answer": "伊春",
+    "explanation": "正确答案是伊春。伊春被称为“中国林都”，是中国最大的红松故乡。"
+  },
+  {
+    "id": "cc_43",
+    "type": "single_image_to_text",
+    "prompt": "素有“塞北江南”的美誉，是重要的农业基地的是哪个城市？",
+    "image": "🌾",
+    "options": [
+      "赣州",
+      "长治",
+      "扬州",
+      "绥化"
+    ],
+    "answer": "绥化",
+    "explanation": "正确答案是绥化。绥化素有“塞北江南”的美誉，是重要的农业基地。"
+  },
+  {
+    "id": "cc_44",
+    "type": "single_image_to_text",
+    "prompt": "有“六朝古都”、“十朝都会”之称的是哪个城市？",
+    "image": "🏛️",
+    "options": [
+      "张掖",
+      "南京",
+      "珠海",
+      "包头"
+    ],
+    "answer": "南京",
+    "explanation": "正确答案是南京。南京有“六朝古都”、“十朝都会”之称。"
+  },
+  {
+    "id": "cc_45",
+    "type": "true_false_image",
+    "prompt": "被称为“东方威尼斯”，以古典园林闻名的是苏州吗？",
+    "image": "🛶",
+    "answer": true,
+    "explanation": "是的。苏州被称为“东方威尼斯”，以古典园林闻名。"
+  },
+  {
+    "id": "cc_46",
+    "type": "single_image_to_text",
+    "prompt": "被誉为“太湖明珠”的是哪个城市？",
+    "image": "🦪",
+    "options": [
+      "北海",
+      "黄石",
+      "无锡",
+      "昌都"
+    ],
+    "answer": "无锡",
+    "explanation": "正确答案是无锡。无锡被誉为“太湖明珠”。"
+  },
+  {
+    "id": "cc_47",
+    "type": "true_false_image",
+    "prompt": "被称为“彭祖故国、刘邦故里、项羽故都”的是徐州吗？",
+    "image": "⚔️",
+    "answer": true,
+    "explanation": "是的。徐州被称为“彭祖故国、刘邦故里、项羽故都”。"
+  },
+  {
+    "id": "cc_48",
+    "type": "single_image_to_text",
+    "prompt": "新亚欧大陆桥东方桥头堡，《西游记》花果山所在地的是哪个城市？",
+    "image": "🐒",
+    "options": [
+      "杭州",
+      "连云港",
+      "重庆",
+      "天水"
+    ],
+    "answer": "连云港",
+    "explanation": "正确答案是连云港。连云港是新亚欧大陆桥东方桥头堡，《西游记》花果山所在地。"
+  },
+  {
+    "id": "cc_49",
+    "type": "single_image_to_text",
+    "prompt": "被称为“龙城”，是中华恐龙园所在地的是哪个城市？",
+    "image": "🦕",
+    "options": [
+      "淮安",
+      "琼海",
+      "常州",
+      "宝鸡"
+    ],
+    "answer": "常州",
+    "explanation": "正确答案是常州。常州被称为“龙城”，是中华恐龙园所在地。"
+  },
+  {
+    "id": "cc_50",
+    "type": "true_false_image",
+    "prompt": "古称广陵，有“淮左名都，竹西佳处”之称的是荆州吗？",
+    "image": "🎑",
+    "answer": false,
+    "explanation": "不是。古称广陵，有“淮左名都，竹西佳处”之称的是扬州。"
+  },
+  {
+    "id": "cc_51",
+    "type": "single_image_to_text",
+    "prompt": "有金山寺，是《白蛇传》水漫金山故事的发源地的是哪个城市？",
+    "image": "🐍",
+    "options": [
+      "渭南",
+      "镇江",
+      "扬州",
+      "中卫"
+    ],
+    "answer": "镇江",
+    "explanation": "正确答案是镇江。镇江有金山寺，是《白蛇传》水漫金山故事的发源地。"
+  },
+  {
+    "id": "cc_52",
+    "type": "single_image_to_text",
+    "prompt": "被称为“中国近代第一城”的是哪个城市？",
+    "image": "🏭",
+    "options": [
+      "鞍山",
+      "芜湖",
+      "蚌埠",
+      "南通"
+    ],
+    "answer": "南通",
+    "explanation": "正确答案是南通。南通被称为“中国近代第一城”。"
+  },
+  {
+    "id": "cc_53",
+    "type": "true_false_image",
+    "prompt": "丹顶鹤的家园和麋鹿的故乡的是南阳吗？",
+    "image": "🦌",
+    "answer": false,
+    "explanation": "不是。丹顶鹤的家园和麋鹿的故乡的是盐城。"
+  },
+  {
+    "id": "cc_54",
+    "type": "true_false_image",
+    "prompt": "周恩来总理的故乡，也是淮扬菜的发源地的是白城吗？",
+    "image": "🍲",
+    "answer": false,
+    "explanation": "不是。周恩来总理的故乡，也是淮扬菜的发源地的是淮安。"
+  },
+  {
+    "id": "cc_55",
+    "type": "single_image_to_text",
+    "prompt": "因西湖美景闻名，被称为“人间天堂”的是哪个城市？",
+    "image": "🌅",
+    "options": [
+      "牡丹江",
+      "乌鲁木齐",
+      "普洱",
+      "杭州"
+    ],
+    "answer": "杭州",
+    "explanation": "正确答案是杭州。杭州因西湖美景闻名，被称为“人间天堂”。"
+  },
+  {
+    "id": "cc_56",
+    "type": "single_image_to_text",
+    "prompt": "拥有世界上最古老的私人藏书楼天一阁的是哪个城市？",
+    "image": "📚",
+    "options": [
+      "安康",
+      "三亚",
+      "铜仁",
+      "宁波"
+    ],
+    "answer": "宁波",
+    "explanation": "正确答案是宁波。宁波拥有世界上最古老的私人藏书楼天一阁。"
+  },
+  {
+    "id": "cc_57",
+    "type": "true_false_image",
+    "prompt": "以商贸闻名，被称为“中国鞋都”的是徐州吗？",
+    "image": "👞",
+    "answer": false,
+    "explanation": "不是。以商贸闻名，被称为“中国鞋都”的是温州。"
+  },
+  {
+    "id": "cc_58",
+    "type": "true_false_image",
+    "prompt": "鲁迅的故乡，被称为“水乡、桥乡、酒乡”的是嘉峪关吗？",
+    "image": "🍶",
+    "answer": false,
+    "explanation": "不是。鲁迅的故乡，被称为“水乡、桥乡、酒乡”的是绍兴。"
+  },
+  {
+    "id": "cc_59",
+    "type": "single_image_to_text",
+    "prompt": "以出产火腿和小商品（义乌）闻名的城市的是哪个城市？",
+    "image": "🍖",
+    "options": [
+      "金华",
+      "昆明",
+      "海西",
+      "南昌"
+    ],
+    "answer": "金华",
+    "explanation": "正确答案是金华。金华是以出产火腿和小商品（义乌）闻名的城市。"
+  },
+  {
+    "id": "cc_60",
+    "type": "true_false_image",
+    "prompt": "南湖红船的所在地，以粽子闻名的是嘉兴吗？",
+    "image": "🥟",
+    "answer": true,
+    "explanation": "是的。嘉兴是南湖红船的所在地，以粽子闻名。"
+  },
+  {
+    "id": "cc_61",
+    "type": "single_image_to_text",
+    "prompt": "被称为“丝绸之府、鱼米之乡”，南太湖明珠的是哪个城市？",
+    "image": "🐟",
+    "options": [
+      "芜湖",
+      "湖州",
+      "上饶",
+      "十堰"
+    ],
+    "answer": "湖州",
+    "explanation": "正确答案是湖州。湖州被称为“丝绸之府、鱼米之乡”，南太湖明珠。"
+  },
+  {
+    "id": "cc_62",
+    "type": "true_false_image",
+    "prompt": "中国最大的海产品生产、加工、销售基地，拥有普陀山的是舟山吗？",
+    "image": "🐟",
+    "answer": true,
+    "explanation": "是的。舟山是中国最大的海产品生产、加工、销售基地，拥有普陀山。"
+  },
+  {
+    "id": "cc_63",
+    "type": "true_false_image",
+    "prompt": "以神仙居和温岭长屿硐天闻名的是台州吗？",
+    "image": "⛰️",
+    "answer": true,
+    "explanation": "是的。台州以神仙居和温岭长屿硐天闻名。"
+  },
+  {
+    "id": "cc_64",
+    "type": "true_false_image",
+    "prompt": "被称为“浙江绿谷”，拥有龙泉青瓷和宝剑的是济南吗？",
+    "image": "🗡️",
+    "answer": false,
+    "explanation": "不是。被称为“浙江绿谷”，拥有龙泉青瓷和宝剑的是丽水。"
+  },
+  {
+    "id": "cc_65",
+    "type": "true_false_image",
+    "prompt": "古称庐州，近年来被称为“最牛风投城市”的是阜阳吗？",
+    "image": "📈",
+    "answer": false,
+    "explanation": "不是。古称庐州，近年来被称为“最牛风投城市”的是合肥。"
+  },
+  {
+    "id": "cc_66",
+    "type": "true_false_image",
+    "prompt": "素有“长江巨埠、皖之中坚”之称，半城山半城水的是宜宾吗？",
+    "image": "🌊",
+    "answer": false,
+    "explanation": "不是。素有“长江巨埠、皖之中坚”之称，半城山半城水的是芜湖。"
+  },
+  {
+    "id": "cc_67",
+    "type": "single_image_to_text",
+    "prompt": "因境内的世界名山而改名的城市（原名徽州）的是哪个城市？",
+    "image": "⛰️",
+    "options": [
+      "抚顺",
+      "咸阳",
+      "衡水",
+      "黄山"
+    ],
+    "answer": "黄山",
+    "explanation": "正确答案是黄山。黄山因境内的世界名山而改名的城市（原名徽州）。"
+  },
+  {
+    "id": "cc_68",
+    "type": "true_false_image",
+    "prompt": "因古代盛产珍珠而被称为“珠城”的是蚌埠吗？",
+    "image": "🦪",
+    "answer": true,
+    "explanation": "是的。蚌埠因古代盛产珍珠而被称为“珠城”。"
+  },
+  {
+    "id": "cc_69",
+    "type": "single_image_to_text",
+    "prompt": "黄梅戏的发源地之一，曾是安徽老省会的是哪个城市？",
+    "image": "🎭",
+    "options": [
+      "岳阳",
+      "高雄",
+      "湘潭",
+      "安庆"
+    ],
+    "answer": "安庆",
+    "explanation": "正确答案是安庆。安庆是黄梅戏的发源地之一，曾是安徽老省会。"
+  },
+  {
+    "id": "cc_70",
+    "type": "true_false_image",
+    "prompt": "被称为“诗城”，是李白绝笔之地的是开封吗？",
+    "image": "📜",
+    "answer": false,
+    "explanation": "不是。被称为“诗城”，是李白绝笔之地的是马鞍山。"
+  },
+  {
+    "id": "cc_71",
+    "type": "true_false_image",
+    "prompt": "因铜得名，被称为“中国古铜都”的是克拉玛依吗？",
+    "image": "🥉",
+    "answer": false,
+    "explanation": "不是。因铜得名，被称为“中国古铜都”的是铜陵。"
+  },
+  {
+    "id": "cc_72",
+    "type": "true_false_image",
+    "prompt": "管仲、鲍叔牙的故里，被称为“百亿粮仓”的是阜阳吗？",
+    "image": "🌾",
+    "answer": true,
+    "explanation": "是的。阜阳是管仲、鲍叔牙的故里，被称为“百亿粮仓”。"
+  },
+  {
+    "id": "cc_73",
+    "type": "true_false_image",
+    "prompt": "文房四宝之乡，出产著名的宣纸的是萍乡吗？",
+    "image": "🖌️",
+    "answer": false,
+    "explanation": "不是。文房四宝之乡，出产著名的宣纸的是宣城。"
+  },
+  {
+    "id": "cc_74",
+    "type": "true_false_image",
+    "prompt": "因城内广植榕树而被称为“榕城”的是酒泉吗？",
+    "image": "🌳",
+    "answer": false,
+    "explanation": "不是。因城内广植榕树而被称为“榕城”的是福州。"
+  },
+  {
+    "id": "cc_75",
+    "type": "true_false_image",
+    "prompt": "因白鹭栖息而被称为“鹭岛”的是厦门吗？",
+    "image": "🦩",
+    "answer": true,
+    "explanation": "是的。厦门因白鹭栖息而被称为“鹭岛”。"
+  },
+  {
+    "id": "cc_76",
+    "type": "single_image_to_text",
+    "prompt": "被联合国教科文组织唯一认定的海上丝绸之路起点的是哪个城市？",
+    "image": "🚢",
+    "options": [
+      "常德",
+      "抚州",
+      "库尔勒",
+      "泉州"
+    ],
+    "answer": "泉州",
+    "explanation": "正确答案是泉州。泉州是被联合国教科文组织唯一认定的海上丝绸之路起点。"
+  },
+  {
+    "id": "cc_77",
+    "type": "true_false_image",
+    "prompt": "被称为“中国水仙花之乡”和“田园都市”的是漳州吗？",
+    "image": "🌼",
+    "answer": true,
+    "explanation": "是的。漳州被称为“中国水仙花之乡”和“田园都市”。"
+  },
+  {
+    "id": "cc_78",
+    "type": "single_image_to_text",
+    "prompt": "拥有武夷山，被誉为“福建粮仓”的是哪个城市？",
+    "image": "🌾",
+    "options": [
+      "珠海",
+      "保山",
+      "南平",
+      "营口"
+    ],
+    "answer": "南平",
+    "explanation": "正确答案是南平。南平拥有武夷山，被誉为“福建粮仓”。"
+  },
+  {
+    "id": "cc_79",
+    "type": "true_false_image",
+    "prompt": "被称为“荔城”，是妈祖文化的发源地的是莆田吗？",
+    "image": "🌊",
+    "answer": true,
+    "explanation": "是的。莆田被称为“荔城”，是妈祖文化的发源地。"
+  },
+  {
+    "id": "cc_80",
+    "type": "true_false_image",
+    "prompt": "沙县小吃的发源地的是三明吗？",
+    "image": "🍜",
+    "answer": true,
+    "explanation": "是的。三明是沙县小吃的发源地。"
+  },
+  {
+    "id": "cc_81",
+    "type": "true_false_image",
+    "prompt": "拥有土楼群，被称为“客家祖地”的是龙岩吗？",
+    "image": "🛖",
+    "answer": true,
+    "explanation": "是的。龙岩拥有土楼群，被称为“客家祖地”。"
+  },
+  {
+    "id": "cc_82",
+    "type": "true_false_image",
+    "prompt": "被称为“中国大黄鱼之乡”的是宁德吗？",
+    "image": "🐟",
+    "answer": true,
+    "explanation": "是的。宁德被称为“中国大黄鱼之乡”。"
+  },
+  {
+    "id": "cc_83",
+    "type": "true_false_image",
+    "prompt": "打响武装反抗第一枪的“英雄城”的是南昌吗？",
+    "image": "🚩",
+    "answer": true,
+    "explanation": "是的。南昌是打响武装反抗第一枪的“英雄城”。"
+  },
+  {
+    "id": "cc_84",
+    "type": "true_false_image",
+    "prompt": "拥有庐山和鄱阳湖的城市的是威海吗？",
+    "image": "🏞️",
+    "answer": false,
+    "explanation": "不是。拥有庐山和鄱阳湖的城市的是九江。"
+  },
+  {
+    "id": "cc_85",
+    "type": "single_image_to_text",
+    "prompt": "闻名世界的中外“瓷都”的是哪个城市？",
+    "image": "🏺",
+    "options": [
+      "株洲",
+      "景德镇",
+      "北京",
+      "乌鲁木齐"
+    ],
+    "answer": "景德镇",
+    "explanation": "正确答案是景德镇。景德镇是闻名世界的中外“瓷都”。"
+  },
+  {
+    "id": "cc_86",
+    "type": "true_false_image",
+    "prompt": "被称为“客家摇篮”和“世界钨都”的是赣州吗？",
+    "image": "🛖",
+    "answer": true,
+    "explanation": "是的。赣州被称为“客家摇篮”和“世界钨都”。"
+  },
+  {
+    "id": "cc_87",
+    "type": "single_image_to_text",
+    "prompt": "以富硒温泉闻名，被称为“月亮之都”的是哪个城市？",
+    "image": "♨️",
+    "options": [
+      "随州",
+      "宜春",
+      "海西",
+      "深圳"
+    ],
+    "answer": "宜春",
+    "explanation": "正确答案是宜春。宜春以富硒温泉闻名，被称为“月亮之都”。"
+  },
+  {
+    "id": "cc_88",
+    "type": "true_false_image",
+    "prompt": "井冈山所在的城市，被称为“革命摇篮”的是东营吗？",
+    "image": "⛰️",
+    "answer": false,
+    "explanation": "不是。井冈山所在的城市，被称为“革命摇篮”的是吉安。"
+  },
+  {
+    "id": "cc_89",
+    "type": "true_false_image",
+    "prompt": "拥有三清山和婺源，被称为“中国最美乡村”所在地的是龙岩吗？",
+    "image": "🌼",
+    "answer": false,
+    "explanation": "不是。拥有三清山和婺源，被称为“中国最美乡村”所在地的是上饶。"
+  },
+  {
+    "id": "cc_90",
+    "type": "true_false_image",
+    "prompt": "被称为“赣西明珠”，以武功山的高山草甸闻名的是萍乡吗？",
+    "image": "⛺",
+    "answer": true,
+    "explanation": "是的。萍乡被称为“赣西明珠”，以武功山的高山草甸闻名。"
+  },
+  {
+    "id": "cc_91",
+    "type": "single_image_to_text",
+    "prompt": "汤显祖的故乡，被称为“才子之乡”的是哪个城市？",
+    "image": "🎭",
+    "options": [
+      "佳木斯",
+      "抚州",
+      "伊春",
+      "毕节"
+    ],
+    "answer": "抚州",
+    "explanation": "正确答案是抚州。抚州是汤显祖的故乡，被称为“才子之乡”。"
+  },
+  {
+    "id": "cc_92",
+    "type": "single_image_to_text",
+    "prompt": "以七十二名泉闻名，被称为“泉城”的是哪个城市？",
+    "image": "⛲",
+    "options": [
+      "济南",
+      "朔州",
+      "贵阳",
+      "郑州"
+    ],
+    "answer": "济南",
+    "explanation": "正确答案是济南。济南以七十二名泉闻名，被称为“泉城”。"
+  },
+  {
+    "id": "cc_93",
+    "type": "true_false_image",
+    "prompt": "以啤酒和海洋名城著称，别称“琴岛”的是青岛吗？",
+    "image": "🍺",
+    "answer": true,
+    "explanation": "是的。青岛以啤酒和海洋名城著称，别称“琴岛”。"
+  },
+  {
+    "id": "cc_94",
+    "type": "single_image_to_text",
+    "prompt": "被称为“苹果之城”和“雪窝”的是哪个城市？",
+    "image": "🍎",
+    "options": [
+      "柳州",
+      "烟台",
+      "衡阳",
+      "玉林"
+    ],
+    "answer": "烟台",
+    "explanation": "正确答案是烟台。烟台被称为“苹果之城”和“雪窝”。"
+  },
+  {
+    "id": "cc_95",
+    "type": "single_image_to_text",
+    "prompt": "中国近代第一支海军北洋水师的发源地的是哪个城市？",
+    "image": "⚓",
+    "options": [
+      "阿勒泰",
+      "石嘴山",
+      "泰安",
+      "威海"
+    ],
+    "answer": "威海",
+    "explanation": "正确答案是威海。威海是中国近代第一支海军北洋水师的发源地。"
+  },
+  {
+    "id": "cc_96",
+    "type": "true_false_image",
+    "prompt": "孔孟之乡，运河之都，下辖曲阜的是济宁吗？",
+    "image": "🛶",
+    "answer": true,
+    "explanation": "是的。济宁是孔孟之乡，运河之都，下辖曲阜。"
+  },
+  {
+    "id": "cc_97",
+    "type": "true_false_image",
+    "prompt": "齐国故都，近年以特色烧烤火爆出圈的是淄博吗？",
+    "image": "🍢",
+    "answer": true,
+    "explanation": "是的。淄博是齐国故都，近年以特色烧烤火爆出圈。"
+  },
+  {
+    "id": "cc_98",
+    "type": "true_false_image",
+    "prompt": "被称为“世界风筝都”的是潍坊吗？",
+    "image": "🪁",
+    "answer": true,
+    "explanation": "是的。潍坊被称为“世界风筝都”。"
+  },
+  {
+    "id": "cc_99",
+    "type": "single_image_to_text",
+    "prompt": "五岳之首泰山所在的城市的是哪个城市？",
+    "image": "⛰️",
+    "options": [
+      "福州",
+      "荆州",
+      "三亚",
+      "泰安"
+    ],
+    "answer": "泰安",
+    "explanation": "正确答案是泰安。泰安是五岳之首泰山所在的城市。"
+  },
+  {
+    "id": "cc_100",
+    "type": "single_image_to_text",
+    "prompt": "古称琅琊，是王羲之和诸葛亮的故乡的是哪个城市？",
+    "image": "🖌️",
+    "options": [
+      "宣城",
+      "九江",
+      "衡水",
+      "临沂"
+    ],
+    "answer": "临沂",
+    "explanation": "正确答案是临沂。临沂古称琅琊，是王羲之和诸葛亮的故乡。"
+  },
+  {
+    "id": "cc_101",
+    "type": "true_false_image",
+    "prompt": "因“日出初光先照”而得名，是水上运动之都的是东营吗？",
+    "image": "🌅",
+    "answer": false,
+    "explanation": "不是。因“日出初光先照”而得名，是水上运动之都的是日照。"
+  },
+  {
+    "id": "cc_102",
+    "type": "true_false_image",
+    "prompt": "黄河入海口所在的城市，胜利油田所在地的是毕节吗？",
+    "image": "🛢️",
+    "answer": false,
+    "explanation": "不是。黄河入海口所在的城市，胜利油田所在地的是东营。"
+  },
+  {
+    "id": "cc_103",
+    "type": "true_false_image",
+    "prompt": "地处中原腹地，素有“中国铁路心脏”之称的是郑州吗？",
+    "image": "🚆",
+    "answer": true,
+    "explanation": "是的。郑州地处中原腹地，素有“中国铁路心脏”之称。"
+  },
+  {
+    "id": "cc_104",
+    "type": "true_false_image",
+    "prompt": "被称为“十三朝古都”和“牡丹花城”的是东莞吗？",
+    "image": "🏵️",
+    "answer": false,
+    "explanation": "不是。被称为“十三朝古都”和“牡丹花城”的是洛阳。"
+  },
+  {
+    "id": "cc_105",
+    "type": "true_false_image",
+    "prompt": "古称东京、汴梁，被称为“八朝古都”的是张家口吗？",
+    "image": "🏮",
+    "answer": false,
+    "explanation": "不是。古称东京、汴梁，被称为“八朝古都”的是开封。"
+  },
+  {
+    "id": "cc_106",
+    "type": "true_false_image",
+    "prompt": "甲骨文的故乡，殷墟所在地的是哈尔滨吗？",
+    "image": "🐢",
+    "answer": false,
+    "explanation": "不是。甲骨文的故乡，殷墟所在地的是安阳。"
+  },
+  {
+    "id": "cc_107",
+    "type": "true_false_image",
+    "prompt": "医圣张仲景和科圣张衡的故乡的是南阳吗？",
+    "image": "🌿",
+    "answer": true,
+    "explanation": "是的。南阳是医圣张仲景和科圣张衡的故乡。"
+  },
+  {
+    "id": "cc_108",
+    "type": "single_image_to_text",
+    "prompt": "被称为“鹰城”，是著名的煤炭之都的是哪个城市？",
+    "image": "🦅",
+    "options": [
+      "平顶山",
+      "哈尔滨",
+      "福州",
+      "宣城"
+    ],
+    "answer": "平顶山",
+    "explanation": "正确答案是平顶山。平顶山被称为“鹰城”，是著名的煤炭之都。"
+  },
+  {
+    "id": "cc_109",
+    "type": "single_image_to_text",
+    "prompt": "牧野之战的发生地，有“南太行明珠”之称的是哪个城市？",
+    "image": "⛰️",
+    "options": [
+      "南平",
+      "石家庄",
+      "新乡",
+      "香格里拉"
+    ],
+    "answer": "新乡",
+    "explanation": "正确答案是新乡。新乡牧野之战的发生地，有“南太行明珠”之称。"
+  },
+  {
+    "id": "cc_110",
+    "type": "single_image_to_text",
+    "prompt": "太极拳的发源地，拥有云台山的是哪个城市？",
+    "image": "🥋",
+    "options": [
+      "呼伦贝尔",
+      "焦作",
+      "乐山",
+      "兰州"
+    ],
+    "answer": "焦作",
+    "explanation": "正确答案是焦作。焦作是太极拳的发源地，拥有云台山。"
+  },
+  {
+    "id": "cc_111",
+    "type": "single_image_to_text",
+    "prompt": "三国时期曹魏的都城的是哪个城市？",
+    "image": "⚔️",
+    "options": [
+      "许昌",
+      "沈阳",
+      "忻州",
+      "黄石"
+    ],
+    "answer": "许昌",
+    "explanation": "正确答案是许昌。许昌是三国时期曹魏的都城。"
+  },
+  {
+    "id": "cc_112",
+    "type": "true_false_image",
+    "prompt": "因出产毛尖茶闻名，被称为“江南北国、北国江南”的是信阳吗？",
+    "image": "🍵",
+    "answer": true,
+    "explanation": "是的。信阳因出产毛尖茶闻名，被称为“江南北国、北国江南”。"
+  },
+  {
+    "id": "cc_113",
+    "type": "true_false_image",
+    "prompt": "因长江和汉水交汇，被称为“江城”的是崇左吗？",
+    "image": "🌊",
+    "answer": false,
+    "explanation": "不是。因长江和汉水交汇，被称为“江城”的是武汉。"
+  },
+  {
+    "id": "cc_114",
+    "type": "true_false_image",
+    "prompt": "三峡大坝所在的城市，被称为“水电之都”的是廊坊吗？",
+    "image": "⚡",
+    "answer": false,
+    "explanation": "不是。三峡大坝所在的城市，被称为“水电之都”的是宜昌。"
+  },
+  {
+    "id": "cc_115",
+    "type": "true_false_image",
+    "prompt": "金庸小说中郭靖死守的古城，被称为“华夏第一城池”的是襄阳吗？",
+    "image": "🏰",
+    "answer": true,
+    "explanation": "是的。襄阳是金庸小说中郭靖死守的古城，被称为“华夏第一城池”。"
+  },
+  {
+    "id": "cc_116",
+    "type": "true_false_image",
+    "prompt": "因关羽“大意失荆州”而名扬天下的古城的是湘潭吗？",
+    "image": "🗡️",
+    "answer": false,
+    "explanation": "不是。因关羽“大意失荆州”而名扬天下的古城的是荆州。"
+  },
+  {
+    "id": "cc_117",
+    "type": "single_image_to_text",
+    "prompt": "中国青铜文化的发祥地，被称为“青铜故里”的是哪个城市？",
+    "image": "🥉",
+    "options": [
+      "黄石",
+      "鄂州",
+      "喀什",
+      "海北"
+    ],
+    "answer": "黄石",
+    "explanation": "正确答案是黄石。黄石是中国青铜文化的发祥地，被称为“青铜故里”。"
+  },
+  {
+    "id": "cc_118",
+    "type": "true_false_image",
+    "prompt": "武当山所在的城市，中国商用车之都的是十堰吗？",
+    "image": "⛰️",
+    "answer": true,
+    "explanation": "是的。十堰是武当山所在的城市，中国商用车之都。"
+  },
+  {
+    "id": "cc_119",
+    "type": "single_image_to_text",
+    "prompt": "炎帝神农故里，曾侯乙编钟出土的地方的是哪个城市？",
+    "image": "🔔",
+    "options": [
+      "九江",
+      "日照",
+      "随州",
+      "酒泉"
+    ],
+    "answer": "随州",
+    "explanation": "正确答案是随州。随州是炎帝神农故里，曾侯乙编钟出土的地方。"
+  },
+  {
+    "id": "cc_120",
+    "type": "single_image_to_text",
+    "prompt": "武昌鱼的故乡的是哪个城市？",
+    "image": "🐟",
+    "options": [
+      "宜宾",
+      "鄂州",
+      "郴州",
+      "武威"
+    ],
+    "answer": "鄂州",
+    "explanation": "正确答案是鄂州。鄂州是武昌鱼的故乡。"
+  },
+  {
+    "id": "cc_121",
+    "type": "single_image_to_text",
+    "prompt": "拥有明显陵，是楚文化的发祥地之一的是哪个城市？",
+    "image": "🏛️",
+    "options": [
+      "南昌",
+      "唐山",
+      "丹东",
+      "荆门"
+    ],
+    "answer": "荆门",
+    "explanation": "正确答案是荆门。荆门拥有明显陵，是楚文化的发祥地之一。"
+  },
+  {
+    "id": "cc_122",
+    "type": "single_image_to_text",
+    "prompt": "被称为“星城”，以橘子洲头闻名的是哪个城市？",
+    "image": "⭐",
+    "options": [
+      "成都",
+      "长沙",
+      "嘉峪关",
+      "许昌"
+    ],
+    "answer": "长沙",
+    "explanation": "正确答案是长沙。长沙被称为“星城”，以橘子洲头闻名。"
+  },
+  {
+    "id": "cc_123",
+    "type": "single_image_to_text",
+    "prompt": "被称为“动力之都”，是中国电力机车的摇篮的是哪个城市？",
+    "image": "🚄",
+    "options": [
+      "信阳",
+      "香港",
+      "株洲",
+      "汕头"
+    ],
+    "answer": "株洲",
+    "explanation": "正确答案是株洲。株洲被称为“动力之都”，是中国电力机车的摇篮。"
+  },
+  {
+    "id": "cc_124",
+    "type": "true_false_image",
+    "prompt": "一代伟人毛泽东的故乡的是湘潭吗？",
+    "image": "🌻",
+    "answer": true,
+    "explanation": "是的。湘潭是一代伟人毛泽东的故乡。"
+  },
+  {
+    "id": "cc_125",
+    "type": "single_image_to_text",
+    "prompt": "因洞庭湖和范仲淹的名篇《岳阳楼记》而闻名的是哪个城市？",
+    "image": "🏯",
+    "options": [
+      "湘潭",
+      "岳阳",
+      "萍乡",
+      "喀什"
+    ],
+    "answer": "岳阳",
+    "explanation": "正确答案是岳阳。岳阳因洞庭湖和范仲淹的名篇《岳阳楼记》而闻名。"
+  },
+  {
+    "id": "cc_126",
+    "type": "true_false_image",
+    "prompt": "因奇特的石英砂岩峰林地貌闻名，是阿凡达取景地的是梧州吗？",
+    "image": "⛰️",
+    "answer": false,
+    "explanation": "不是。因奇特的石英砂岩峰林地貌闻名，是阿凡达取景地的是张家界。"
+  },
+  {
+    "id": "cc_127",
+    "type": "true_false_image",
+    "prompt": "被称为“雁城”，南岳衡山所在地的是玉溪吗？",
+    "image": "🦆",
+    "answer": false,
+    "explanation": "不是。被称为“雁城”，南岳衡山所在地的是衡阳。"
+  },
+  {
+    "id": "cc_128",
+    "type": "true_false_image",
+    "prompt": "陶渊明笔下《桃花源记》的原型地的是邯郸吗？",
+    "image": "🌸",
+    "answer": false,
+    "explanation": "不是。陶渊明笔下《桃花源记》的原型地的是常德。"
+  },
+  {
+    "id": "cc_129",
+    "type": "true_false_image",
+    "prompt": "被称为“林中之城”，拥有东江湖的是郴州吗？",
+    "image": "💧",
+    "answer": true,
+    "explanation": "是的。郴州被称为“林中之城”，拥有东江湖。"
+  },
+  {
+    "id": "cc_130",
+    "type": "single_image_to_text",
+    "prompt": "被称为“火车拖来的城市”，是芷江受降地的是哪个城市？",
+    "image": "🚂",
+    "options": [
+      "怀化",
+      "丽水",
+      "榆林",
+      "温州"
+    ],
+    "answer": "怀化",
+    "explanation": "正确答案是怀化。怀化被称为“火车拖来的城市”，是芷江受降地。"
+  },
+  {
+    "id": "cc_131",
+    "type": "single_image_to_text",
+    "prompt": "古称宝庆，被称为“湘西南明珠”的是哪个城市？",
+    "image": "💎",
+    "options": [
+      "佛山",
+      "满洲里",
+      "邵阳",
+      "榆林"
+    ],
+    "answer": "邵阳",
+    "explanation": "正确答案是邵阳。邵阳古称宝庆，被称为“湘西南明珠”。"
+  },
+  {
+    "id": "cc_132",
+    "type": "true_false_image",
+    "prompt": "被称为“羊城”和“花城”的是广州吗？",
+    "image": "🌸",
+    "answer": true,
+    "explanation": "是的。广州被称为“羊城”和“花城”。"
+  },
+  {
+    "id": "cc_133",
+    "type": "true_false_image",
+    "prompt": "别称“鹏城”，是中国改革开放的窗口的是深圳吗？",
+    "image": "🦅",
+    "answer": true,
+    "explanation": "是的。深圳别称“鹏城”，是中国改革开放的窗口。"
+  },
+  {
+    "id": "cc_134",
+    "type": "single_image_to_text",
+    "prompt": "毗邻澳门，被称为“百岛之市”的是哪个城市？",
+    "image": "🏝️",
+    "options": [
+      "玉树",
+      "海东",
+      "赤峰",
+      "珠海"
+    ],
+    "answer": "珠海",
+    "explanation": "正确答案是珠海。珠海毗邻澳门，被称为“百岛之市”。"
+  },
+  {
+    "id": "cc_135",
+    "type": "true_false_image",
+    "prompt": "黄飞鸿、叶问的故乡，被称为“武术之乡”的是佛山吗？",
+    "image": "🥋",
+    "answer": true,
+    "explanation": "是的。佛山是黄飞鸿、叶问的故乡，被称为“武术之乡”。"
+  },
+  {
+    "id": "cc_136",
+    "type": "single_image_to_text",
+    "prompt": "位于广深之间，被称为“世界工厂”的是哪个城市？",
+    "image": "🏭",
+    "options": [
+      "乌海",
+      "沈阳",
+      "东莞",
+      "珠海"
+    ],
+    "answer": "东莞",
+    "explanation": "正确答案是东莞。东莞位于广深之间，被称为“世界工厂”。"
+  },
+  {
+    "id": "cc_137",
+    "type": "true_false_image",
+    "prompt": "因纪念孙中山先生而由香山县改名的城市的是西宁吗？",
+    "image": "🏛️",
+    "answer": false,
+    "explanation": "不是。因纪念孙中山先生而由香山县改名的城市的是中山。"
+  },
+  {
+    "id": "cc_138",
+    "type": "true_false_image",
+    "prompt": "被称为“岭南名郡”，拥有巽寮湾和西湖的是荆门吗？",
+    "image": "🌊",
+    "answer": false,
+    "explanation": "不是。被称为“岭南名郡”，拥有巽寮湾和西湖的是惠州。"
+  },
+  {
+    "id": "cc_139",
+    "type": "true_false_image",
+    "prompt": "全国主要港口城市和著名侨乡，被称为“百载商埠”的是海口吗？",
+    "image": "🚢",
+    "answer": false,
+    "explanation": "不是。全国主要港口城市和著名侨乡，被称为“百载商埠”的是汕头。"
+  },
+  {
+    "id": "cc_140",
+    "type": "single_image_to_text",
+    "prompt": "潮汕文化的发源地，以工夫茶和牛肉火锅闻名的是哪个城市？",
+    "image": "🍵",
+    "options": [
+      "乐山",
+      "潮州",
+      "株洲",
+      "衡阳"
+    ],
+    "answer": "潮州",
+    "explanation": "正确答案是潮州。潮州是潮汕文化的发源地，以工夫茶和牛肉火锅闻名。"
+  },
+  {
+    "id": "cc_141",
+    "type": "single_image_to_text",
+    "prompt": "拥有中国大陆最南端（菠萝的海），是中国海鲜美食之都的是哪个城市？",
+    "image": "🦞",
+    "options": [
+      "潮州",
+      "怀化",
+      "安顺",
+      "湛江"
+    ],
+    "answer": "湛江",
+    "explanation": "正确答案是湛江。湛江拥有中国大陆最南端（菠萝的海），是中国海鲜美食之都。"
+  },
+  {
+    "id": "cc_142",
+    "type": "true_false_image",
+    "prompt": "拥有七星岩和鼎湖山，出产名贵端砚的是肇庆吗？",
+    "image": "🖋️",
+    "answer": true,
+    "explanation": "是的。肇庆拥有七星岩和鼎湖山，出产名贵端砚。"
+  },
+  {
+    "id": "cc_143",
+    "type": "true_false_image",
+    "prompt": "被称为“椰城”的是琼海吗？",
+    "image": "🥥",
+    "answer": false,
+    "explanation": "不是。被称为“椰城”的是海口。"
+  },
+  {
+    "id": "cc_144",
+    "type": "true_false_image",
+    "prompt": "被称为“东方夏威夷”，是最南端热带滨海旅游城市的是三亚吗？",
+    "image": "🏖️",
+    "answer": true,
+    "explanation": "是的。三亚被称为“东方夏威夷”，是最南端热带滨海旅游城市。"
+  },
+  {
+    "id": "cc_145",
+    "type": "single_image_to_text",
+    "prompt": "中国总面积最大、陆地面积最小、人口最少的地级市的是哪个城市？",
+    "image": "🌊",
+    "options": [
+      "三沙",
+      "大理",
+      "南昌",
+      "百色"
+    ],
+    "answer": "三沙",
+    "explanation": "正确答案是三沙。三沙是中国总面积最大、陆地面积最小、人口最少的地级市。"
+  },
+  {
+    "id": "cc_146",
+    "type": "single_image_to_text",
+    "prompt": "博鳌亚洲论坛永久会址所在地的是哪个城市？",
+    "image": "🌐",
+    "options": [
+      "安庆",
+      "嘉峪关",
+      "琼海",
+      "宜昌"
+    ],
+    "answer": "琼海",
+    "explanation": "正确答案是琼海。琼海是博鳌亚洲论坛永久会址所在地。"
+  },
+  {
+    "id": "cc_147",
+    "type": "true_false_image",
+    "prompt": "拥有中国首个滨海航天发射中心的是文昌吗？",
+    "image": "🚀",
+    "answer": true,
+    "explanation": "是的。文昌拥有中国首个滨海航天发射中心。"
+  },
+  {
+    "id": "cc_148",
+    "type": "true_false_image",
+    "prompt": "苏东坡曾被贬谪的地方（东坡书院所在地）的是儋州吗？",
+    "image": "📜",
+    "answer": true,
+    "explanation": "是的。儋州是苏东坡曾被贬谪的地方（东坡书院所在地）。"
+  },
+  {
+    "id": "cc_149",
+    "type": "true_false_image",
+    "prompt": "别称“蓉城”、“锦官城”，拥有大熊猫繁育研究基地的是宁德吗？",
+    "image": "🐼",
+    "answer": false,
+    "explanation": "不是。别称“蓉城”、“锦官城”，拥有大熊猫繁育研究基地的是成都。"
+  },
+  {
+    "id": "cc_150",
+    "type": "single_image_to_text",
+    "prompt": "被称为“中国科技城”的是哪个城市？",
+    "image": "🔬",
+    "options": [
+      "琼海",
+      "绵阳",
+      "烟台",
+      "固原"
+    ],
+    "answer": "绵阳",
+    "explanation": "正确答案是绵阳。绵阳被称为“中国科技城”。"
+  },
+  {
+    "id": "cc_151",
+    "type": "single_image_to_text",
+    "prompt": "被称为“千年盐都”、“恐龙之乡”和“南国灯城”的是哪个城市？",
+    "image": "🦖",
+    "options": [
+      "开封",
+      "绍兴",
+      "自贡",
+      "武威"
+    ],
+    "answer": "自贡",
+    "explanation": "正确答案是自贡。自贡被称为“千年盐都”、“恐龙之乡”和“南国灯城”。"
+  },
+  {
+    "id": "cc_152",
+    "type": "true_false_image",
+    "prompt": "被称为“万里长江第一城”和“中国酒都”的是宜宾吗？",
+    "image": "🍶",
+    "answer": true,
+    "explanation": "是的。宜宾被称为“万里长江第一城”和“中国酒都”。"
+  },
+  {
+    "id": "cc_153",
+    "type": "single_image_to_text",
+    "prompt": "拥有世界最大的石刻弥勒佛坐像的是哪个城市？",
+    "image": "🗿",
+    "options": [
+      "盐城",
+      "乐山",
+      "海西",
+      "临沂"
+    ],
+    "answer": "乐山",
+    "explanation": "正确答案是乐山。乐山拥有世界最大的石刻弥勒佛坐像。"
+  },
+  {
+    "id": "cc_154",
+    "type": "single_image_to_text",
+    "prompt": "中国唯一以花名命名的城市，盛产芒果的是哪个城市？",
+    "image": "🥭",
+    "options": [
+      "乐山",
+      "东营",
+      "台北",
+      "攀枝花"
+    ],
+    "answer": "攀枝花",
+    "explanation": "正确答案是攀枝花。攀枝花是中国唯一以花名命名的城市，盛产芒果。"
+  },
+  {
+    "id": "cc_155",
+    "type": "single_image_to_text",
+    "prompt": "被称为“酒城”，拥有国窖1573的是哪个城市？",
+    "image": "🍶",
+    "options": [
+      "崇左",
+      "湛江",
+      "泸州",
+      "丽江"
+    ],
+    "answer": "泸州",
+    "explanation": "正确答案是泸州。泸州被称为“酒城”，拥有国窖1573。"
+  },
+  {
+    "id": "cc_156",
+    "type": "single_image_to_text",
+    "prompt": "三星堆遗址所在的城市的是哪个城市？",
+    "image": "🎭",
+    "options": [
+      "大理",
+      "舟山",
+      "德阳",
+      "格尔木"
+    ],
+    "answer": "德阳",
+    "explanation": "正确答案是德阳。德阳是三星堆遗址所在的城市。"
+  },
+  {
+    "id": "cc_157",
+    "type": "single_image_to_text",
+    "prompt": "武则天的故里，拥有剑门关的是哪个城市？",
+    "image": "⚔️",
+    "options": [
+      "广元",
+      "海北",
+      "泰安",
+      "景德镇"
+    ],
+    "answer": "广元",
+    "explanation": "正确答案是广元。广元是武则天的故里，拥有剑门关。"
+  },
+  {
+    "id": "cc_158",
+    "type": "true_false_image",
+    "prompt": "三国文化和春节文化的发祥地之一的是上饶吗？",
+    "image": "🏮",
+    "answer": false,
+    "explanation": "不是。三国文化和春节文化的发祥地之一的是南充。"
+  },
+  {
+    "id": "cc_159",
+    "type": "true_false_image",
+    "prompt": "被称为“林城”，夏季气候凉爽的是泸州吗？",
+    "image": "🌲",
+    "answer": false,
+    "explanation": "不是。被称为“林城”，夏季气候凉爽的是贵阳。"
+  },
+  {
+    "id": "cc_160",
+    "type": "single_image_to_text",
+    "prompt": "因中国工农红军的伟大转折会议而闻名，被称为“转折之城”，出产茅台酒的是哪个城市？",
+    "image": "🚩",
+    "options": [
+      "荆州",
+      "玉树",
+      "遵义",
+      "黑河"
+    ],
+    "answer": "遵义",
+    "explanation": "正确答案是遵义。遵义因中国工农红军的伟大转折会议而闻名，被称为“转折之城”，出产茅台酒。"
+  },
+  {
+    "id": "cc_161",
+    "type": "true_false_image",
+    "prompt": "气候凉爽宜人，被称为“中国凉都”的是六盘水吗？",
+    "image": "❄️",
+    "answer": true,
+    "explanation": "是的。六盘水气候凉爽宜人，被称为“中国凉都”。"
+  },
+  {
+    "id": "cc_162",
+    "type": "single_image_to_text",
+    "prompt": "黄果树瀑布所在的城市的是哪个城市？",
+    "image": "💦",
+    "options": [
+      "松原",
+      "安顺",
+      "焦作",
+      "榆林"
+    ],
+    "answer": "安顺",
+    "explanation": "正确答案是安顺。安顺是黄果树瀑布所在的城市。"
+  },
+  {
+    "id": "cc_163",
+    "type": "single_image_to_text",
+    "prompt": "百里杜鹃风景区所在的城市的是哪个城市？",
+    "image": "🌺",
+    "options": [
+      "毕节",
+      "广州",
+      "宣城",
+      "海西"
+    ],
+    "answer": "毕节",
+    "explanation": "正确答案是毕节。毕节是百里杜鹃风景区所在的城市。"
+  },
+  {
+    "id": "cc_164",
+    "type": "true_false_image",
+    "prompt": "梵净山所在的城市的是黄石吗？",
+    "image": "⛰️",
+    "answer": false,
+    "explanation": "不是。梵净山所在的城市的是铜仁。"
+  },
+  {
+    "id": "cc_165",
+    "type": "true_false_image",
+    "prompt": "因四季如春被称为“春城”的是昆明吗？",
+    "image": "🌸",
+    "answer": true,
+    "explanation": "是的。昆明因四季如春被称为“春城”。"
+  },
+  {
+    "id": "cc_166",
+    "type": "single_image_to_text",
+    "prompt": "以“风花雪月”（下关风、上关花、苍山雪、洱海月）闻名的是哪个城市？",
+    "image": "🌙",
+    "options": [
+      "玉树",
+      "湖州",
+      "大理",
+      "拉萨"
+    ],
+    "answer": "大理",
+    "explanation": "正确答案是大理。大理以“风花雪月”（下关风、上关花、苍山雪、洱海月）闻名。"
+  },
+  {
+    "id": "cc_167",
+    "type": "single_image_to_text",
+    "prompt": "以保存完好的纳西族古城和玉龙雪山闻名的是哪个城市？",
+    "image": "🏔️",
+    "options": [
+      "黄石",
+      "丽江",
+      "莆田",
+      "佳木斯"
+    ],
+    "answer": "丽江",
+    "explanation": "正确答案是丽江。丽江以保存完好的纳西族古城和玉龙雪山闻名。"
+  },
+  {
+    "id": "cc_168",
+    "type": "single_image_to_text",
+    "prompt": "聂耳的故乡，被称为“云烟之乡”的是哪个城市？",
+    "image": "🎵",
+    "options": [
+      "台中",
+      "晋中",
+      "玉溪",
+      "宜春"
+    ],
+    "answer": "玉溪",
+    "explanation": "正确答案是玉溪。玉溪是聂耳的故乡，被称为“云烟之乡”。"
+  },
+  {
+    "id": "cc_169",
+    "type": "single_image_to_text",
+    "prompt": "因盛产同名黑茶而得名的是哪个城市？",
+    "image": "🍵",
+    "options": [
+      "宜昌",
+      "伊犁",
+      "普洱",
+      "南平"
+    ],
+    "answer": "普洱",
+    "explanation": "正确答案是普洱。普洱因盛产同名黑茶而得名。"
+  },
+  {
+    "id": "cc_170",
+    "type": "single_image_to_text",
+    "prompt": "珠江的发源地，被称为“珠江源头第一城”的是哪个城市？",
+    "image": "💧",
+    "options": [
+      "曲靖",
+      "温州",
+      "焦作",
+      "中山"
+    ],
+    "answer": "曲靖",
+    "explanation": "正确答案是曲靖。曲靖珠江的发源地，被称为“珠江源头第一城”。"
+  },
+  {
+    "id": "cc_171",
+    "type": "single_image_to_text",
+    "prompt": "以腾冲火山地热及翡翠集散地闻名的是哪个城市？",
+    "image": "🌋",
+    "options": [
+      "保山",
+      "白城",
+      "崇左",
+      "海口"
+    ],
+    "answer": "保山",
+    "explanation": "正确答案是保山。保山以腾冲火山地热及翡翠集散地闻名。"
+  },
+  {
+    "id": "cc_172",
+    "type": "true_false_image",
+    "prompt": "名字意为“心中的日月”，是《消失的地平线》中所描述的秘境的是秦皇岛吗？",
+    "image": "🏞️",
+    "answer": false,
+    "explanation": "不是。名字意为“心中的日月”，是《消失的地平线》中所描述的秘境的是香格里拉。"
+  },
+  {
+    "id": "cc_173",
+    "type": "true_false_image",
+    "prompt": "古称长安，是兵马俑所在的城市的是安阳吗？",
+    "image": "🏺",
+    "answer": false,
+    "explanation": "不是。古称长安，是兵马俑所在的城市的是西安。"
+  },
+  {
+    "id": "cc_174",
+    "type": "true_false_image",
+    "prompt": "中国历史上第一个封建帝国秦朝的都城的是咸阳吗？",
+    "image": "🏛️",
+    "answer": true,
+    "explanation": "是的。咸阳是中国历史上第一个封建帝国秦朝的都城。"
+  },
+  {
+    "id": "cc_175",
+    "type": "true_false_image",
+    "prompt": "古称陈仓，有“明修栈道，暗度陈仓”的典故的是襄阳吗？",
+    "image": "🛤️",
+    "answer": false,
+    "explanation": "不是。古称陈仓，有“明修栈道，暗度陈仓”的典故的是宝鸡。"
+  },
+  {
+    "id": "cc_176",
+    "type": "single_image_to_text",
+    "prompt": "中国革命的圣地，拥有宝塔山的是哪个城市？",
+    "image": "⭐",
+    "options": [
+      "阜阳",
+      "延安",
+      "香格里拉",
+      "襄阳"
+    ],
+    "answer": "延安",
+    "explanation": "正确答案是延安。延安是中国革命的圣地，拥有宝塔山。"
+  },
+  {
+    "id": "cc_177",
+    "type": "true_false_image",
+    "prompt": "刘邦发迹之地，被称为“天汉”和“西北小江南”的是宣城吗？",
+    "image": "🏞️",
+    "answer": false,
+    "explanation": "不是。刘邦发迹之地，被称为“天汉”和“西北小江南”的是汉中。"
+  },
+  {
+    "id": "cc_178",
+    "type": "true_false_image",
+    "prompt": "被称为“塞上明珠”，资源丰富的是榆林吗？",
+    "image": "⛏️",
+    "answer": true,
+    "explanation": "是的。榆林被称为“塞上明珠”，资源丰富。"
+  },
+  {
+    "id": "cc_179",
+    "type": "single_image_to_text",
+    "prompt": "华山所在的城市的是哪个城市？",
+    "image": "⛰️",
+    "options": [
+      "渭南",
+      "萍乡",
+      "呼和浩特",
+      "赤峰"
+    ],
+    "answer": "渭南",
+    "explanation": "正确答案是渭南。渭南是华山所在的城市。"
+  },
+  {
+    "id": "cc_180",
+    "type": "true_false_image",
+    "prompt": "被称为“中国硒谷”，秦巴腹地汉水之畔的是安康吗？",
+    "image": "🍵",
+    "answer": true,
+    "explanation": "是的。安康被称为“中国硒谷”，秦巴腹地汉水之畔。"
+  },
+  {
+    "id": "cc_181",
+    "type": "true_false_image",
+    "prompt": "唯一黄河穿城而过的省会，以牛肉面闻名的是兰州吗？",
+    "image": "🍜",
+    "answer": true,
+    "explanation": "是的。兰州是唯一黄河穿城而过的省会，以牛肉面闻名。"
+  },
+  {
+    "id": "cc_182",
+    "type": "single_image_to_text",
+    "prompt": "麦积山石窟所在的城市，被称为“羲皇故里”的是哪个城市？",
+    "image": "🗿",
+    "options": [
+      "深圳",
+      "黄山",
+      "平凉",
+      "天水"
+    ],
+    "answer": "天水",
+    "explanation": "正确答案是天水。天水是麦积山石窟所在的城市，被称为“羲皇故里”。"
+  },
+  {
+    "id": "cc_183",
+    "type": "true_false_image",
+    "prompt": "敦煌莫高窟和中国酒泉卫星发射中心所在地的是酒泉吗？",
+    "image": "🚀",
+    "answer": true,
+    "explanation": "是的。酒泉是敦煌莫高窟和中国酒泉卫星发射中心所在地。"
+  },
+  {
+    "id": "cc_184",
+    "type": "single_image_to_text",
+    "prompt": "以七彩丹霞地貌闻名的城市的是哪个城市？",
+    "image": "🌈",
+    "options": [
+      "山南",
+      "上海",
+      "张掖",
+      "北京"
+    ],
+    "answer": "张掖",
+    "explanation": "正确答案是张掖。张掖是以七彩丹霞地貌闻名的城市。"
+  },
+  {
+    "id": "cc_185",
+    "type": "single_image_to_text",
+    "prompt": "因明长城最西端的雄关（天下第一雄关）而得名的是哪个城市？",
+    "image": "🧱",
+    "options": [
+      "龙岩",
+      "唐山",
+      "潍坊",
+      "嘉峪关"
+    ],
+    "answer": "嘉峪关",
+    "explanation": "正确答案是嘉峪关。嘉峪关因明长城最西端的雄关（天下第一雄关）而得名。"
+  },
+  {
+    "id": "cc_186",
+    "type": "true_false_image",
+    "prompt": "古称凉州，是“马踏飞燕”的出土地的是连云港吗？",
+    "image": "🐎",
+    "answer": false,
+    "explanation": "不是。古称凉州，是“马踏飞燕”的出土地的是武威。"
+  },
+  {
+    "id": "cc_187",
+    "type": "true_false_image",
+    "prompt": "拥有道教名山崆峒山的是包头吗？",
+    "image": "⛰️",
+    "answer": false,
+    "explanation": "不是。拥有道教名山崆峒山的是平凉。"
+  },
+  {
+    "id": "cc_188",
+    "type": "true_false_image",
+    "prompt": "气候凉爽，被称为“中国夏都”的是济宁吗？",
+    "image": "🌬️",
+    "answer": false,
+    "explanation": "不是。气候凉爽，被称为“中国夏都”的是西宁。"
+  },
+  {
+    "id": "cc_189",
+    "type": "single_image_to_text",
+    "prompt": "互助土族故土园所在的城市的是哪个城市？",
+    "image": "🌈",
+    "options": [
+      "三明",
+      "海东",
+      "邯郸",
+      "萍乡"
+    ],
+    "answer": "海东",
+    "explanation": "正确答案是海东。海东是互助土族故土园所在的城市。"
+  },
+  {
+    "id": "cc_190",
+    "type": "single_image_to_text",
+    "prompt": "位于柴达木盆地，是茶卡盐湖和察尔汗盐湖所在地的是哪个城市？",
+    "image": "🧂",
+    "options": [
+      "海西",
+      "海口",
+      "蚌埠",
+      "廊坊"
+    ],
+    "answer": "海西",
+    "explanation": "正确答案是海西。海西位于柴达木盆地，是茶卡盐湖和察尔汗盐湖所在地。"
+  },
+  {
+    "id": "cc_191",
+    "type": "true_false_image",
+    "prompt": "三江源发源地（长江、黄河、澜沧江）的是玉树吗？",
+    "image": "💧",
+    "answer": true,
+    "explanation": "是的。玉树是三江源发源地（长江、黄河、澜沧江）。"
+  },
+  {
+    "id": "cc_192",
+    "type": "true_false_image",
+    "prompt": "中国最大内陆咸水湖青海湖的主要所在地的是郴州吗？",
+    "image": "🌊",
+    "answer": false,
+    "explanation": "不是。中国最大内陆咸水湖青海湖的主要所在地的是海北。"
+  },
+  {
+    "id": "cc_193",
+    "type": "true_false_image",
+    "prompt": "青藏铁路和青藏公路的交通枢纽城市的是格尔木吗？",
+    "image": "🚞",
+    "answer": true,
+    "explanation": "是的。格尔木是青藏铁路和青藏公路的交通枢纽城市。"
+  },
+  {
+    "id": "cc_194",
+    "type": "single_image_to_text",
+    "prompt": "拥有101大楼和故宫博物院的是哪个城市？",
+    "image": "🏢",
+    "options": [
+      "衡水",
+      "台北",
+      "澳门",
+      "东莞"
+    ],
+    "answer": "台北",
+    "explanation": "正确答案是台北。台北拥有101大楼和故宫博物院。"
+  },
+  {
+    "id": "cc_195",
+    "type": "true_false_image",
+    "prompt": "台湾最大的港口城市，拥有爱河的是琼海吗？",
+    "image": "🚢",
+    "answer": false,
+    "explanation": "不是。台湾最大的港口城市，拥有爱河的是高雄。"
+  },
+  {
+    "id": "cc_196",
+    "type": "single_image_to_text",
+    "prompt": "台湾历史最悠久的城市，被称为“文化古都”的是哪个城市？",
+    "image": "⛩️",
+    "options": [
+      "台南",
+      "固原",
+      "徐州",
+      "台中"
+    ],
+    "answer": "台南",
+    "explanation": "正确答案是台南。台南是台湾历史最悠久的城市，被称为“文化古都”。"
+  },
+  {
+    "id": "cc_197",
+    "type": "true_false_image",
+    "prompt": "以太阳饼和逢甲夜市闻名的城市的是台中吗？",
+    "image": "🍪",
+    "answer": true,
+    "explanation": "是的。台中是以太阳饼和逢甲夜市闻名的城市。"
+  },
+  {
+    "id": "cc_198",
+    "type": "true_false_image",
+    "prompt": "被称为“台湾硅谷”，高科技产业发达的是新竹吗？",
+    "image": "💻",
+    "answer": true,
+    "explanation": "是的。新竹被称为“台湾硅谷”，高科技产业发达。"
+  },
+  {
+    "id": "cc_199",
+    "type": "true_false_image",
+    "prompt": "拥有太鲁阁国家公园的是花莲吗？",
+    "image": "🏞️",
+    "answer": true,
+    "explanation": "是的。花莲拥有太鲁阁国家公园。"
+  },
+  {
+    "id": "cc_200",
+    "type": "true_false_image",
+    "prompt": "被称为“青城”，也是“中国乳都”的是呼和浩特吗？",
+    "image": "🥛",
+    "answer": true,
+    "explanation": "是的。呼和浩特被称为“青城”，也是“中国乳都”。"
+  },
+  {
+    "id": "cc_201",
+    "type": "single_image_to_text",
+    "prompt": "被称为“鹿城”和“草原钢城”的是哪个城市？",
+    "image": "🦌",
+    "options": [
+      "连云港",
+      "阿勒泰",
+      "莆田",
+      "包头"
+    ],
+    "answer": "包头",
+    "explanation": "正确答案是包头。包头被称为“鹿城”和“草原钢城”。"
+  },
+  {
+    "id": "cc_202",
+    "type": "true_false_image",
+    "prompt": "被称为“羊煤土气”的资源富集之城的是和田吗？",
+    "image": "🐑",
+    "answer": false,
+    "explanation": "不是。被称为“羊煤土气”的资源富集之城的是鄂尔多斯。"
+  },
+  {
+    "id": "cc_203",
+    "type": "true_false_image",
+    "prompt": "拥有中国面积最大的同名草原的是呼伦贝尔吗？",
+    "image": "🐎",
+    "answer": true,
+    "explanation": "是的。呼伦贝尔拥有中国面积最大的同名草原。"
+  },
+  {
+    "id": "cc_204",
+    "type": "single_image_to_text",
+    "prompt": "红山文化发祥地，被称为“玉龙之乡”的是哪个城市？",
+    "image": "🐉",
+    "options": [
+      "丽江",
+      "赤峰",
+      "湖州",
+      "长沙"
+    ],
+    "answer": "赤峰",
+    "explanation": "正确答案是赤峰。赤峰是红山文化发祥地，被称为“玉龙之乡”。"
+  },
+  {
+    "id": "cc_205",
+    "type": "single_image_to_text",
+    "prompt": "被称为“黄河明珠”和“沙漠中的绿洲”的是哪个城市？",
+    "image": "🏜️",
+    "options": [
+      "安阳",
+      "龙岩",
+      "乌海",
+      "长治"
+    ],
+    "answer": "乌海",
+    "explanation": "正确答案是乌海。乌海被称为“黄河明珠”和“沙漠中的绿洲”。"
+  },
+  {
+    "id": "cc_206",
+    "type": "single_image_to_text",
+    "prompt": "被称为“科尔沁草原明珠”的是哪个城市？",
+    "image": "🌾",
+    "options": [
+      "西宁",
+      "通辽",
+      "花莲",
+      "桂林"
+    ],
+    "answer": "通辽",
+    "explanation": "正确答案是通辽。通辽被称为“科尔沁草原明珠”。"
+  },
+  {
+    "id": "cc_207",
+    "type": "single_image_to_text",
+    "prompt": "中国最大的陆路口岸城市，充满中俄边境风情的是哪个城市？",
+    "image": "🚂",
+    "options": [
+      "满洲里",
+      "泰安",
+      "乌海",
+      "喀什"
+    ],
+    "answer": "满洲里",
+    "explanation": "正确答案是满洲里。满洲里是中国最大的陆路口岸城市，充满中俄边境风情。"
+  },
+  {
+    "id": "cc_208",
+    "type": "true_false_image",
+    "prompt": "满城皆绿，被称为“绿城”的是南宁吗？",
+    "image": "🍃",
+    "answer": true,
+    "explanation": "是的。南宁满城皆绿，被称为“绿城”。"
+  },
+  {
+    "id": "cc_209",
+    "type": "true_false_image",
+    "prompt": "有“山水甲天下”之美誉的是蚌埠吗？",
+    "image": "⛰️",
+    "answer": false,
+    "explanation": "不是。有“山水甲天下”之美誉的是桂林。"
+  },
+  {
+    "id": "cc_210",
+    "type": "true_false_image",
+    "prompt": "以螺蛳粉和汽车工业闻名的是哈密吗？",
+    "image": "🍜",
+    "answer": false,
+    "explanation": "不是。以螺蛳粉和汽车工业闻名的是柳州。"
+  },
+  {
+    "id": "cc_211",
+    "type": "true_false_image",
+    "prompt": "拥有“天下第一滩”银滩的是北海吗？",
+    "image": "🏖️",
+    "answer": true,
+    "explanation": "是的。北海拥有“天下第一滩”银滩。"
+  },
+  {
+    "id": "cc_212",
+    "type": "single_image_to_text",
+    "prompt": "粤语的发源地之一，素有“小香港”之称的是哪个城市？",
+    "image": "🏙️",
+    "options": [
+      "烟台",
+      "延吉",
+      "南京",
+      "梧州"
+    ],
+    "answer": "梧州",
+    "explanation": "正确答案是梧州。梧州是粤语的发源地之一，素有“小香港”之称。"
+  },
+  {
+    "id": "cc_213",
+    "type": "single_image_to_text",
+    "prompt": "被称为“岭南美玉、胜景如林”的是哪个城市？",
+    "image": "🌳",
+    "options": [
+      "玉林",
+      "随州",
+      "伊春",
+      "安顺"
+    ],
+    "answer": "玉林",
+    "explanation": "正确答案是玉林。玉林被称为“岭南美玉、胜景如林”。"
+  },
+  {
+    "id": "cc_214",
+    "type": "single_image_to_text",
+    "prompt": "著名的革命老区的是哪个城市？",
+    "image": "🚩",
+    "options": [
+      "百色",
+      "大同",
+      "景德镇",
+      "长沙"
+    ],
+    "answer": "百色",
+    "explanation": "正确答案是百色。百色是著名的革命老区。"
+  },
+  {
+    "id": "cc_215",
+    "type": "single_image_to_text",
+    "prompt": "拥有亚洲第一大跨国瀑布德天瀑布的是哪个城市？",
+    "image": "💦",
+    "options": [
+      "许昌",
+      "崇左",
+      "汕头",
+      "海口"
+    ],
+    "answer": "崇左",
+    "explanation": "正确答案是崇左。崇左拥有亚洲第一大跨国瀑布德天瀑布。"
+  },
+  {
+    "id": "cc_216",
+    "type": "single_image_to_text",
+    "prompt": "被称为“中国四大名陶之乡”（坭兴陶）的是哪个城市？",
+    "image": "🏺",
+    "options": [
+      "乌海",
+      "钦州",
+      "德阳",
+      "大同"
+    ],
+    "answer": "钦州",
+    "explanation": "正确答案是钦州。钦州被称为“中国四大名陶之乡”（坭兴陶）。"
+  },
+  {
+    "id": "cc_217",
+    "type": "true_false_image",
+    "prompt": "被称为“日光城”，是布达拉宫所在地的是拉萨吗？",
+    "image": "☀️",
+    "answer": true,
+    "explanation": "是的。拉萨被称为“日光城”，是布达拉宫所在地。"
+  },
+  {
+    "id": "cc_218",
+    "type": "true_false_image",
+    "prompt": "珠穆朗玛峰所在的城市，拥有扎什伦布寺的是青岛吗？",
+    "image": "🏔️",
+    "answer": false,
+    "explanation": "不是。珠穆朗玛峰所在的城市，拥有扎什伦布寺的是日喀则。"
+  },
+  {
+    "id": "cc_219",
+    "type": "single_image_to_text",
+    "prompt": "被称为“西藏江南”，以桃花节闻名的是哪个城市？",
+    "image": "🍑",
+    "options": [
+      "林芝",
+      "新乡",
+      "衡阳",
+      "喀什"
+    ],
+    "answer": "林芝",
+    "explanation": "正确答案是林芝。林芝被称为“西藏江南”，以桃花节闻名。"
+  },
+  {
+    "id": "cc_220",
+    "type": "single_image_to_text",
+    "prompt": "藏民族和藏文化的发祥地的是哪个城市？",
+    "image": "🛖",
+    "options": [
+      "成都",
+      "山南",
+      "安阳",
+      "柳州"
+    ],
+    "answer": "山南",
+    "explanation": "正确答案是山南。山南是藏民族和藏文化的发祥地。"
+  },
+  {
+    "id": "cc_221",
+    "type": "single_image_to_text",
+    "prompt": "位于藏东，被称为“康巴腹地”的是哪个城市？",
+    "image": "🦅",
+    "options": [
+      "昌都",
+      "渭南",
+      "南平",
+      "佛山"
+    ],
+    "answer": "昌都",
+    "explanation": "正确答案是昌都。昌都位于藏东，被称为“康巴腹地”。"
+  },
+  {
+    "id": "cc_222",
+    "type": "true_false_image",
+    "prompt": "青藏铁路上的重要节点，以赛马节闻名的是那曲吗？",
+    "image": "🐎",
+    "answer": true,
+    "explanation": "是的。那曲是青藏铁路上的重要节点，以赛马节闻名。"
+  },
+  {
+    "id": "cc_223",
+    "type": "true_false_image",
+    "prompt": "被称为“塞上湖城”的是银川吗？",
+    "image": "🦆",
+    "answer": true,
+    "explanation": "是的。银川被称为“塞上湖城”。"
+  },
+  {
+    "id": "cc_224",
+    "type": "true_false_image",
+    "prompt": "因贺兰山与黄河交汇处的山石突出如嘴而得名的是石嘴山吗？",
+    "image": "⛰️",
+    "answer": true,
+    "explanation": "是的。石嘴山因贺兰山与黄河交汇处的山石突出如嘴而得名。"
+  },
+  {
+    "id": "cc_225",
+    "type": "single_image_to_text",
+    "prompt": "被誉为“中国滩羊之乡”的是哪个城市？",
+    "image": "🐑",
+    "options": [
+      "文昌",
+      "太原",
+      "吴忠",
+      "西安"
+    ],
+    "answer": "吴忠",
+    "explanation": "正确答案是吴忠。吴忠被誉为“中国滩羊之乡”。"
+  },
+  {
+    "id": "cc_226",
+    "type": "true_false_image",
+    "prompt": "六盘山所在的城市的是温州吗？",
+    "image": "🌲",
+    "answer": false,
+    "explanation": "不是。六盘山所在的城市的是固原。"
+  },
+  {
+    "id": "cc_227",
+    "type": "single_image_to_text",
+    "prompt": "沙坡头景区所在地，以治沙奇迹闻名的是哪个城市？",
+    "image": "🏜️",
+    "options": [
+      "邵阳",
+      "新竹",
+      "中卫",
+      "合肥"
+    ],
+    "answer": "中卫",
+    "explanation": "正确答案是中卫。中卫是沙坡头景区所在地，以治沙奇迹闻名。"
+  },
+  {
+    "id": "cc_228",
+    "type": "true_false_image",
+    "prompt": "距离海洋最远的大城市的是格尔木吗？",
+    "image": "🐪",
+    "answer": false,
+    "explanation": "不是。距离海洋最远的大城市的是乌鲁木齐。"
+  },
+  {
+    "id": "cc_229",
+    "type": "true_false_image",
+    "prompt": "中国最西部的边境城市，“不到此地就不算到新疆”的是焦作吗？",
+    "image": "🕌",
+    "answer": false,
+    "explanation": "不是。中国最西部的边境城市，“不到此地就不算到新疆”的是喀什。"
+  },
+  {
+    "id": "cc_230",
+    "type": "single_image_to_text",
+    "prompt": "被称为“火洲”，以葡萄和火焰山闻名的是哪个城市？",
+    "image": "🍇",
+    "options": [
+      "铜仁",
+      "平顶山",
+      "吐鲁番",
+      "宣城"
+    ],
+    "answer": "吐鲁番",
+    "explanation": "正确答案是吐鲁番。吐鲁番被称为“火洲”，以葡萄和火焰山闻名。"
+  },
+  {
+    "id": "cc_231",
+    "type": "single_image_to_text",
+    "prompt": "因石油而建市，名字在维吾尔语中意为“黑油”的是哪个城市？",
+    "image": "🛢️",
+    "options": [
+      "许昌",
+      "新乡",
+      "广州",
+      "克拉玛依"
+    ],
+    "answer": "克拉玛依",
+    "explanation": "正确答案是克拉玛依。克拉玛依因石油而建市，名字在维吾尔语中意为“黑油”。"
+  },
+  {
+    "id": "cc_232",
+    "type": "single_image_to_text",
+    "prompt": "被称为“塞外江南”，拥有那拉提草原的是哪个城市？",
+    "image": "🐎",
+    "options": [
+      "盐城",
+      "伊犁",
+      "宝鸡",
+      "南平"
+    ],
+    "answer": "伊犁",
+    "explanation": "正确答案是伊犁。伊犁被称为“塞外江南”，拥有那拉提草原。"
+  },
+  {
+    "id": "cc_233",
+    "type": "single_image_to_text",
+    "prompt": "因盛产哈密瓜而闻名全国的是哪个城市？",
+    "image": "🍈",
+    "options": [
+      "常州",
+      "绵阳",
+      "哈密",
+      "徐州"
+    ],
+    "answer": "哈密",
+    "explanation": "正确答案是哈密。哈密因盛产哈密瓜而闻名全国。"
+  },
+  {
+    "id": "cc_234",
+    "type": "single_image_to_text",
+    "prompt": "被称为“玉石之都”，以和田玉闻名的是哪个城市？",
+    "image": "💎",
+    "options": [
+      "平凉",
+      "丽水",
+      "和田",
+      "克拉玛依"
+    ],
+    "answer": "和田",
+    "explanation": "正确答案是和田。和田被称为“玉石之都”，以和田玉闻名。"
+  },
+  {
+    "id": "cc_235",
+    "type": "single_image_to_text",
+    "prompt": "被称为“人类滑雪起源地”，拥有喀纳斯湖的是哪个城市？",
+    "image": "🎿",
+    "options": [
+      "宜春",
+      "阿勒泰",
+      "石家庄",
+      "齐齐哈尔"
+    ],
+    "answer": "阿勒泰",
+    "explanation": "正确答案是阿勒泰。阿勒泰被称为“人类滑雪起源地”，拥有喀纳斯湖。"
+  },
+  {
+    "id": "cc_236",
+    "type": "true_false_image",
+    "prompt": "被称为“梨城”，盛产香梨的是库尔勒吗？",
+    "image": "🍐",
+    "answer": true,
+    "explanation": "是的。库尔勒被称为“梨城”，盛产香梨。"
+  },
+  {
+    "id": "cc_237",
+    "type": "true_false_image",
+    "prompt": "中国的首都，被誉为“双奥之城”的是阿勒泰吗？",
+    "image": "🏟️",
+    "answer": false,
+    "explanation": "不是。中国的首都，被誉为“双奥之城”的是北京。"
+  },
+  {
+    "id": "cc_238",
+    "type": "single_image_to_text",
+    "prompt": "被称为“魔都”，拥有外滩和陆家嘴的是哪个城市？",
+    "image": "🌃",
+    "options": [
+      "平顶山",
+      "大庆",
+      "白城",
+      "上海"
+    ],
+    "answer": "上海",
+    "explanation": "正确答案是上海。上海被称为“魔都”，拥有外滩和陆家嘴。"
+  },
+  {
+    "id": "cc_239",
+    "type": "true_false_image",
+    "prompt": "被称为“渤海明珠”，以狗不理包子和相声闻名的是天津吗？",
+    "image": "🎙️",
+    "answer": true,
+    "explanation": "是的。天津被称为“渤海明珠”，以狗不理包子和相声闻名。"
+  },
+  {
+    "id": "cc_240",
+    "type": "single_image_to_text",
+    "prompt": "因建筑依山而建，民间享有“山城”美誉的是哪个城市？",
+    "image": "⛰️",
+    "options": [
+      "重庆",
+      "日喀则",
+      "营口",
+      "呼和浩特"
+    ],
+    "answer": "重庆",
+    "explanation": "正确答案是重庆。重庆因建筑依山而建，民间享有“山城”美誉。"
+  },
+  {
+    "id": "cc_241",
+    "type": "true_false_image",
+    "prompt": "被誉为“东方之珠”的国际金融中心的是香港吗？",
+    "image": "💎",
+    "answer": true,
+    "explanation": "是的。香港是被誉为“东方之珠”的国际金融中心。"
+  },
+  {
+    "id": "cc_242",
+    "type": "true_false_image",
+    "prompt": "以大三巴牌坊闻名，被称为“东方蒙特卡洛”的是克拉玛依吗？",
+    "image": "🎰",
+    "answer": false,
+    "explanation": "不是。以大三巴牌坊闻名，被称为“东方蒙特卡洛”的是澳门。"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "lm_1",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个著名的地标建筑？",
+    "image": "🗽",
+    "options": ["自由女神像", "大本钟", "埃菲尔铁塔", "比萨斜塔"],
+    "answer": "自由女神像",
+    "explanation": "自由女神像是法国在1886年赠送给美国的独立100周年贺礼。"
+  },
+  {
+    "id": "lm_2",
+    "type": "true_false_image",
+    "prompt": "这座建筑是悉尼歌剧院吗？",
+    "image": "🎭",
+    "answer": true,
+    "explanation": "悉尼歌剧院是澳大利亚的标志性建筑，设计造型像白色的贝壳。"
+  }
+]

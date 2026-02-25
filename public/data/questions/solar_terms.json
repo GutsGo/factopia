@@ -1,0 +1,19 @@
+[
+  {
+    "id": "st_1",
+    "type": "single_image_to_text",
+    "prompt": "春季的第一个节气是？",
+    "image": "🌱",
+    "options": ["立春", "雨水", "惊蛰", "春分"],
+    "answer": "立春",
+    "explanation": "立春是二十四节气中的第一个节气，代表春天的开始。"
+  },
+  {
+    "id": "st_2",
+    "type": "true_false_image",
+    "prompt": "这个节气意味着天气开始变热，是夏至吗？",
+    "image": "☀️",
+    "answer": false,
+    "explanation": "进入夏天标志性的是“立夏”，而夏至表示白天最长。"
+  }
+]

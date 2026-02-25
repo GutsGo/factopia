@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cr_1",
+    "type": "single_image_to_text",
+    "prompt": "这是什么农作物？",
+    "image": "🌽",
+    "options": [
+      "玉米",
+      "小麦",
+      "水稻",
+      "大豆"
+    ],
+    "answer": "玉米",
+    "explanation": "常见的黄色玉米棒。"
+  },
+  {
+    "id": "cr_2",
+    "type": "true_false_image",
+    "prompt": "这是水稻吗？",
+    "image": "🌾",
+    "answer": true,
+    "explanation": "结满稻穗的水稻。"
+  }
+]

@@ -1,0 +1,852 @@
+[
+  {
+    "id": "cl_1",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/byd.png",
+    "options": ["比亚迪", "蔚来", "小鹏", "理想"],
+    "answer": "比亚迪",
+    "explanation": "比亚迪（BYD）是全球销量领先的中国新能源汽车龙头品牌。"
+  },
+  {
+    "id": "cl_2",
+    "type": "true_false_image",
+    "prompt": "这个标志属于蔚来吗？",
+    "image": "/images/car-logos/nio.png",
+    "answer": true,
+    "explanation": "标志上半部分代表天空，下半部分代表道路，这正是蔚来（NIO）的品牌标志。"
+  },
+  {
+    "id": "cl_3",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/xpeng.png",
+    "options": ["理想", "小鹏", "零跑", "哪吒"],
+    "answer": "小鹏",
+    "explanation": "小鹏汽车的Logo形似展翅飞翔的`X`，代表探索与未来。"
+  },
+  {
+    "id": "cl_4",
+    "type": "true_false_image",
+    "prompt": "这个标志属于问界吗？",
+    "image": "/images/car-logos/li-auto.png",
+    "answer": false,
+    "explanation": "其实这是理想汽车的标志，其Logo形似字母`L`。"
+  },
+  {
+    "id": "cl_5",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/zeekr.png",
+    "options": ["极氪", "领克", "极星", "沃尔沃"],
+    "answer": "极氪",
+    "explanation": "极氪（ZEEKR）是吉利旗下的高端智能纯电品牌。"
+  },
+  {
+    "id": "cl_6",
+    "type": "true_false_image",
+    "prompt": "这个标志属于问界吗？",
+    "image": "/images/car-logos/aito.png",
+    "answer": true,
+    "explanation": "问界（AITO）是鸿蒙智行旗下的高端新能源品牌。"
+  },
+  {
+    "id": "cl_7",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/leapmotor.png",
+    "options": ["零跑", "哪吒", "深蓝", "阿维塔"],
+    "answer": "零跑",
+    "explanation": "零跑汽车（Leapmotor）是一家注重全域自研的新势力车企。"
+  },
+  {
+    "id": "cl_8",
+    "type": "true_false_image",
+    "prompt": "这个标志属于阿维塔吗？",
+    "image": "/images/car-logos/neta.png",
+    "answer": false,
+    "explanation": "其实这是哪吒汽车的标志，形似喷射的火花或树状结构。"
+  },
+  {
+    "id": "cl_9",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/xiaomi.png",
+    "options": ["小米汽车", "苹果汽车", "华为", "百度"],
+    "answer": "小米汽车",
+    "explanation": "小米汽车的标志沿用了小米经典的`mi`字Logo，首款车型为SU7。"
+  },
+  {
+    "id": "cl_10",
+    "type": "true_false_image",
+    "prompt": "这个标志属于阿维塔吗？",
+    "image": "/images/car-logos/avatr.webp",
+    "answer": true,
+    "explanation": "阿维塔是由长安、华为、宁德时代共同打造的高端智能品牌。"
+  },
+  {
+    "id": "cl_11",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/deepal.png",
+    "options": ["深蓝", "启源", "昊铂", "埃安"],
+    "answer": "深蓝",
+    "explanation": "深蓝汽车（Deepal）是长安旗下的新能源品牌，标志形似倒置的三角形结晶。"
+  },
+  {
+    "id": "cl_12",
+    "type": "true_false_image",
+    "prompt": "这个标志属于方程豹吗？",
+    "image": "/images/car-logos/yangwang.png",
+    "answer": false,
+    "explanation": "其实这是仰望汽车的标志，来源于甲骨文中的`电`字。"
+  },
+  {
+    "id": "cl_13",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/fangchengbao.png",
+    "options": ["方程豹", "仰望", "腾势", "极狐"],
+    "answer": "方程豹",
+    "explanation": "方程豹是比亚迪旗下的专业个性化品牌，主打新能源越野。"
+  },
+  {
+    "id": "cl_14",
+    "type": "true_false_image",
+    "prompt": "这个标志属于腾势吗？",
+    "image": "/images/car-logos/denza.png",
+    "answer": true,
+    "explanation": "腾势（DENZA）由比亚迪主导，标志中心形似一滴水，象征新能源。"
+  },
+  {
+    "id": "cl_15",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/voyah.png",
+    "options": ["岚图", "智己", "埃安", "极氪"],
+    "answer": "岚图",
+    "explanation": "岚图（VOYAH）是东风汽车旗下的高端新能源品牌，标志如展翅的鲲鹏。"
+  },
+  {
+    "id": "cl_16",
+    "type": "true_false_image",
+    "prompt": "这个标志属于埃安吗？",
+    "image": "/images/car-logos/im.png",
+    "answer": false,
+    "explanation": "其实这是智己汽车（IM Motors）的标志，由上汽、张江高科和阿里巴巴打造。"
+  },
+  {
+    "id": "cl_17",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/arcfox.png",
+    "options": ["极狐", "极越", "极氪", "极星"],
+    "answer": "极狐",
+    "explanation": "极狐（ARCFOX）是北汽蓝谷旗下的高端智能新能源汽车品牌，Logo形似北极狐。"
+  },
+  {
+    "id": "cl_18",
+    "type": "true_false_image",
+    "prompt": "这个标志属于埃安吗？",
+    "image": "/images/car-logos/aion.png",
+    "answer": true,
+    "explanation": "埃安（AION）是广汽集团旗下的新能源汽车品牌，Logo中间是星星的变体。"
+  },
+  {
+    "id": "cl_19",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/hyper.png",
+    "options": ["昊铂", "埃安", "传祺", "深蓝"],
+    "answer": "昊铂",
+    "explanation": "昊铂（Hyper）是广汽埃安旗下的高端豪华新能源品牌。"
+  },
+  {
+    "id": "cl_20",
+    "type": "true_false_image",
+    "prompt": "这个标志属于享界吗？",
+    "image": "/images/car-logos/luxeed.png",
+    "answer": false,
+    "explanation": "其实这是智界（Luxeed）的标志，由华为与奇瑞合作打造。"
+  },
+  {
+    "id": "cl_21",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/geely.png",
+    "options": ["吉利", "长城", "长安", "奇瑞"],
+    "answer": "吉利",
+    "explanation": "吉利汽车的标志由多个盾牌形的小块组成，寓意安全与品质。"
+  },
+  {
+    "id": "cl_22",
+    "type": "true_false_image",
+    "prompt": "这个标志属于长安吗？",
+    "image": "/images/car-logos/changan.png",
+    "answer": true,
+    "explanation": "长安汽车的经典V字型标志，寓意Victory（胜利）和Value（价值）。"
+  },
+  {
+    "id": "cl_23",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/chery.png",
+    "options": ["奇瑞", "长安", "名爵", "奔腾"],
+    "answer": "奇瑞",
+    "explanation": "奇瑞汽车的标志是以字母`C`、`A`、`C`组合而成，代表Chery Automobile Company。"
+  },
+  {
+    "id": "cl_24",
+    "type": "true_false_image",
+    "prompt": "这个标志属于哈弗吗？",
+    "image": "/images/car-logos/gwm.png",
+    "answer": false,
+    "explanation": "其实这是长城汽车（GWM）的标志，形似烽火台。"
+  },
+  {
+    "id": "cl_25",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/haval.png",
+    "options": ["哈弗", "坦克", "魏牌", "欧拉"],
+    "answer": "哈弗",
+    "explanation": "哈弗（HAVAL）是长城汽车旗下的主力SUV品牌，标志为英文字母设计。"
+  },
+  {
+    "id": "cl_26",
+    "type": "true_false_image",
+    "prompt": "这个标志属于坦克吗？",
+    "image": "/images/car-logos/tank.png",
+    "answer": true,
+    "explanation": "坦克（TANK）是长城汽车旗下的越野品牌，标志像是一个硬派的T型头盔。"
+  },
+  {
+    "id": "cl_27",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/wey.png",
+    "options": ["魏牌", "林肯", "红旗", "凯迪拉克"],
+    "answer": "魏牌",
+    "explanation": "魏牌（WEY）是长城的高端品牌，标志灵感来自保定直隶总督署门前的高大旗杆。"
+  },
+  {
+    "id": "cl_28",
+    "type": "true_false_image",
+    "prompt": "这个标志属于五菱吗？",
+    "image": "/images/car-logos/ora.png",
+    "answer": false,
+    "explanation": "其实这是欧拉（ORA）的标志，长城旗下的纯电品牌，Logo形似感叹号。"
+  },
+  {
+    "id": "cl_29",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/hongqi.png",
+    "options": ["红旗", "奔腾", "长安", "荣威"],
+    "answer": "红旗",
+    "explanation": "红旗的标志犹如一面迎风招展的红旗，是中国一汽的高端品牌。"
+  },
+  {
+    "id": "cl_30",
+    "type": "true_false_image",
+    "prompt": "这个标志属于荣威吗？",
+    "image": "/images/car-logos/roewe.png",
+    "answer": true,
+    "explanation": "荣威（ROEWE）是上汽旗下的品牌，标志为双狮护卫华表的盾形设计。"
+  },
+  {
+    "id": "cl_31",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/mg.png",
+    "options": ["名爵", "罗孚", "MINI", "捷豹"],
+    "answer": "名爵",
+    "explanation": "名爵（MG）带有八角形标志，源自英国，现为上汽集团旗下品牌。"
+  },
+  {
+    "id": "cl_32",
+    "type": "true_false_image",
+    "prompt": "这个标志属于宝骏吗？",
+    "image": "/images/car-logos/wuling.png",
+    "answer": false,
+    "explanation": "其实这是五菱的标志，经典的五个红色菱形组成`W`形飞鸟。"
+  },
+  {
+    "id": "cl_33",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/baojun.png",
+    "options": ["宝骏", "五菱", "长安", "东风"],
+    "answer": "宝骏",
+    "explanation": "宝骏的新钻石标简约现代，是上汽通用五菱旗下的品牌。"
+  },
+  {
+    "id": "cl_34",
+    "type": "true_false_image",
+    "prompt": "这个标志属于领克吗？",
+    "image": "/images/car-logos/lynkco.png",
+    "answer": true,
+    "explanation": "领克（LYNK & CO）由吉利与沃尔沃合资成立，标志简洁富有科技感。"
+  },
+  {
+    "id": "cl_35",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/exeed.png",
+    "options": ["星途", "捷途", "奇瑞", "极越"],
+    "answer": "星途",
+    "explanation": "星途（EXEED）是奇瑞旗下的高端品牌，使用英文字母作为标志。"
+  },
+  {
+    "id": "cl_36",
+    "type": "true_false_image",
+    "prompt": "这个标志属于奇瑞吗？",
+    "image": "/images/car-logos/jetour.png",
+    "answer": false,
+    "explanation": "其实这是捷途（JETOUR）的标志，主打`旅行+`的奇瑞子品牌。"
+  },
+  {
+    "id": "cl_37",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/faw.png",
+    "options": ["一汽", "东风", "上汽", "北汽"],
+    "answer": "一汽",
+    "explanation": "中国一汽的标志中心有`1`字形，两边似鹰翼。"
+  },
+  {
+    "id": "cl_38",
+    "type": "true_false_image",
+    "prompt": "这个标志属于东风吗？",
+    "image": "/images/car-logos/dongfeng.png",
+    "answer": true,
+    "explanation": "东风汽车的标志如同两个旋转的春燕，象征东风送暖。"
+  },
+  {
+    "id": "cl_39",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/gac.png",
+    "options": ["广汽", "北汽", "长安", "江淮"],
+    "answer": "广汽",
+    "explanation": "广汽集团（GAC）的标志是变形的`G`字母。"
+  },
+  {
+    "id": "cl_40",
+    "type": "true_false_image",
+    "prompt": "这个标志属于广汽吗？",
+    "image": "/images/car-logos/baic.png",
+    "answer": false,
+    "explanation": "其实这是北汽（BAIC）的标志，形似`北`字。"
+  },
+  {
+    "id": "cl_41",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/stelato.png",
+    "options": ["享界", "问界", "智界", "尊界"],
+    "answer": "享界",
+    "explanation": "享界（STELATO）是华为与北汽合作推出的全景智慧旗舰品牌。"
+  },
+  {
+    "id": "cl_42",
+    "type": "true_false_image",
+    "prompt": "这个标志属于iCAR吗？",
+    "image": "/images/car-logos/icar.png",
+    "answer": true,
+    "explanation": "iCAR是奇瑞旗下的首个新能源纯电品牌，主打潮酷风格。"
+  },
+  {
+    "id": "cl_43",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/qiyuan.png",
+    "options": ["启源", "深蓝", "阿维塔", "极越"],
+    "answer": "启源",
+    "explanation": "长安启源（Qiyuan）的标志由0和1组成，代表数字化的起源。"
+  },
+  {
+    "id": "cl_44",
+    "type": "true_false_image",
+    "prompt": "这个标志属于集度吗？",
+    "image": "/images/car-logos/jiyue.png",
+    "answer": false,
+    "explanation": "其实这是极越（JiYue）的标志，由吉利与百度联合打造的高阶智驾品牌。"
+  },
+  {
+    "id": "cl_45",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/livan.png",
+    "options": ["睿蓝", "几何", "银河", "极氪"],
+    "answer": "睿蓝",
+    "explanation": "睿蓝汽车（Livan）是吉利旗下的换电新能源品牌。"
+  },
+  {
+    "id": "cl_46",
+    "type": "true_false_image",
+    "prompt": "这个标志属于重汽VGV吗？",
+    "image": "/images/car-logos/vgv.png",
+    "answer": true,
+    "explanation": "VGV是中国重汽旗下的轻型汽车品牌。"
+  },
+  {
+    "id": "cl_47",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/fengxing.png",
+    "options": ["风行", "风神", "启辰", "岚图"],
+    "answer": "风行",
+    "explanation": "东风风行使用了焕新的`劲狮`标作为其品牌标识。"
+  },
+  {
+    "id": "cl_48",
+    "type": "true_false_image",
+    "prompt": "这个标志属于日产吗？",
+    "image": "/images/car-logos/venucia.png",
+    "answer": false,
+    "explanation": "其实这是启辰（Venucia）的标志，标志中有五角星元素，现为东风日产旗下。"
+  },
+  {
+    "id": "cl_49",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/maxus.png",
+    "options": ["大通", "荣威", "名爵", "五菱"],
+    "answer": "大通",
+    "explanation": "上汽大通（MAXUS）的标志由三个相互连接的三角形组成。"
+  },
+  {
+    "id": "cl_50",
+    "type": "true_false_image",
+    "prompt": "这个标志属于传祺吗？",
+    "image": "/images/car-logos/trumpchi.png",
+    "answer": true,
+    "explanation": "传祺（Trumpchi）是广汽乘用车旗下的品牌，标志为圆滑的G形。"
+  },
+  {
+    "id": "cl_51",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/porsche.png",
+    "options": ["保时捷", "法拉利", "兰博基尼", "福特"],
+    "answer": "保时捷",
+    "explanation": "保时捷盾徽正中央是一匹跃动的黑马，周围有鹿角和红黑条纹。"
+  },
+  {
+    "id": "cl_52",
+    "type": "true_false_image",
+    "prompt": "这个标志属于兰博基尼吗？",
+    "image": "/images/car-logos/ferrari.png",
+    "answer": false,
+    "explanation": "其实这是法拉利的跃马标志，底色为黄色。"
+  },
+  {
+    "id": "cl_53",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/lamborghini.png",
+    "options": ["兰博基尼", "法拉利", "玛莎拉蒂", "保时捷"],
+    "answer": "兰博基尼",
+    "explanation": "兰博基尼的标志是一头充满力量、正向对方攻击的斗牛。"
+  },
+  {
+    "id": "cl_54",
+    "type": "true_false_image",
+    "prompt": "这个标志属于玛莎拉蒂吗？",
+    "image": "/images/car-logos/maserati.png",
+    "answer": true,
+    "explanation": "玛莎拉蒂的标志是一把经典的海神三叉戟。"
+  },
+  {
+    "id": "cl_55",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/aston-martin.png",
+    "options": ["阿斯顿·马丁", "宾利", "克莱斯勒", "捷豹"],
+    "answer": "阿斯顿·马丁",
+    "explanation": "阿斯顿·马丁的标志是展翅飞翔的大鹏，印有Aston Martin英文字样。"
+  },
+  {
+    "id": "cl_56",
+    "type": "true_false_image",
+    "prompt": "这个标志属于劳斯莱斯吗？",
+    "image": "/images/car-logos/bentley.png",
+    "answer": false,
+    "explanation": "其实这是宾利（Bentley）的标志，中间是字母`B`配以飞翼。"
+  },
+  {
+    "id": "cl_57",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/rolls-royce.png",
+    "options": ["劳斯莱斯", "宾利", "迈巴赫", "凯迪拉克"],
+    "answer": "劳斯莱斯",
+    "explanation": "劳斯莱斯的标志是重叠的两个`R`，车头还有著名的欢庆女神雕像。"
+  },
+  {
+    "id": "cl_58",
+    "type": "true_false_image",
+    "prompt": "这个标志属于布加迪吗？",
+    "image": "/images/car-logos/bugatti.png",
+    "answer": true,
+    "explanation": "布加迪的标志是一个红色的椭圆形，里面包含了创始人名字的缩写EB。"
+  },
+  {
+    "id": "cl_59",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/mclaren.png",
+    "options": ["迈凯伦", "迈巴赫", "玛莎拉蒂", "路特斯"],
+    "answer": "迈凯伦",
+    "explanation": "迈凯伦（McLaren）的标志像一道红色的弯月飞镖，极具速度感。"
+  },
+  {
+    "id": "cl_60",
+    "type": "true_false_image",
+    "prompt": "这个标志属于布加迪吗？",
+    "image": "/images/car-logos/pagani.png",
+    "answer": false,
+    "explanation": "其实这是顶级跑车帕加尼（Pagani）的标志。"
+  },
+  {
+    "id": "cl_61",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/mercedes-benz.png",
+    "options": ["奔驰", "宝马", "奥迪", "大众"],
+    "answer": "奔驰",
+    "explanation": "梅赛德斯-奔驰的标志是著名的三叉星徽，象征海陆空全方位发展。"
+  },
+  {
+    "id": "cl_62",
+    "type": "true_false_image",
+    "prompt": "这个标志属于宝马吗？",
+    "image": "/images/car-logos/bmw.png",
+    "answer": true,
+    "explanation": "宝马（BMW）的标志是蓝白相间的螺旋桨图案，代表其源于航空发动机厂的历史。"
+  },
+  {
+    "id": "cl_63",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/audi.png",
+    "options": ["奥迪", "奥运", "大众", "斯柯达"],
+    "answer": "奥迪",
+    "explanation": "奥迪的四环标志代表了合并形成汽车联盟的四家公司。"
+  },
+  {
+    "id": "cl_64",
+    "type": "true_false_image",
+    "prompt": "这个标志属于英菲尼迪吗？",
+    "image": "/images/car-logos/lexus.png",
+    "answer": false,
+    "explanation": "其实这是雷克萨斯（Lexus）的标志，字母L在椭圆之中。"
+  },
+  {
+    "id": "cl_65",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/cadillac.png",
+    "options": ["凯迪拉克", "林肯", "保时捷", "标致"],
+    "answer": "凯迪拉克",
+    "explanation": "凯迪拉克的标志是著名的花冠盾形徽章，象征着其皇家贵族的传统。"
+  },
+  {
+    "id": "cl_66",
+    "type": "true_false_image",
+    "prompt": "这个标志属于林肯吗？",
+    "image": "/images/car-logos/lincoln.png",
+    "answer": true,
+    "explanation": "林肯汽车的标志是一个矩形中含有一颗闪闪发光的星辰。"
+  },
+  {
+    "id": "cl_67",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/volvo.png",
+    "options": ["沃尔沃", "日产", "福特", "雷诺"],
+    "answer": "沃尔沃",
+    "explanation": "沃尔沃（Volvo）的标志是古罗马神话中铁神的符号，斜跨着一条对角线。"
+  },
+  {
+    "id": "cl_68",
+    "type": "true_false_image",
+    "prompt": "这个标志属于吉普（Jeep）吗？",
+    "image": "/images/car-logos/land-rover.png",
+    "answer": false,
+    "explanation": "其实这是路虎（Land Rover）的标志，经典的绿色椭圆形设计。"
+  },
+  {
+    "id": "cl_69",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/jaguar.png",
+    "options": ["捷豹", "标致", "福特", "保时捷"],
+    "answer": "捷豹",
+    "explanation": "捷豹（Jaguar）的标志是一只纵身跳跃的`美洲豹`。"
+  },
+  {
+    "id": "cl_70",
+    "type": "true_false_image",
+    "prompt": "这个标志属于阿尔法·罗密欧吗？",
+    "image": "/images/car-logos/alfa-romeo.png",
+    "answer": true,
+    "explanation": "阿尔法·罗密欧的标志左边是红十字，右边是吞噬敌人的食人蛇。"
+  },
+  {
+    "id": "cl_71",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/volkswagen.png",
+    "options": ["大众", "本田", "现代", "丰田"],
+    "answer": "大众",
+    "explanation": "大众汽车（Volkswagen）的标志由V和W两个字母重叠组成。"
+  },
+  {
+    "id": "cl_72",
+    "type": "true_false_image",
+    "prompt": "这个标志属于雪佛兰吗？",
+    "image": "/images/car-logos/ford.png",
+    "answer": false,
+    "explanation": "其实这是福特（Ford）的标志，经典的蓝色椭圆与优雅的字体。"
+  },
+  {
+    "id": "cl_73",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/chevrolet.png",
+    "options": ["雪佛兰", "林肯", "别克", "克莱斯勒"],
+    "answer": "雪佛兰",
+    "explanation": "雪佛兰的标志是一个金色的领结（金领结）。"
+  },
+  {
+    "id": "cl_74",
+    "type": "true_false_image",
+    "prompt": "这个标志属于别克吗？",
+    "image": "/images/car-logos/buick.png",
+    "answer": true,
+    "explanation": "别克（Buick）的标志是三个呈阶梯状排列的盾牌。"
+  },
+  {
+    "id": "cl_75",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/peugeot.png",
+    "options": ["标致", "捷豹", "法拉利", "兰博基尼"],
+    "answer": "标致",
+    "explanation": "标致（Peugeot）的标志是一只站立的狮子。"
+  },
+  {
+    "id": "cl_76",
+    "type": "true_false_image",
+    "prompt": "这个标志属于雷诺吗？",
+    "image": "/images/car-logos/citroen.png",
+    "answer": false,
+    "explanation": "其实这是雪铁龙的标志，形似两个向上的`人`字形齿轮。"
+  },
+  {
+    "id": "cl_77",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/renault.png",
+    "options": ["雷诺", "雪铁龙", "标致", "欧宝"],
+    "answer": "雷诺",
+    "explanation": "雷诺（Renault）的标志是四个菱形拼成的空心菱形图案。"
+  },
+  {
+    "id": "cl_78",
+    "type": "true_false_image",
+    "prompt": "这个标志属于菲亚特吗？",
+    "image": "/images/car-logos/fiat.png",
+    "answer": true,
+    "explanation": "菲亚特（FIAT）的标志是四个字母组合的简约设计。"
+  },
+  {
+    "id": "cl_79",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/jeep.png",
+    "options": ["吉普", "路虎", "哈弗", "悍马"],
+    "answer": "吉普",
+    "explanation": "吉普（Jeep）经常使用简洁的英文字母作为品牌标识。"
+  },
+  {
+    "id": "cl_80",
+    "type": "true_false_image",
+    "prompt": "这个标志属于大众吗？",
+    "image": "/images/car-logos/skoda.png",
+    "answer": false,
+    "explanation": "其实这是斯柯达（Skoda）的标志，中心是一支带有翅膀的飞箭。"
+  },
+  {
+    "id": "cl_81",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/toyota.png",
+    "options": ["丰田", "本田", "日产", "马自达"],
+    "answer": "丰田",
+    "explanation": "丰田的标志由三个椭圆重叠组成，寓意客户与厂家的心连在一起。"
+  },
+  {
+    "id": "cl_82",
+    "type": "true_false_image",
+    "prompt": "这个标志属于本田吗？",
+    "image": "/images/car-logos/honda.png",
+    "answer": true,
+    "explanation": "本田（Honda）的标志是一个大写的`H`，代表`Honda`拼音的首字母。"
+  },
+  {
+    "id": "cl_83",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/nissan.png",
+    "options": ["日产", "丰田", "马自达", "雷克萨斯"],
+    "answer": "日产",
+    "explanation": "日产（Nissan）的标志是包含英文字母NISSAN的圆形标识，代表朝阳。"
+  },
+  {
+    "id": "cl_84",
+    "type": "true_false_image",
+    "prompt": "这个标志属于铃木吗？",
+    "image": "/images/car-logos/mazda.png",
+    "answer": false,
+    "explanation": "其实这是马自达（Mazda）的标志，椭圆中展现出海鸥飞翔的M型态。"
+  },
+  {
+    "id": "cl_85",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/subaru.png",
+    "options": ["斯巴鲁", "铃木", "丰田", "三菱"],
+    "answer": "斯巴鲁",
+    "explanation": "斯巴鲁（Subaru）的标志是六连星图案，代表金牛座的昴星团。"
+  },
+  {
+    "id": "cl_86",
+    "type": "true_false_image",
+    "prompt": "这个标志属于铃木吗？",
+    "image": "/images/car-logos/suzuki.png",
+    "answer": true,
+    "explanation": "铃木（Suzuki）的标志是其英文名首字母S的变体。"
+  },
+  {
+    "id": "cl_87",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/mitsubishi.png",
+    "options": ["三菱", "奔驰", "斯巴鲁", "铃木"],
+    "answer": "三菱",
+    "explanation": "三菱（Mitsubishi）的标志是三个红色菱形拼成的图案。"
+  },
+  {
+    "id": "cl_88",
+    "type": "true_false_image",
+    "prompt": "这个标志属于起亚吗？",
+    "image": "/images/car-logos/hyundai.png",
+    "answer": false,
+    "explanation": "其实这是现代（Hyundai）的标志，倾斜的H代表两人握手。"
+  },
+  {
+    "id": "cl_89",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/kia.png",
+    "options": ["起亚", "现代", "捷尼赛思", "雪佛兰"],
+    "answer": "起亚",
+    "explanation": "起亚（KIA）新标志去掉了椭圆外环，采用了相连的字母设计，极具科技感。"
+  },
+  {
+    "id": "cl_90",
+    "type": "true_false_image",
+    "prompt": "这个标志属于捷尼赛思吗？",
+    "image": "/images/car-logos/genesis.png",
+    "answer": true,
+    "explanation": "捷尼赛思（Genesis）是现代的高端品牌，标志为展翅的飞翼加盾牌形。"
+  },
+  {
+    "id": "cl_91",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/tesla.png",
+    "options": ["特斯拉", "蔚来", "小鹏", "极星"],
+    "answer": "特斯拉",
+    "explanation": "特斯拉（Tesla）的标志是字母`T`的变形，也代表电动机的转子。"
+  },
+  {
+    "id": "cl_92",
+    "type": "true_false_image",
+    "prompt": "这个标志属于沃尔沃吗？",
+    "image": "/images/car-logos/polestar.png",
+    "answer": false,
+    "explanation": "其实这是极星（Polestar）的标志，两个银色箭头相向组成的极星图案。"
+  },
+  {
+    "id": "cl_93",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/smart.png",
+    "options": ["精灵", "MINI", "极氪", "五菱"],
+    "answer": "精灵",
+    "explanation": "精灵（Smart）现由奔驰和吉利合资运营，全面转型为纯电品牌。"
+  },
+  {
+    "id": "cl_94",
+    "type": "true_false_image",
+    "prompt": "这个标志属于MINI吗？",
+    "image": "/images/car-logos/mini.png",
+    "answer": true,
+    "explanation": "MINI是宝马集团旗下的个性化品牌，标志也是经典的飞翼与字母设计。"
+  },
+  {
+    "id": "cl_95",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/rivian.png",
+    "options": ["Rivian", "Lucid", "特斯拉", "极星"],
+    "answer": "Rivian",
+    "explanation": "Rivian是美国著名的新能源皮卡及SUV制造商品牌。"
+  },
+  {
+    "id": "cl_96",
+    "type": "true_false_image",
+    "prompt": "这个标志属于特斯拉吗？",
+    "image": "/images/car-logos/lucid.png",
+    "answer": false,
+    "explanation": "其实这是Lucid Motors的标志，另一家美国高端新能源电动汽车品牌。"
+  },
+  {
+    "id": "cl_97",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/lotus.png",
+    "options": ["路特斯", "保时捷", "迈凯伦", "法拉利"],
+    "answer": "路特斯",
+    "explanation": "路特斯（Lotus，又译莲花）是著名的跑车品牌，现已全面拥抱电动化。"
+  },
+  {
+    "id": "cl_98",
+    "type": "true_false_image",
+    "prompt": "这个标志属于迈巴赫吗？",
+    "image": "/images/car-logos/maybach.png",
+    "answer": true,
+    "explanation": "迈巴赫的标志是由2个交叉的M围绕在一个球面三角形里，代表超豪华级品质。"
+  },
+  {
+    "id": "cl_99",
+    "type": "single_image_to_text",
+    "prompt": "这是哪个汽车品牌的标志？",
+    "image": "/images/car-logos/acura.png",
+    "options": ["讴歌", "英菲尼迪", "雷克萨斯", "长安"],
+    "answer": "讴歌",
+    "explanation": "讴歌（Acura）是本田的高端品牌，标志像是一个机械卡钳。"
+  },
+  {
+    "id": "cl_100",
+    "type": "true_false_image",
+    "prompt": "这个标志属于雷克萨斯吗？",
+    "image": "/images/car-logos/infiniti.png",
+    "answer": false,
+    "explanation": "其实这是英菲尼迪（Infiniti）的标志，代表一条无限延伸的道路。"
+  }
+]

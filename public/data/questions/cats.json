@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ct_1",
+    "type": "single_image_to_text",
+    "prompt": "这只毛色分布像蓝色的猫品种是？",
+    "image": "🐈",
+    "options": ["英国短毛猫", "布偶猫", "暹罗猫", "加菲猫"],
+    "answer": "英国短毛猫",
+    "explanation": "英短蓝猫毛色呈灰蓝色，不仅可爱而且性格圆融温顺。"
+  },
+  {
+    "id": "ct_2",
+    "type": "true_false_image",
+    "prompt": "这通常代表布偶猫的优雅外表吗？",
+    "image": "🐱",
+    "answer": true,
+    "explanation": "布偶猫有着蓝色的眼睛和长毛，如同仙女一般。"
+  }
+]
