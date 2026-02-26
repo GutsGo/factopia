@@ -1,4 +1,5 @@
 import type { CategoryData, Question } from '@/types/question';
+import { resolveDataUrl } from '@/utils/assets';
 
 // 缓存数据以避免重复加载
 let categoriesCache: CategoryData[] | null = null;
@@ -8,7 +9,7 @@ export async function fetchCategories(): Promise<CategoryData[]> {
   if (categoriesCache) return categoriesCache;
 
   try {
-    const response = await fetch('/data/categories.json');
+    const response = await fetch(resolveDataUrl('/data/categories.json'));
     if (!response.ok) throw new Error('Failed to fetch categories.');
 
     categoriesCache = await response.json();
@@ -31,7 +32,7 @@ export async function fetchQuestionsByLevel(categoryId: string, levelId: string)
 
   if (!questions) {
     try {
-      const response = await fetch(`/data/questions/${categoryId}.json`);
+      const response = await fetch(resolveDataUrl(`/data/questions/${categoryId}.json`));
       if (!response.ok) throw new Error(`Failed to fetch questions for category ${categoryId}.`);
 
       questions = await response.json();

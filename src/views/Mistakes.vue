@@ -47,7 +47,7 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useProgressStore } from '@/stores/useProgressStore'
 import { fetchCategories } from '@/data/questions'
-import { resolveImageUrl, isUrl } from '@/utils/assets'
+import { resolveImageUrl, resolveDataUrl, isUrl } from '@/utils/assets'
 import type { Question, CategoryData, MistakeRecord } from '@/types/question'
 
 const router = useRouter()
@@ -109,7 +109,7 @@ async function loadMistakes() {
       try {
         // 由于当前的 fetchQuestionsByLevel 只需要 category 名字就能加载出那个 json 的全体内容再过滤
         // 我们可以借用它，传入一个假的 level 比如全取或者直接拉取 json
-        const res = await fetch(`/data/questions/${catId}.json`)
+        const res = await fetch(resolveDataUrl(`/data/questions/${catId}.json`))
         if (res.ok) {
            const allQs: Question[] = await res.json()
            qIds.forEach(targetQid => {

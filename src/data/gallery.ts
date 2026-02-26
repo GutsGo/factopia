@@ -1,8 +1,9 @@
 import type { GalleryItem } from '@/types/question';
+import { resolveDataUrl } from '@/utils/assets';
 
 export async function fetchGallery(categoryId: string): Promise<GalleryItem[]> {
   try {
-    const response = await fetch(`/data/gallery/${categoryId}.json`);
+    const response = await fetch(resolveDataUrl(`/data/gallery/${categoryId}.json`));
     if (!response.ok) {
       throw new Error(`Failed to fetch gallery for category ${categoryId}`);
     }

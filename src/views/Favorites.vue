@@ -49,7 +49,7 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useProgressStore } from '@/stores/useProgressStore'
 import { fetchCategories } from '@/data/questions'
-import { resolveImageUrl, isUrl } from '@/utils/assets'
+import { resolveImageUrl, resolveDataUrl, isUrl } from '@/utils/assets'
 import type { Question, CategoryData, MistakeRecord } from '@/types/question'
 
 const router = useRouter()
@@ -98,7 +98,7 @@ async function loadFavorites() {
 
     for (const [catId, qIds] of categoryGroups.entries()) {
       try {
-        const res = await fetch(`/data/questions/${catId}.json`)
+        const res = await fetch(resolveDataUrl(`/data/questions/${catId}.json`))
         if (res.ok) {
            const allQs: Question[] = await res.json()
            qIds.forEach(targetQid => {
