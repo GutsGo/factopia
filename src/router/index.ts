@@ -48,6 +48,17 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(_to, _from, savedPosition) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        if (savedPosition) {
+          resolve(savedPosition);
+        } else {
+          resolve({ top: 0 });
+        }
+      }, 300); // 结合 App.vue 的 <transition> 动画时长（300ms），防止原页面在离场动画结束前发生突兀的滚动
+    });
+  },
 });
 
 router.beforeEach((to, _from) => {
