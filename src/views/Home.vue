@@ -44,7 +44,7 @@
           <span class="emoji">⭐</span> 收藏夹
         </router-link>
         <router-link to="/statistics" class="action-btn">
-          <span class="emoji">📊</span> 统计中心
+          <span class="emoji">🎯</span> 统计中心
         </router-link>
       </div>
 
@@ -57,27 +57,55 @@
         </div>
       </div>
       
-      <main class="categories" v-if="categories.length">
-        <router-link 
-          v-for="cat in categories" 
-          :key="cat.id" 
-          :to="`/levels/${cat.id}`" 
-          class="category-card"
-          :style="{ '--theme-color': getCategoryColor(cat.id) }"
+      <main class="category-sections" v-if="categories.length">
+        <section 
+          v-for="group in groups" 
+          :key="group.id" 
+          class="category-group-section"
+          v-show="group.items.length > 0"
         >
-          <div class="card-inner">
-            <div class="icon-wrapper">
-              <div class="icon">{{ cat.icon }}</div>
-            </div>
-            <h2>{{ cat.name }}</h2>
-            <div class="card-footer">
-              <div class="progress-bar">
-                <div class="progress-fill" :style="{ width: `${getCategoryProgress(cat)}%` }"></div>
-              </div>
-              <svg class="star-icon" viewBox="0 0 24 24" fill="#FFCF40"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div class="section-header">
+            <div class="header-title">
+              <span class="emoji">{{ group.icon }}</span>
+              <h2>{{ group.name }}</h2>
             </div>
           </div>
-        </router-link>
+          <div class="categories-grid">
+            <router-link 
+              v-for="cat in getDisplayItems(group)" 
+              :key="cat.id" 
+              :to="`/levels/${cat.id}`" 
+              class="category-card"
+              :style="{ '--theme-color': getCategoryColor(cat.id) }"
+            >
+              <div class="card-inner">
+                <div class="icon-wrapper">
+                  <div class="icon">{{ cat.icon }}</div>
+                </div>
+                <h2>{{ cat.name }}</h2>
+                <div class="card-footer">
+                  <div class="progress-bar">
+                    <div class="progress-fill" :style="{ width: `${getCategoryProgress(cat)}%` }"></div>
+                  </div>
+                  <svg class="star-icon" viewBox="0 0 24 24" fill="#FFCF40"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+              </div>
+            </router-link>
+
+            <!-- 更多卡片 -->
+            <router-link
+              v-if="group.items.length > 3"
+              :to="`/group/${group.id}`"
+              class="category-card more-card"
+              :style="{ '--theme-color': '#EAEAEA' }"
+            >
+              <div class="card-inner">
+                <div class="icon">➔</div>
+                <h2>查看全部</h2>
+              </div>
+            </router-link>
+          </div>
+        </section>
       </main>
       <div v-else class="loading">正在加载数据...</div>
     </div>
@@ -90,6 +118,21 @@ import { fetchCategories } from '@/data/questions'
 import { useSettingsStore } from '@/stores/useSettingsStore'
 import { useProgressStore } from '@/stores/useProgressStore'
 import type { CategoryData } from '@/types/question'
+
+interface CategoryGroup {
+  id: string;
+  name: string;
+  icon: string;
+  items: CategoryData[];
+}
+
+const groups = ref<CategoryGroup[]>([
+  { id: 'nature', name: '自然与生物', icon: '🌿', items: [] },
+  { id: 'life', name: '生活饮食', icon: '🍔', items: [] },
+  { id: 'geo', name: '人文地标', icon: '🌍', items: [] },
+  { id: 'science', name: '科学探索', icon: '🚀', items: [] },
+  { id: 'others', name: '其他分项', icon: '📦', items: [] }
+])
 
 const categories = ref<CategoryData[]>([])
 const settingsStore = useSettingsStore()
@@ -109,7 +152,14 @@ const categoryColors: Record<string, string> = {
   cats: '#D3C6E6',
   fruits: '#FFBE98',
   solar_terms: '#C9E493',
-  traditional_instruments: '#EEA8B2'
+  traditional_instruments: '#EEA8B2',
+  wild_animals: '#F9C0AB',
+  marine_life: '#A3DDF8',
+  insects: '#E2CA76',
+  dinosaurs: '#B2D8C1',
+  vegetables: '#A7E49D',
+  chinese_food: '#F8B691',
+  space_exploration: '#D2C4ED'
 }
 
 const getCategoryColor = (id: string) => {
@@ -128,8 +178,23 @@ const getCategoryProgress = (cat: CategoryData) => {
   return Math.round((completedCount / cat.levels.length) * 100);
 }
 
+const getDisplayItems = (group: CategoryGroup) => {
+  const sorted = [...group.items].sort((a, b) => {
+    return getCategoryProgress(b) - getCategoryProgress(a);
+  });
+  if (sorted.length <= 3) return sorted;
+  return sorted.slice(0, 3);
+};
+
 onMounted(async () => {
-  categories.value = await fetchCategories()
+  const cats = await fetchCategories()
+  categories.value = cats
+  
+  cats.forEach(cat => {
+    let group = groups.value.find(g => g.id === cat.groupId)
+    if (!group) group = groups.value.find(g => g.id === 'others')
+    if (group) group.items.push(cat)
+  })
 })
 </script>
 
@@ -282,6 +347,31 @@ onMounted(async () => {
   flex-wrap: wrap;
 }
 
+@media (max-width: 500px) {
+  .actions-bar {
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    padding: 0 0.4rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .action-btn {
+    padding: 0.6rem 0.2rem;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    flex: 1;
+    justify-content: center;
+    gap: 0.2rem;
+    white-space: nowrap;
+    min-width: 0; /* 允许 flex 项目缩小到其最小内容大小以下 */
+  }
+  
+  .action-btn .emoji {
+    font-size: 1rem;
+  }
+}
+
 .action-btn {
   background: white;
   border: 2px solid #5E4C41;
@@ -360,17 +450,67 @@ onMounted(async () => {
   font-size: 1.2rem;
 }
 
-.categories {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.8rem;
+.category-sections {
   max-width: 850px;
   margin: 0 auto;
 }
 
+.category-group-section {
+  margin-bottom: 2.5rem;
+}
+
+.section-header {
+  padding: 0 0.5rem 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header-title .emoji {
+  font-size: 1.8rem;
+}
+
+.header-title h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #5E4C41;
+  margin: 0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.more-card .icon {
+  font-size: 1.8rem;
+  color: #8E705B;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.more-card h2 {
+  color: #8E705B;
+}
+.more-card .card-inner {
+  box-shadow: none;
+  border: 2px dashed rgba(94, 76, 65, 0.2);
+  justify-content: center;
+}
+.more-card:hover .card-inner {
+  border-color: rgba(94, 76, 65, 0.4);
+}
+.more-card .card-inner {
+  background: #FDFDFD;
+}
+
 @media (min-width: 500px) {
-  .categories {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  .categories-grid {
     gap: 1.5rem;
   }
 }
@@ -406,6 +546,7 @@ onMounted(async () => {
   justify-content: center;
   padding: 1.2rem 0.5rem 0.8rem 0.5rem;
   transition: background-color 0.3s;
+  box-shadow: 4px 4px 4px rgba(94, 76, 65, 0.1);
 }
 
 .category-card:hover .card-inner {
@@ -439,6 +580,38 @@ onMounted(async () => {
   font-weight: 700;
   margin: 0 0 0.8rem 0;
   color: #5C5552;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (max-width: 500px) {
+  .categories-grid {
+    gap: 0.4rem;
+  }
+  .card-inner {
+    padding: 0.8rem 0.2rem 0.6rem 0.2rem;
+  }
+  .icon-wrapper {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 0.5rem;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .category-card h2 {
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 0 2px;
+  }
+  .more-card .icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
 }
 
 .card-footer {

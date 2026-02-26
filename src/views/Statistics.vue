@@ -2,7 +2,7 @@
   <div class="statistics-container">
     <header class="page-header">
       <button class="back-btn cute-btn" @click="goBack">← 返回首页</button>
-      <h2>📊 统计中心</h2>
+      <h2>🎯 统计中心</h2>
     </header>
 
     <main class="stats-content">

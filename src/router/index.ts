@@ -37,6 +37,12 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/Statistics.vue'),
     meta: { title: 'Factopia - 统计中心' },
   },
+  {
+    path: '/group/:id',
+    name: 'CategoryGroup',
+    component: () => import('@/views/CategoryGroup.vue'),
+    meta: { title: 'Factopia - 分类大全' },
+  },
 ];
 
 const router = createRouter({
