@@ -90,7 +90,7 @@
       <transition name="fade">
         <div v-if="hasAnswered" class="feedback-section">
           <div class="result-text" :class="isCorrect ? 'text-success' : 'text-error'">
-            {{ isCorrect ? '🎉 回答正确 (+10分)' : '❌ 回答错误 (-3分)' }}
+            <span>{{ isCorrect ? '🎉 回答正确 (+10分)' : '❌ 回答错误 (-3分)' }}</span>
             <span v-if="isCorrect && quizStore.comboCount >= 3" class="combo-bonus">🔥连击 +5</span>
           </div>
           <div v-if="question.explanation" class="explanation cute-box">
@@ -417,17 +417,22 @@ function emitNext() {
   font-weight: 900;
   margin-bottom: 1rem;
   text-shadow: 0 2px 0 rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .combo-bonus {
   font-size: 1rem;
   color: #F8B182;
-  margin-left: 0.5rem;
   animation: popIn 0.3s;
   background: #FFFDF8;
   padding: 0.2rem 0.5rem;
   border: 1px solid #5E4C41;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
 .text-success {

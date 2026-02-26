@@ -40,7 +40,7 @@
           {{ getEncouragementText() }}
         </p>
         <div class="actions">
-          <button class="cute-btn primary-btn" @click="goBack">返回关卡</button>
+          <button class="cute-btn secondary-btn" @click="goBack">返回关卡</button>
           <button v-if="hasNextLevel" class="cute-btn primary-btn" @click="goToNextLevel">下一关卡</button>
           <button 
             v-if="quizStore.currentMistakes.length > 0" 
@@ -277,6 +277,7 @@ function getQuestionExplanation(qId: string) {
   font-weight: bold;
   color: #5E4C41;
   box-shadow: 0 4px 0 rgba(94, 76, 65, 0.1);
+  line-height: 1.2;
 }
 .pill span {
   font-size: 1.1rem;
