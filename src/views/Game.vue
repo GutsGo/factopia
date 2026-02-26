@@ -41,6 +41,7 @@
         </p>
         <div class="actions">
           <button class="cute-btn primary-btn" @click="goBack">返回关卡</button>
+          <button v-if="hasNextLevel" class="cute-btn primary-btn" @click="goToNextLevel">下一关卡</button>
           <button 
             v-if="quizStore.currentMistakes.length > 0" 
             class="cute-btn secondary-btn" 
@@ -76,6 +77,7 @@ import { computed, onMounted, ref, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useProgressStore } from '@/stores/useProgressStore'
+import { useSettingsStore } from '@/stores/useSettingsStore'
 import QuestionCard from '@/components/QuestionCard.vue'
 import { fetchCategories, fetchQuestionsByLevel } from '@/data/questions'
 import type { Question } from '@/types/question'
@@ -88,11 +90,14 @@ const props = defineProps<{
 const router = useRouter()
 const quizStore = useQuizStore()
 const progressStore = useProgressStore()
+const settingsStore = useSettingsStore()
 
 const isLoading = ref(true)
 const questions = ref<Question[]>([])
 const isGameOver = ref(false)
 const showMistakeList = ref(false)
+const hasNextLevel = ref(false)
+const nextLevelId = ref('')
 
 // Timer
 const timeSpent = ref(0)
@@ -146,6 +151,7 @@ function nextQuestion() {
 }
 
 async function handleGameOver() {
+  settingsStore.playSound('win')
   // 写入持久化记录
   progressStore.updateLevelProgress(props.category, props.level, quizStore.currentScore, quizStore.getCurrentAccuracy())
   progressStore.addMistakes(props.category, quizStore.currentMistakes)
@@ -160,6 +166,8 @@ async function handleGameOver() {
       const nextLevel = cat.levels[idx + 1]
       if (idx !== -1 && nextLevel) {
         progressStore.unlockNextLevel(props.category, nextLevel.id)
+        hasNextLevel.value = true
+        nextLevelId.value = nextLevel.id
       }
     }
   } catch (err) {
@@ -167,8 +175,16 @@ async function handleGameOver() {
   }
 }
 
+function goToNextLevel() {
+  router.replace(`/game/${props.category}/${nextLevelId.value}`)
+}
+
 function goBack() {
-  router.push(`/levels/${props.category}`)
+  if (window.history.state && window.history.state.back) {
+    router.back()
+  } else {
+    router.replace(`/levels/${props.category}`)
+  }
 }
 
 function getEncouragementText() {
