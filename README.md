@@ -1,5 +1,37 @@
-# Vue 3 + TypeScript + Vite
+# Factopia (趣味百科全书)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Factopia 是一款色彩亮丽、充满趣味的多领域百科全书问答游戏。它通过精美的视觉设计和流畅的交互体验，带你探索从自然生物到科学文明的奥秘。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## ✨ 核心特性
+
+- **多维分类系统**：涵盖自然、生活、地理、科学等五大领域，定期更新趣味内容。
+- **阶梯式关卡**：由浅入深的学习路径，完成当前关卡即可解锁后续挑战。
+- **智能错题本**：自动记录答错题目，方便随时查漏补缺，巩固知识。
+- **数据统计中心**：可视化展示你的学习成就，包括完成度、准确率和各项分类进度。
+- **沉浸式音效**：内置轻快交互音效，提升答题趣味性。
+- **全平台适配**：针对移动端深度优化的响应式设计，随时随地开启知识之旅。
+
+## 🛠️ 技术栈
+
+- **框架**：Vue 3 (Composition API)
+- **开发工具**：Vite + TypeScript
+- **状态管理**：Pinia
+- **样式**：Vanilla CSS (CSS Variables)
+- **本地化存储**：@vueuse/core (LocalStorage)
+- **音效系统**：Web Audio API
+
+## 🚀 快速启动
+
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+```
+
+---
+*版权所有 © 2026 Factopia Team*
