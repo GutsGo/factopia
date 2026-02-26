@@ -19,7 +19,7 @@
             <template v-if="isUrl(question.image)">
               <img 
                 v-show="imageLoaded"
-                :src="question.image" 
+                :src="resolveImageUrl(question.image)" 
                 :key="question.id"
                 :alt="question.prompt" 
                 class="question-image" 
@@ -51,7 +51,7 @@
           >
             <!-- 如果是选图模式，可能 option 就是 emoji 或者 URL -->
             <template v-if="isUrl(option)">
-              <img :src="option" class="option-image" />
+              <img :src="resolveImageUrl(option)" class="option-image" />
             </template>
             <template v-else>
               {{ option }}
@@ -108,6 +108,7 @@ import { ref, watch, computed } from 'vue'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useSettingsStore } from '@/stores/useSettingsStore'
 import { useProgressStore } from '@/stores/useProgressStore'
+import { resolveImageUrl, isUrl } from '@/utils/assets'
 import type { Question } from '@/types/question'
 
 const props = defineProps<{
@@ -132,9 +133,7 @@ const imageLoaded = ref(false)
 
 const isFavorite = computed(() => progressStore.isFavorite(props.categoryId, String(props.question.id)))
 
-function isUrl(str: any) {
-  return typeof str === 'string' && (str.startsWith('http') || str.startsWith('/'))
-}
+
 
 function onImageLoad() {
   imageLoaded.value = true

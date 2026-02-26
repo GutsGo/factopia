@@ -68,7 +68,7 @@
           @click="openGalleryModal(item)"
         >
           <div v-if="item.image" class="gallery-img-wrap">
-            <img :src="item.image" :alt="item.name" loading="lazy" />
+            <img :src="resolveImageUrl(item.image)" :alt="item.name" loading="lazy" />
           </div>
           <div class="gallery-name" :class="{ 'no-img': !item.image }">{{ item.name }}</div>
         </div>
@@ -84,7 +84,7 @@
           <button class="close-btn" @click="closeGalleryModal">✕</button>
           <h2 class="modal-title">{{ selectedGalleryItem.name }}</h2>
           <div v-if="selectedGalleryItem.image" class="modal-img-wrap">
-            <img :src="selectedGalleryItem.image" :alt="selectedGalleryItem.name" />
+             <img :src="resolveImageUrl(selectedGalleryItem.image)" :alt="selectedGalleryItem.name" />
           </div>
           <div class="modal-desc-container">
             <p class="modal-desc">{{ selectedGalleryItem.description }}</p>
@@ -100,6 +100,7 @@ import { ref, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { fetchCategories } from '@/data/questions'
 import { fetchGallery } from '@/data/gallery'
+import { resolveImageUrl } from '@/utils/assets'
 import { useProgressStore } from '@/stores/useProgressStore'
 import type { CategoryData, GalleryItem } from '@/types/question'
 

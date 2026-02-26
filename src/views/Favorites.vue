@@ -29,7 +29,7 @@
           
           <div class="f-image-container" v-if="item.question?.image">
             <template v-if="isUrl(item.question.image)">
-              <img :src="item.question.image" :alt="item.question.prompt" class="f-image" />
+              <img :src="resolveImageUrl(item.question.image)" :alt="item.question.prompt" class="f-image" />
             </template>
             <template v-else>
               <div class="f-emoji">{{ item.question.image }}</div>
@@ -49,6 +49,7 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useProgressStore } from '@/stores/useProgressStore'
 import { fetchCategories } from '@/data/questions'
+import { resolveImageUrl, isUrl } from '@/utils/assets'
 import type { Question, CategoryData, MistakeRecord } from '@/types/question'
 
 const router = useRouter()
@@ -67,9 +68,7 @@ function goBack() {
   router.push('/')
 }
 
-function isUrl(str: string) {
-  return typeof str === 'string' && (str.startsWith('http') || str.startsWith('/'))
-}
+
 
 function formatAnswer(q: Question) {
   if (q.type === 'true_false_image') return q.answer ? '正确' : '错误'
