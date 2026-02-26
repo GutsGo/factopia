@@ -1,0 +1,674 @@
+[
+  {
+    "id": "gal_flowers_1",
+    "name": "牡丹",
+    "description": "牡丹被称为'花中之王'，是中国的传统名花，象征富贵吉祥。🧠 口诀：'花王牡丹大又圆，富贵满堂春意暖。'",
+    "image": "/images/flowers/peony.webp"
+  },
+  {
+    "id": "gal_flowers_2",
+    "name": "梅花",
+    "description": "梅花在严冬绽放，常被用来象征坚韧不拔的品格。🧠 口诀：'冰天雪地独自开，百花未动我先来——越冷越开是梅花。'",
+    "image": "/images/flowers/plum_blossom.webp"
+  },
+  {
+    "id": "gal_flowers_3",
+    "name": "兰花",
+    "description": "兰花被称为'花中君子'，以其淡雅的香气和优美的姿态著称。🧠 口诀：'空谷幽兰不争艳，君子之交淡如兰——记住兰=君子+淡香。'",
+    "image": "/images/flowers/orchid.webp"
+  },
+  {
+    "id": "gal_flowers_4",
+    "name": "菊花",
+    "description": "菊花是秋季的代表花卉，在中国传统文化中象征高洁和长寿。🧠 口诀：'秋风一吹菊花黄，陶渊明东篱下采菊忙——秋天+篱笆=菊花。'",
+    "image": "/images/flowers/chrysanthemum.webp"
+  },
+  {
+    "id": "gal_flowers_5",
+    "name": "茶花",
+    "description": "茶花是中国传统名花，花期极长，从秋季一直开到春季。🧠 口诀：'秋来开花春才谢，四季不休是茶花——记住花期最长=茶花。'",
+    "image": "/images/flowers/camellia.webp"
+  },
+  {
+    "id": "gal_flowers_6",
+    "name": "月季",
+    "description": "月季被称为'花中皇后'，品种繁多且四季开花，花店里的'玫瑰'大多是现代月季。🧠 口诀：'月月都开花不停，花店玫瑰多是它——月季=月月有花季。'",
+    "image": "/images/flowers/chinese_rose.webp"
+  },
+  {
+    "id": "gal_flowers_7",
+    "name": "杜鹃",
+    "description": "杜鹃花在中国分布极广，被誉为'花中西施'，常在春季满山盛开。🧠 口诀：'春到山野杜鹃红，杜鹃鸟叫杜鹃花——鸟名花名共一个。'",
+    "image": "/images/flowers/azalea.webp"
+  },
+  {
+    "id": "gal_flowers_8",
+    "name": "茉莉",
+    "description": "茉莉花香气清婉柔淑，是制作茉莉花茶的主要原料。🧠 口诀：'好一朵美丽的茉莉花——会唱这首歌，就记住茉莉了！'",
+    "image": "/images/flowers/jasmine.webp"
+  },
+  {
+    "id": "gal_flowers_9",
+    "name": "海棠",
+    "description": "海棠花姿态优美，被古代文人雅士称为'花中神仙'。🧠 口诀：'苏东坡写海棠诗，花中神仙不睡觉——文人爱海棠，雅致又飘逸。'",
+    "image": "/images/flowers/chinese_flowering_crabapple.webp"
+  },
+  {
+    "id": "gal_flowers_10",
+    "name": "玉兰",
+    "description": "玉兰在早春绽放，花朵硕大洁白，寓意高洁芬芳。🧠 口诀：'先开花来后长叶，光秃枝头白如玉——记住先花后叶大白花=玉兰。'",
+    "image": "/images/flowers/magnolia.webp"
+  },
+  {
+    "id": "gal_flowers_11",
+    "name": "向日葵",
+    "description": "向日葵的花序会随着太阳转动，象征着阳光和希望。🧠 口诀：'太阳走到哪，我的脸朝哪——向日葵=一直向着太阳的花。'",
+    "image": "/images/flowers/sunflower.webp"
+  },
+  {
+    "id": "gal_flowers_12",
+    "name": "薰衣草",
+    "description": "薰衣草常用于提取精油，法国普罗旺斯以种植薰衣草闻名。🧠 口诀：'紫色花海普罗旺斯，香枕助眠薰衣草——紫色+香味+助眠=薰衣草。'",
+    "image": "/images/flowers/lavender.webp"
+  },
+  {
+    "id": "gal_flowers_13",
+    "name": "铃兰",
+    "description": "铃兰的花朵像一串串白色的小铃铛，花语是'幸福归来'。🧠 口诀：'叮叮当白铃铛挂，幸福归来是铃兰——形状记忆：铃=铃铛，兰=高雅。'",
+    "image": "/images/flowers/lily_of_the_valley.webp"
+  },
+  {
+    "id": "gal_flowers_14",
+    "name": "绣球",
+    "description": "绣球花的花色常会随土壤的酸碱度改变，酸性开蓝色，碱性开粉红色。🧠 口诀：'酸蓝碱粉会变色，一团圆球像绣球——绣球=土壤酸碱度的晴雨表。'",
+    "image": "/images/flowers/hydrangea.webp"
+  },
+  {
+    "id": "gal_flowers_15",
+    "name": "百合",
+    "description": "百合在中国传统文化中常被赋予'百年好合'的美好寓意。🧠 口诀：'百年好合百合花，婚礼必备送一束——百合=百+合，取百年好合之意。'",
+    "image": "/images/flowers/lily.webp"
+  },
+  {
+    "id": "gal_flowers_16",
+    "name": "康乃馨",
+    "description": "康乃馨是世界公认的母亲节之花，象征着母爱与宽容。🧠 口诀：'母亲节送妈妈，花边锯齿皱边边——母亲节+锯齿花边=康乃馨。'",
+    "image": "/images/flowers/carnation.webp"
+  },
+  {
+    "id": "gal_flowers_17",
+    "name": "三色堇",
+    "description": "三色堇通常每朵花有紫、白、黄三色，花瓣上的斑纹像一张猫脸或者人脸。🧠 口诀：'三种颜色一朵花，中间花纹像猫脸——三色堇=3色+猫脸纹路。'",
+    "image": "/images/flowers/pansy.webp"
+  },
+  {
+    "id": "gal_flowers_18",
+    "name": "虞美人",
+    "description": "虞美人是一种观赏花卉，与罂粟同科，但植株全身有绒毛且不含毒品成分。🧠 口诀：'虞姬魂化薄翼花，全身绒毛随风摇——虞美人=楚汉传说+轻薄花瓣+绒毛茎。'",
+    "image": "/images/flowers/corn_poppy.webp"
+  },
+  {
+    "id": "gal_flowers_19",
+    "name": "鸢尾",
+    "description": "鸢尾的花瓣形如鸢鸟的尾巴，法国将其作为国花。🧠 口诀：'法国国花三色旗，鸢尾花瓣像鸟尾——鸢尾=老鹰尾巴+法国国花。'",
+    "image": "/images/flowers/iris.webp"
+  },
+  {
+    "id": "gal_flowers_20",
+    "name": "洋桔梗",
+    "description": "洋桔梗花形酷似玫瑰，但边缘常常带有迷人的波浪褶皱，是流行的切花。🧠 口诀：'像玫瑰却非玫瑰，花边皱皱像裙摆——洋桔梗=假玫瑰+波浪花边。'",
+    "image": "/images/flowers/eustoma.webp"
+  },
+  {
+    "id": "gal_flowers_21",
+    "name": "红掌",
+    "description": "红掌的红色部分其实是它的苞片，真正的花是中间那根黄色的肉穗。🧠 口诀：'一巴掌红光光，中间小棒是真花——红掌=大红苞片像手掌+中间肉穗才是花。'",
+    "image": "/images/flowers/anthurium.webp"
+  },
+  {
+    "id": "gal_flowers_22",
+    "name": "鹤望兰",
+    "description": "鹤望兰因其花形酷似展翅飞翔的仙鹤而得名，也常被称为天堂鸟。🧠 口诀：'花形像仙鹤展翅，又名天堂鸟起飞——鹤望兰=仙鹤+天堂鸟，同一朵花两个名。'",
+    "image": "/images/flowers/strelitzia.webp"
+  },
+  {
+    "id": "gal_flowers_23",
+    "name": "大丽花",
+    "description": "大丽花品种繁多、花型多样且色彩艳丽，是世界名花之一。🧠 口诀：'大大的花型艳丽丽，品种千百说不完——大丽花=大+丽，名字即特征。'",
+    "image": "/images/flowers/dahlia.webp"
+  },
+  {
+    "id": "gal_flowers_24",
+    "name": "朱顶红",
+    "description": "朱顶红常在春季开花，花朵极大，非常具有观赏价值。🧠 口诀：'顶部朱红花超大，喇叭向上冲天开——朱顶红=顶端+红色+大喇叭花。'",
+    "image": "/images/flowers/hippeastrum.webp"
+  },
+  {
+    "id": "gal_flowers_25",
+    "name": "三角梅",
+    "description": "三角梅色彩鲜艳的部分其实是它的苞片，真正的花非常小，长在苞片中间。🧠 口诀：'三片苞叶似花瓣，真花藏在中间小——三角梅=三角形苞片+藏在里面的真花。'",
+    "image": "/images/flowers/bougainvillea.webp"
+  },
+  {
+    "id": "gal_flowers_26",
+    "name": "鸡蛋花",
+    "description": "鸡蛋花因花冠外部洁白、中心鲜黄而得名，在热带地区非常常见。🧠 口诀：'外白内黄像鸡蛋，夏威夷花环它最多——鸡蛋花=鸡蛋配色+热带花环必备。'",
+    "image": "/images/flowers/plumeria.webp"
+  },
+  {
+    "id": "gal_flowers_27",
+    "name": "沙漠玫瑰",
+    "description": "沙漠玫瑰原产于非洲干旱地区，并不是真正的玫瑰，属于夹竹桃科。🧠 口诀：'名叫玫瑰非玫瑰，沙漠喝水靠肥根——沙漠玫瑰=假玫瑰+非洲旱地+粗壮根茎。'",
+    "image": "/images/flowers/desert_rose.webp"
+  },
+  {
+    "id": "gal_flowers_28",
+    "name": "天堂鸟",
+    "description": "天堂鸟即鹤望兰，因其花朵造型如一只准备起飞的神奇鸟类而得此俗名。🧠 口诀：'天堂飞来奇异鸟，其实就是鹤望兰——天堂鸟=鹤望兰的另一个名字，记住两个名字是同一朵花。'",
+    "image": "/images/flowers/bird_of_paradise.webp"
+  },
+  {
+    "id": "gal_flowers_29",
+    "name": "文心兰",
+    "description": "文心兰由于花朵的特殊形状，常被形象地称为'跳舞兰'（Dancing Lady）。🧠 口诀：'裙摆飞扬跳舞女，英文名叫跳舞兰——文心兰=兰中的舞蹈家。'",
+    "image": "/images/flowers/oncidium.webp"
+  },
+  {
+    "id": "gal_flowers_30",
+    "name": "炮仗花",
+    "description": "炮仗花在春季开花，花朵密集如串串鞭炮，常用来装饰庭院墙壁。🧠 口诀：'一串橙红挂墙上，像过年放鞭炮一样——炮仗花=过年鞭炮+橙红色+爬墙植物。'",
+    "image": "/images/flowers/pyrostegia_venusta.webp"
+  },
+  {
+    "id": "gal_flowers_31",
+    "name": "蒲公英",
+    "description": "蒲公英开着黄色的小花，结籽后形成白色的毛球，种子随风飘散。🧠 口诀：'吹一口白绒球飘散，黄花变白球是蒲公英——蒲公英=可以许愿吹的白色毛球。'",
+    "image": "/images/flowers/dandelion.webp"
+  },
+  {
+    "id": "gal_flowers_32",
+    "name": "彼岸花",
+    "description": "彼岸花又称石蒜，它的特点是'花开不见叶，叶生不见花'。🧠 口诀：'花开叶落两不见，秋彼岸上血红开——彼岸花=花叶永远不相遇的悲剧花朵。'",
+    "image": "/images/flowers/spider_lily.webp"
+  },
+  {
+    "id": "gal_flowers_33",
+    "name": "合欢",
+    "description": "合欢花呈粉红色绒毛状，它的叶子在夜间会闭合。🧠 口诀：'叶合欢快入睡觉，粉红绒毛如烟花——合欢=叶子会合拢+粉红烟火状花朵。'",
+    "image": "/images/flowers/silk_tree.webp"
+  },
+  {
+    "id": "gal_flowers_34",
+    "name": "木槿",
+    "description": "木槿花朝开暮落，生命力顽强，被称为'无穷花'，也是韩国的国花。🧠 口诀：'韩国国花叫无穷，朝开暮落不断绝——木槿=韩国+无穷花+朝开暮谢却生生不息。'",
+    "image": "/images/flowers/hibiscus.webp"
+  },
+  {
+    "id": "gal_flowers_35",
+    "name": "金银花",
+    "description": "金银花初开为白色，后转为黄色，因一蒂二花且黄白相映而得名，也是常用中药材。🧠 口诀：'同一枝头黄白花，金色银色共一家——金银花=黄白双色+清热解毒中药。'",
+    "image": "/images/flowers/honeysuckle.webp"
+  },
+  {
+    "id": "gal_flowers_36",
+    "name": "凌霄",
+    "description": "凌霄花生命力强，常攀附于树木或墙壁生长，是优良的垂直绿化植物。🧠 口诀：'凌云直上爬高墙，橘红喇叭朝天吹——凌霄=凌云之志+橘红喇叭形+爬墙高手。'",
+    "image": "/images/flowers/chinese_trumpet_vine.webp"
+  },
+  {
+    "id": "gal_flowers_37",
+    "name": "锦葵",
+    "description": "锦葵花朵通常呈紫粉色，带有深色的脉纹，是一种适应性很强的花卉。🧠 口诀：'锦上添花紫粉色，花瓣上有深色纹——锦葵=锦=有纹路，紫粉色+深色脉纹。'",
+    "image": "/images/flowers/mallow.webp"
+  },
+  {
+    "id": "gal_flowers_38",
+    "name": "飞燕草",
+    "description": "飞燕草因其花形酷似一只只正在飞翔的燕子而得名，是优美的切花材料。🧠 口诀：'蓝紫花穗燕子飞，春燕归来是飞燕草——飞燕草=燕子形花朵+蓝紫花穗。'",
+    "image": "/images/flowers/larkspur.webp"
+  },
+  {
+    "id": "gal_flowers_39",
+    "name": "耧斗菜",
+    "description": "耧斗菜的花瓣带有细长的距，造型独特，像一个个小漏斗。🧠 口诀：'花瓣后有细长距，像古代播种耧的斗——耧斗菜=耧车的斗形+细长的花距=造型独特。'",
+    "image": "/images/flowers/columbine.webp"
+  },
+  {
+    "id": "gal_flowers_40",
+    "name": "荷包牡丹",
+    "description": "荷包牡丹的花朵像一个个小荷包或者悬挂的心，因此英文名为Bleeding Heart。🧠 口诀：'粉色爱心串串挂，英文名叫滴血心——荷包牡丹=心形花朵+荷包形状+浪漫英文名。'",
+    "image": "/images/flowers/bleeding_heart.webp"
+  },
+  {
+    "id": "gal_flowers_41",
+    "name": "花毛茛",
+    "description": "花毛茛又名陆莲花，花色丰富，重瓣多层，形似玫瑰。它原产于地中海地区，是秋冬至春季常见的球根花卉。",
+    "image": "/images/flowers/ranunculus.webp"
+  },
+  {
+    "id": "gal_flowers_42",
+    "name": "香雪球",
+    "description": "香雪球是十字花科植物，花小而密集，有浓郁香气。它常作为花坛镶边植物使用，花色以白色和紫色为主。",
+    "image": "/images/flowers/sweet_alyssum.webp"
+  },
+  {
+    "id": "gal_flowers_43",
+    "name": "六倍利",
+    "description": "六倍利又名半边莲，花色蓝紫，适合花坛边缘种植。其花朵极具特色，上方两瓣、下方三瓣，形态优雅。",
+    "image": "/images/flowers/lobelia_erinus.webp"
+  },
+  {
+    "id": "gal_flowers_44",
+    "name": "鲁冰花",
+    "description": "鲁冰花总状花序高耸，花色鲜艳，常见于牧场与路边。鲁冰花有固氮功效，枯萎后可作绿肥改良土壤。",
+    "image": "/images/flowers/lupin.webp"
+  },
+  {
+    "id": "gal_flowers_45",
+    "name": "紫茉莉",
+    "description": "紫茉莉傍晚开花，花色多样，又名胭脂花。其种子黑色坚硬，果实内有白色粉末，古时用于美容。",
+    "image": "/images/flowers/four_o'clock_flower.webp"
+  },
+  {
+    "id": "gal_flowers_46",
+    "name": "茑萝",
+    "description": "茑萝是攀援植物，叶如羽毛，花朵五角星形。茑萝花色鲜红，极具热带风情，常作篱垣绿化使用。",
+    "image": "/images/flowers/cypress_vine.webp"
+  },
+  {
+    "id": "gal_flowers_47",
+    "name": "福禄考",
+    "description": "福禄考花色丰富，常成片种植，有浓郁香气。它是北美原产的草本植物，花期主要在春夏两季。",
+    "image": "/images/flowers/phlox.webp"
+  },
+  {
+    "id": "gal_flowers_48",
+    "name": "石碱花",
+    "description": "石碱花花色淡粉，可用于制作天然皂，又名肥皂草。其茎叶含皂甙，揉搓后会产生泡沫，古时用来洗涤衣物。",
+    "image": "/images/flowers/soapwort.webp"
+  },
+  {
+    "id": "gal_flowers_49",
+    "name": "剪秋罗",
+    "description": "剪秋罗花瓣边缘呈剪裂状，花色红或白，形态独特。它属于石竹科多年生植物，喜凉爽湿润的生长环境。",
+    "image": "/images/flowers/lychnis.webp"
+  },
+  {
+    "id": "gal_flowers_50",
+    "name": "高雪轮",
+    "description": "高雪轮是石竹科植物，花萼膨大如气囊，花色粉红。其膨大的花萼是重要识别特征，花朵小巧可爱。",
+    "image": "/images/flowers/silene_armeria.webp"
+  },
+  {
+    "id": "gal_flowers_51",
+    "name": "香石竹",
+    "description": "香石竹又名康乃馨，花香浓郁，是母亲节的代表花卉。它原产于地中海沿岸，花色繁多，是世界四大切花之一。",
+    "image": "/images/flowers/carnation.webp"
+  },
+  {
+    "id": "gal_flowers_52",
+    "name": "麦秆菊",
+    "description": "麦秆菊花瓣干燥后不凋谢，质感如麦秆，常用于干花制作。它是菊科植物，原产澳大利亚，花色有红黄橙白等多种。",
+    "image": "/images/flowers/strawflower.webp"
+  },
+  {
+    "id": "gal_flowers_53",
+    "name": "勿忘我",
+    "description": "勿忘我是小蓝花，花朵细小密集，象征真爱与永恒记忆。其花语来源于德国传说，据说恋人临别时赠此花以表思念。",
+    "image": "/images/flowers/forget-me-not.webp"
+  },
+  {
+    "id": "gal_flowers_54",
+    "name": "一串红",
+    "description": "一串红又名鼠尾草，穗状红花串串，常用于花坛布置。它原产巴西，喜温暖向阳环境，是国庆花坛的常见用花。",
+    "image": "/images/flowers/salvia_splendens.webp"
+  },
+  {
+    "id": "gal_flowers_55",
+    "name": "万寿菊",
+    "description": "万寿菊又名臭芙蓉，花色金黄，有驱虫防病功效。它原产墨西哥，是重要的天然色素植物，常用于食品与染色。",
+    "image": "/images/flowers/tagetes_erecta.webp"
+  },
+  {
+    "id": "gal_flowers_56",
+    "name": "孔雀草",
+    "description": "孔雀草是万寿菊的近亲，株型矮小，花色橙黄，图案如孔雀。它极耐热耐旱，是夏季花坛的优良植物。",
+    "image": "/images/flowers/tagetes_patula.webp"
+  },
+  {
+    "id": "gal_flowers_57",
+    "name": "百日草",
+    "description": "百日草花期长达百日，色彩艳丽，极耐热耐旱。它原产墨西哥，是菊科一年生草本，花色涵盖几乎所有暖色系。",
+    "image": "/images/flowers/zinnia_elegans.webp"
+  },
+  {
+    "id": "gal_flowers_58",
+    "name": "波斯菊",
+    "description": "波斯菊花形似菊，花瓣轻盈，常见粉白紫色，迎风摇曳。它原产墨西哥，生长迅速，是秋季野趣花园的代表植物。",
+    "image": "/images/flowers/cosmos_bipinnatus.webp"
+  },
+  {
+    "id": "gal_flowers_59",
+    "name": "硫华菊",
+    "description": "硫华菊是黄色系波斯菊，花色鲜黄或橙，极耐热。与普通波斯菊相比，硫华菊叶片更粗，更适合热带地区种植。",
+    "image": "/images/flowers/cosmos_sulphureus.webp"
+  },
+  {
+    "id": "gal_flowers_60",
+    "name": "凤仙花",
+    "description": "凤仙花又名指甲花，果实成熟后轻触即弹裂散种。其花瓣捣碎后可用来染指甲，是古代女子的天然美甲材料。",
+    "image": "/images/flowers/impatiens_balsamina.webp"
+  },
+  {
+    "id": "gal_flowers_61",
+    "name": "长春花",
+    "description": "长春花又名日日春，常开不败，花色粉白紫红多样。长春花中提取的长春碱是重要的抗癌药物原料。",
+    "image": "/images/flowers/catharanthus_roseus.webp"
+  },
+  {
+    "id": "gal_flowers_62",
+    "name": "矮牵牛",
+    "description": "矮牵牛花形似喇叭，花色繁多，常用于悬挂花盆与花坛。它是茄科植物，原产南美，现已育出数百个园艺品种。",
+    "image": "/images/flowers/petunia_hybrida.webp"
+  },
+  {
+    "id": "gal_flowers_63",
+    "name": "美女樱",
+    "description": "美女樱花序繁密，花色多样，适合地被与花坛栽培。它属于马鞭草科，喜阳光充足的环境，夏秋开花最盛。",
+    "image": "/images/flowers/verbena_hybrida.webp"
+  },
+  {
+    "id": "gal_flowers_64",
+    "name": "金鱼草",
+    "description": "金鱼草花形酷似金鱼，轻捏可开合，花色丰富。它是玄参科植物，喜凉爽气候，是春秋季重要的花坛植物。",
+    "image": "/images/flowers/antirrhinum_majus.webp"
+  },
+  {
+    "id": "gal_flowers_65",
+    "name": "倒挂金钟",
+    "description": "倒挂金钟花朵下垂如钟，双色搭配，又名吊钟海棠。它原产中南美洲，喜凉爽湿润，不耐高温，夏季需遮阴养护。",
+    "image": "/images/flowers/fuchsia_hybrida.webp"
+  },
+  {
+    "id": "gal_flowers_66",
+    "name": "报春花",
+    "description": "报春花早春开花，花色艳丽多样，是报春迎新的象征。它喜冷凉湿润环境，是重要的冬春季室内观赏盆花。",
+    "image": "/images/flowers/primula_malacoides.webp"
+  },
+  {
+    "id": "gal_flowers_67",
+    "name": "仙客来",
+    "description": "仙客来是球根花卉，花瓣向上反折，俗称兔耳花。它原产地中海沿岸，块茎扁圆，花期从秋末延续至翌年春季。",
+    "image": "/images/flowers/cyclamen_persicum.webp"
+  },
+  {
+    "id": "gal_flowers_68",
+    "name": "瓜叶菊",
+    "description": "瓜叶菊叶片形似瓜叶，花色蓝紫粉白，冬春季观赏。它是菊科植物，原产加那利群岛，喜凉爽不耐高温。",
+    "image": "/images/flowers/senecio_cruentus.webp"
+  },
+  {
+    "id": "gal_flowers_69",
+    "name": "非洲菊",
+    "description": "非洲菊又名扶郎花，花大色艳，是世界著名切花之一。它原产南非，花色涵盖红橙黄粉白等，花期几乎全年。",
+    "image": "/images/flowers/gerbera.webp"
+  },
+  {
+    "id": "gal_flowers_70",
+    "name": "非洲紫罗兰",
+    "description": "非洲紫罗兰是室内常见盆栽，花色紫蓝粉，常年可开花。它原产东非，喜散射光，忌叶片沾水，是优良的室内观花植物。",
+    "image": "/images/flowers/african_violet.webp"
+  },
+  {
+    "id": "gal_flowers_71",
+    "name": "虎尾兰",
+    "description": "虎尾兰叶片挺直，边缘金黄，斑纹酷似虎皮，极耐阴耐旱。它是净化空气的优秀室内植物，能有效吸收甲醛等有害气体。",
+    "image": "/images/flowers/snake_plant.webp"
+  },
+  {
+    "id": "gal_flowers_72",
+    "name": "龙舌兰",
+    "description": "龙舌兰叶片肉质尖锐，原产墨西哥，可用于酿造龙舌兰酒。龙舌兰一生只开花一次，花后母株枯死，因此被称为'世纪植物'。",
+    "image": "/images/flowers/agave.webp"
+  },
+  {
+    "id": "gal_flowers_73",
+    "name": "丝兰",
+    "description": "丝兰叶缘有白丝，花序高挑，花朵白色钟形，芳香宜人。它是龙舌兰科植物，与授粉昆虫丝兰蛾存在高度专一的共生关系。",
+    "image": "/images/flowers/yucca.webp"
+  },
+  {
+    "id": "gal_flowers_74",
+    "name": "凤尾兰",
+    "description": "凤尾兰又名凤尾丝兰，花序高如剑，花朵白色钟形。它是常见的园林绿化植物，耐旱耐盐碱，适合海滨绿化。",
+    "image": "/images/flowers/yucca_gloriosa.webp"
+  },
+  {
+    "id": "gal_flowers_75",
+    "name": "文殊兰",
+    "description": "文殊兰是大型球根植物，花白色带红条纹，香气浓郁。其叶片宽大浓绿，花茎直立，是南方园林中常见的景观植物。",
+    "image": "/images/flowers/crinum_asiaticum.webp"
+  },
+  {
+    "id": "gal_flowers_76",
+    "name": "朱蕉",
+    "description": "朱蕉叶色红紫绿相间，是热带观叶植物，又名千年木。它在夏威夷和波利尼西亚文化中具有重要地位，被视为好运象征。",
+    "image": "/images/flowers/cordyline_fruticosa.webp"
+  },
+  {
+    "id": "gal_flowers_77",
+    "name": "龙血树",
+    "description": "龙血树叶片剑形，茎干受伤后会渗出红色树脂，如同鲜血。其红色树脂称为'龙血'，古时被用作颜料和药材。",
+    "image": "/images/flowers/dragon's_blood_tree.webp"
+  },
+  {
+    "id": "gal_flowers_78",
+    "name": "旅人蕉",
+    "description": "旅人蕉叶片呈扇形排列，叶鞘基部可储存雨水，又名扇芭蕉。相传旅行者在荒野中可刺破叶鞘取水饮用，故得名旅人蕉。",
+    "image": "/images/flowers/traveler's_palm.webp"
+  },
+  {
+    "id": "gal_flowers_79",
+    "name": "芭蕉",
+    "description": "芭蕉是大型草本植物，叶片宽大，与香蕉外形相近。芭蕉叶在中国传统文化中象征清凉与夏日，常见于古典园林造景。",
+    "image": "/images/flowers/plantain.webp"
+  },
+  {
+    "id": "gal_flowers_80",
+    "name": "香蕉花",
+    "description": "香蕉花是香蕉的花序，花苞深红色，可食用，营养丰富。香蕉花在东南亚料理中十分常见，可凉拌、炒食或煮汤。",
+    "image": "/images/flowers/banana_flower.webp"
+  },
+  {
+    "id": "gal_flowers_81",
+    "name": "鹤蕉",
+    "description": "鹤蕉又名蝎尾蕉，苞片鲜红或黄色，形态奇特如仙鹤展翅。它原产热带美洲，是重要的热带切花材料，观赏价值极高。",
+    "image": "/images/flowers/heliconia.webp"
+  },
+  {
+    "id": "gal_flowers_82",
+    "name": "姜花",
+    "description": "姜花又名蝴蝶姜，花朵白色芳香，花形似蝴蝶飞舞。其香气清新浓郁，是提取天然香料的重要原料，也是古巴的国花。",
+    "image": "/images/flowers/ginger_lily.webp"
+  },
+  {
+    "id": "gal_flowers_83",
+    "name": "美人蕉",
+    "description": "美人蕉叶片宽大，花色红黄橙，热带风情浓郁。它原产美洲热带，耐水湿，常用于湿地景观与水边绿化。",
+    "image": "/images/flowers/canna_lily.webp"
+  },
+  {
+    "id": "gal_flowers_84",
+    "name": "结香",
+    "description": "结香春季先花后叶，花黄色芳香，茎枝柔韧可打结不断。其茎皮纤维质地优良，是制造高档纸张和钞票纸的重要原料。",
+    "image": "/images/flowers/edgeworthia_chrysantha.webp"
+  },
+  {
+    "id": "gal_flowers_85",
+    "name": "瑞香",
+    "description": "瑞香花小而密集，香气浓郁，冬末春初开花，寓意吉祥。它是中国传统名花，南宋时从庐山引种至宫廷，被誉为'花贼'。",
+    "image": "/images/flowers/daphne_odora.webp"
+  },
+  {
+    "id": "gal_flowers_86",
+    "name": "醉鱼草",
+    "description": "醉鱼草花穗紫色，蜜源丰富，能吸引大量蝴蝶，故名蝴蝶树。其茎叶有毒，古时渔民将其捣碎投入水中用以毒鱼，故名醉鱼草。",
+    "image": "/images/flowers/buddleja_lindleyana.webp"
+  },
+  {
+    "id": "gal_flowers_87",
+    "name": "醉蝶花",
+    "description": "醉蝶花花蕊细长如蜘蛛腿，花色粉紫白，傍晚时分香气更浓。它原产热带美洲，适应性强，自播能力旺盛，是优良的夏秋花卉。",
+    "image": "/images/flowers/cleome_spinosa.webp"
+  },
+  {
+    "id": "gal_flowers_88",
+    "name": "蓝花楹",
+    "description": "蓝花楹树冠满开蓝紫色花，是著名的紫色观花乔木。它原产南美洲，在南非比勒陀利亚、中国广州等地形成壮观的花景大道。",
+    "image": "/images/flowers/jacaranda_mimosifolia.webp"
+  },
+  {
+    "id": "gal_flowers_89",
+    "name": "凤凰木",
+    "description": "凤凰木树冠开展，花朵红橙色鲜艳，又名火树。它原产马达加斯加，被誉为'世界上色彩最丰富的树'，是厦门、汕头的市树。",
+    "image": "/images/flowers/delonix_regia.webp"
+  },
+  {
+    "id": "gal_flowers_90",
+    "name": "刺桐",
+    "description": "刺桐花色鲜红，枝干有刺，先花后叶，是厦门的市花。刺桐在历史上是泉州的别称'刺桐城'的由来，曾是丝绸之路的重要港口。",
+    "image": "/images/flowers/erythrina_variegata.webp"
+  },
+  {
+    "id": "gal_flowers_91",
+    "name": "珊瑚树",
+    "description": "珊瑚树是常绿灌木，白色小花后结红色果实，串串如珊瑚。它耐修剪，隔音防火效果好，是优良的城市绿化和防护植物。",
+    "image": "/images/flowers/viburnum_odoratissimum.webp"
+  },
+  {
+    "id": "gal_flowers_92",
+    "name": "绣球荚蒾",
+    "description": "绣球荚蒾花球大而圆，洁白如雪，是荚蒾属中的观赏佳品。其花球由不育花组成，故无法结实，但观赏效果极为震撼。",
+    "image": "/images/flowers/viburnum_macrocephalum.webp"
+  },
+  {
+    "id": "gal_flowers_93",
+    "name": "锦带花",
+    "description": "锦带花枝条拱形，花粉红至深红，春季盛开，繁花似锦。它是忍冬科灌木，耐寒耐旱，是北方园林中重要的春季观花植物。",
+    "image": "/images/flowers/weigela_florida.webp"
+  },
+  {
+    "id": "gal_flowers_94",
+    "name": "猬实",
+    "description": "猬实花色粉红，果实外被刺毛如刺猬，又名美丽猬实。它是中国特有植物，被誉为'美丽灌木'，在国际园艺界颇受珍视。",
+    "image": "/images/flowers/kolkwitzia_amabilis.webp"
+  },
+  {
+    "id": "gal_flowers_95",
+    "name": "六道木",
+    "description": "六道木枝条横切面可见六条纵纹，花白粉色，花期长。它适应性强，耐修剪，是优良的园林地被和绿篱材料。",
+    "image": "/images/flowers/abelia_biflora.webp"
+  },
+  {
+    "id": "gal_flowers_96",
+    "name": "糯米条",
+    "description": "糯米条花白色细小似米粒，花期夏秋，原产中国。其花后宿存的萼片变为红色，观赏期极长，兼具观花观叶价值。",
+    "image": "/images/flowers/abelia_chinensis.webp"
+  },
+  {
+    "id": "gal_flowers_97",
+    "name": "金缕梅",
+    "description": "金缕梅冬季开花，花瓣细长金黄如缕，药用价值极高。它是金缕梅科的代表植物，提取物广泛用于化妆品和医药行业。",
+    "image": "/images/flowers/hamamelis_mollis.webp"
+  },
+  {
+    "id": "gal_flowers_98",
+    "name": "蜡瓣花",
+    "description": "蜡瓣花早春开黄花，花如蜡质，串状下垂，清新雅致。它是中国原产的落叶灌木，先花后叶，常作早春园林观赏植物。",
+    "image": "/images/flowers/corylopsis_sinensis.webp"
+  },
+  {
+    "id": "gal_flowers_99",
+    "name": "荷包花",
+    "description": "荷包花花形如荷包或拖鞋，色彩斑斓，形态十分可爱。它喜凉爽气候，不耐高温，是冬春季常见的盆栽观花植物。",
+    "image": "/images/flowers/calceolaria.webp"
+  },
+  {
+    "id": "gal_flowers_100",
+    "name": "蒲包花",
+    "description": "蒲包花花瓣两唇膨大如囊袋，花色艳丽多斑点，观赏性强。它与荷包花同属，是重要的冬季室内盆花，花期可达数月。",
+    "image": "/images/flowers/calceolaria.webp"
+  },
+  {
+    "id": "gal_flowers_101",
+    "name": "虾衣花",
+    "description": "虾衣花苞片橙红叠瓦如虾壳，白色小花从中伸出，奇特可爱。它原产墨西哥，常年可开花，是热带地区优良的庭院观赏植物。",
+    "image": "/images/flowers/justicia_brandegeeana.webp"
+  },
+  {
+    "id": "gal_flowers_102",
+    "name": "金苞花",
+    "description": "金苞花苞片金黄色，与虾衣花同属，花期极长，观赏价值高。它喜高温多湿，适合热带和亚热带地区种植，耐阴性较强。",
+    "image": "/images/flowers/pachystachys_lutea.webp"
+  },
+  {
+    "id": "gal_flowers_103",
+    "name": "珊瑚花",
+    "description": "珊瑚花花色鲜红橙，形如珊瑚，是热带地区常见盆栽植物。它原产中美洲，花期较长，喜温暖湿润，不耐寒冷。",
+    "image": "/images/flowers/jatropha_multifida.webp"
+  },
+  {
+    "id": "gal_flowers_104",
+    "name": "五星花",
+    "description": "五星花花朵五瓣如星形，花色红粉白紫，几乎常年开花。它是蜜源植物，能吸引蝴蝶和蜜蜂，适合热带庭院栽培。",
+    "image": "/images/flowers/pentas_lanceolata.webp"
+  },
+  {
+    "id": "gal_flowers_105",
+    "name": "蓝雪花",
+    "description": "蓝雪花花色天蓝清新，花期极长，又名蓝茉莉。它原产南非，耐旱耐热，是南方夏秋季难得的蓝色系观花植物。",
+    "image": "/images/flowers/plumbago_auriculata.webp"
+  },
+  {
+    "id": "gal_flowers_106",
+    "name": "红雪花",
+    "description": "红雪花是蓝雪花的红色近亲，花色玫红，花形相似。它比蓝雪花更耐热，在热带地区表现更为优异，花期更长。",
+    "image": "/images/flowers/plumbago_indica.webp"
+  },
+  {
+    "id": "gal_flowers_107",
+    "name": "白雪花",
+    "description": "白雪花是蓝雪花的白色品种，花色纯白，清雅素净。它与蓝雪花同属白花丹科，栽培管理方式基本相同。",
+    "image": "/images/flowers/plumbago_zeylanica.webp"
+  },
+  {
+    "id": "gal_flowers_108",
+    "name": "茉莉叶蔓",
+    "description": "茉莉叶蔓是攀援性茉莉，花白色芳香，叶形似茉莉。它生长迅速，适合用于棚架和篱垣绿化，兼具观赏与香化效果。",
+    "image": "/images/flowers/jasminum_polyanthum.webp"
+  },
+  {
+    "id": "gal_flowers_109",
+    "name": "硬枝老鸦嘴",
+    "description": "硬枝老鸦嘴直立生长，花紫蓝色，中心黄色，色彩对比鲜明。它是爵床科灌木，耐热耐旱，是热带庭院中常见的观赏植物。",
+    "image": "/images/flowers/thunbergia_erecta.webp"
+  },
+  {
+    "id": "gal_flowers_110",
+    "name": "大花老鸦嘴",
+    "description": "大花老鸦嘴花朵硕大，蓝紫色，是著名的热带攀援观花植物。它生长旺盛，可迅速覆盖棚架，花期长达夏秋两季，观赏效果极佳。",
+    "image": "/images/flowers/thunbergia_grandiflora.webp"
+  },
+  {
+    "id": "gal_flowers_111",
+    "name": "穿心莲",
+    "description": "穿心莲茎叶极苦，是著名的清热解毒中草药植物。其有效成分穿心莲内酯具有抗菌消炎作用，被广泛用于中成药制剂。",
+    "image": "/images/flowers/andrographis_paniculata.webp"
+  },
+  {
+    "id": "gal_flowers_112",
+    "name": "爵床花",
+    "description": "爵床花花色紫粉，苞片明显，是热带常见观赏植物。它原产热带亚洲，耐阴性强，适合作室内或林下地被植物栽培。",
+    "image": "/images/flowers/justicia_procumbens.webp"
+  }
+]

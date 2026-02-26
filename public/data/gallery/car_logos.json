@@ -1,0 +1,302 @@
+[
+  {
+    "id": "gal_car_logos_1",
+    "name": "比亚迪",
+    "description": "比亚迪（BYD）是全球销量领先的中国新能源汽车龙头品牌。",
+    "image": "/images/car-logos/byd.png"
+  },
+  {
+    "id": "gal_car_logos_2",
+    "name": "小鹏",
+    "description": "小鹏汽车的Logo形似展翅飞翔的`X`，代表探索与未来。",
+    "image": "/images/car-logos/xpeng.png"
+  },
+  {
+    "id": "gal_car_logos_3",
+    "name": "极氪",
+    "description": "极氪（ZEEKR）是吉利旗下的高端智能纯电品牌。",
+    "image": "/images/car-logos/zeekr.png"
+  },
+  {
+    "id": "gal_car_logos_4",
+    "name": "零跑",
+    "description": "零跑汽车（Leapmotor）是一家注重全域自研的新势力车企。",
+    "image": "/images/car-logos/leapmotor.png"
+  },
+  {
+    "id": "gal_car_logos_5",
+    "name": "小米汽车",
+    "description": "小米汽车的标志沿用了小米经典的`mi`字Logo，首款车型为SU7。",
+    "image": "/images/car-logos/xiaomi.png"
+  },
+  {
+    "id": "gal_car_logos_6",
+    "name": "深蓝",
+    "description": "深蓝汽车（Deepal）是长安旗下的新能源品牌，标志形似倒置的三角形结晶。",
+    "image": "/images/car-logos/deepal.png"
+  },
+  {
+    "id": "gal_car_logos_7",
+    "name": "方程豹",
+    "description": "方程豹是比亚迪旗下的专业个性化品牌，主打新能源越野。",
+    "image": "/images/car-logos/fangchengbao.png"
+  },
+  {
+    "id": "gal_car_logos_8",
+    "name": "岚图",
+    "description": "岚图（VOYAH）是东风汽车旗下的高端新能源品牌，标志如展翅的鲲鹏。",
+    "image": "/images/car-logos/voyah.png"
+  },
+  {
+    "id": "gal_car_logos_9",
+    "name": "极狐",
+    "description": "极狐（ARCFOX）是北汽蓝谷旗下的高端智能新能源汽车品牌，Logo形似北极狐。",
+    "image": "/images/car-logos/arcfox.png"
+  },
+  {
+    "id": "gal_car_logos_10",
+    "name": "昊铂",
+    "description": "昊铂（Hyper）是广汽埃安旗下的高端豪华新能源品牌。",
+    "image": "/images/car-logos/hyper.png"
+  },
+  {
+    "id": "gal_car_logos_11",
+    "name": "吉利",
+    "description": "吉利汽车的标志由多个盾牌形的小块组成，寓意安全与品质。",
+    "image": "/images/car-logos/geely.png"
+  },
+  {
+    "id": "gal_car_logos_12",
+    "name": "奇瑞",
+    "description": "奇瑞汽车的标志是以字母`C`、`A`、`C`组合而成，代表Chery Automobile Company。",
+    "image": "/images/car-logos/chery.png"
+  },
+  {
+    "id": "gal_car_logos_13",
+    "name": "哈弗",
+    "description": "哈弗（HAVAL）是长城汽车旗下的主力SUV品牌，标志为英文字母设计。",
+    "image": "/images/car-logos/haval.png"
+  },
+  {
+    "id": "gal_car_logos_14",
+    "name": "魏牌",
+    "description": "魏牌（WEY）是长城的高端品牌，标志灵感来自保定直隶总督署门前的高大旗杆。",
+    "image": "/images/car-logos/wey.png"
+  },
+  {
+    "id": "gal_car_logos_15",
+    "name": "红旗",
+    "description": "红旗的标志犹如一面迎风招展的红旗，是中国一汽的高端品牌。",
+    "image": "/images/car-logos/hongqi.png"
+  },
+  {
+    "id": "gal_car_logos_16",
+    "name": "名爵",
+    "description": "名爵（MG）带有八角形标志，源自英国，现为上汽集团旗下品牌。",
+    "image": "/images/car-logos/mg.png"
+  },
+  {
+    "id": "gal_car_logos_17",
+    "name": "宝骏",
+    "description": "宝骏的新钻石标简约现代，是上汽通用五菱旗下的品牌。",
+    "image": "/images/car-logos/baojun.png"
+  },
+  {
+    "id": "gal_car_logos_18",
+    "name": "星途",
+    "description": "星途（EXEED）是奇瑞旗下的高端品牌，使用英文字母作为标志。",
+    "image": "/images/car-logos/exeed.png"
+  },
+  {
+    "id": "gal_car_logos_19",
+    "name": "一汽",
+    "description": "中国一汽的标志中心有`1`字形，两边似鹰翼。",
+    "image": "/images/car-logos/faw.png"
+  },
+  {
+    "id": "gal_car_logos_20",
+    "name": "广汽",
+    "description": "广汽集团（GAC）的标志是变形的`G`字母。",
+    "image": "/images/car-logos/gac.png"
+  },
+  {
+    "id": "gal_car_logos_21",
+    "name": "享界",
+    "description": "享界（STELATO）是华为与北汽合作推出的全景智慧旗舰品牌。",
+    "image": "/images/car-logos/stelato.png"
+  },
+  {
+    "id": "gal_car_logos_22",
+    "name": "启源",
+    "description": "长安启源（Qiyuan）的标志由0和1组成，代表数字化的起源。",
+    "image": "/images/car-logos/qiyuan.png"
+  },
+  {
+    "id": "gal_car_logos_23",
+    "name": "睿蓝",
+    "description": "睿蓝汽车（Livan）是吉利旗下的换电新能源品牌。",
+    "image": "/images/car-logos/livan.png"
+  },
+  {
+    "id": "gal_car_logos_24",
+    "name": "风行",
+    "description": "东风风行使用了焕新的`劲狮`标作为其品牌标识。",
+    "image": "/images/car-logos/fengxing.png"
+  },
+  {
+    "id": "gal_car_logos_25",
+    "name": "大通",
+    "description": "上汽大通（MAXUS）的标志由三个相互连接的三角形组成。",
+    "image": "/images/car-logos/maxus.png"
+  },
+  {
+    "id": "gal_car_logos_26",
+    "name": "保时捷",
+    "description": "保时捷盾徽正中央是一匹跃动的黑马，周围有鹿角和红黑条纹。",
+    "image": "/images/car-logos/porsche.png"
+  },
+  {
+    "id": "gal_car_logos_27",
+    "name": "兰博基尼",
+    "description": "兰博基尼的标志是一头充满力量、正向对方攻击的斗牛。",
+    "image": "/images/car-logos/lamborghini.png"
+  },
+  {
+    "id": "gal_car_logos_28",
+    "name": "阿斯顿·马丁",
+    "description": "阿斯顿·马丁的标志是展翅飞翔的大鹏，印有Aston Martin英文字样。",
+    "image": "/images/car-logos/aston-martin.png"
+  },
+  {
+    "id": "gal_car_logos_29",
+    "name": "劳斯莱斯",
+    "description": "劳斯莱斯的标志是重叠的两个`R`，车头还有著名的欢庆女神雕像。",
+    "image": "/images/car-logos/rolls-royce.png"
+  },
+  {
+    "id": "gal_car_logos_30",
+    "name": "迈凯伦",
+    "description": "迈凯伦（McLaren）的标志像一道红色的弯月飞镖，极具速度感。",
+    "image": "/images/car-logos/mclaren.png"
+  },
+  {
+    "id": "gal_car_logos_31",
+    "name": "奔驰",
+    "description": "梅赛德斯-奔驰的标志是著名的三叉星徽，象征海陆空全方位发展。",
+    "image": "/images/car-logos/mercedes-benz.png"
+  },
+  {
+    "id": "gal_car_logos_32",
+    "name": "奥迪",
+    "description": "奥迪的四环标志代表了合并形成汽车联盟的四家公司。",
+    "image": "/images/car-logos/audi.png"
+  },
+  {
+    "id": "gal_car_logos_33",
+    "name": "凯迪拉克",
+    "description": "凯迪拉克的标志是著名的花冠盾形徽章，象征着其皇家贵族的传统。",
+    "image": "/images/car-logos/cadillac.png"
+  },
+  {
+    "id": "gal_car_logos_34",
+    "name": "沃尔沃",
+    "description": "沃尔沃（Volvo）的标志是古罗马神话中铁神的符号，斜跨着一条对角线。",
+    "image": "/images/car-logos/volvo.png"
+  },
+  {
+    "id": "gal_car_logos_35",
+    "name": "捷豹",
+    "description": "捷豹（Jaguar）的标志是一只纵身跳跃的`美洲豹`。",
+    "image": "/images/car-logos/jaguar.png"
+  },
+  {
+    "id": "gal_car_logos_36",
+    "name": "大众",
+    "description": "大众汽车（Volkswagen）的标志由V和W两个字母重叠组成。",
+    "image": "/images/car-logos/volkswagen.png"
+  },
+  {
+    "id": "gal_car_logos_37",
+    "name": "雪佛兰",
+    "description": "雪佛兰的标志是一个金色的领结（金领结）。",
+    "image": "/images/car-logos/chevrolet.png"
+  },
+  {
+    "id": "gal_car_logos_38",
+    "name": "标致",
+    "description": "标致（Peugeot）的标志是一只站立的狮子。",
+    "image": "/images/car-logos/peugeot.png"
+  },
+  {
+    "id": "gal_car_logos_39",
+    "name": "雷诺",
+    "description": "雷诺（Renault）的标志是四个菱形拼成的空心菱形图案。",
+    "image": "/images/car-logos/renault.png"
+  },
+  {
+    "id": "gal_car_logos_40",
+    "name": "吉普",
+    "description": "吉普（Jeep）经常使用简洁的英文字母作为品牌标识。",
+    "image": "/images/car-logos/jeep.png"
+  },
+  {
+    "id": "gal_car_logos_41",
+    "name": "丰田",
+    "description": "丰田的标志由三个椭圆重叠组成，寓意客户与厂家的心连在一起。",
+    "image": "/images/car-logos/toyota.png"
+  },
+  {
+    "id": "gal_car_logos_42",
+    "name": "日产",
+    "description": "日产（Nissan）的标志是包含英文字母NISSAN的圆形标识，代表朝阳。",
+    "image": "/images/car-logos/nissan.png"
+  },
+  {
+    "id": "gal_car_logos_43",
+    "name": "斯巴鲁",
+    "description": "斯巴鲁（Subaru）的标志是六连星图案，代表金牛座的昴星团。",
+    "image": "/images/car-logos/subaru.png"
+  },
+  {
+    "id": "gal_car_logos_44",
+    "name": "三菱",
+    "description": "三菱（Mitsubishi）的标志是三个红色菱形拼成的图案。",
+    "image": "/images/car-logos/mitsubishi.png"
+  },
+  {
+    "id": "gal_car_logos_45",
+    "name": "起亚",
+    "description": "起亚（KIA）新标志去掉了椭圆外环，采用了相连的字母设计，极具科技感。",
+    "image": "/images/car-logos/kia.png"
+  },
+  {
+    "id": "gal_car_logos_46",
+    "name": "特斯拉",
+    "description": "特斯拉（Tesla）的标志是字母`T`的变形，也代表电动机的转子。",
+    "image": "/images/car-logos/tesla.png"
+  },
+  {
+    "id": "gal_car_logos_47",
+    "name": "精灵",
+    "description": "精灵（Smart）现由奔驰和吉利合资运营，全面转型为纯电品牌。",
+    "image": "/images/car-logos/smart.png"
+  },
+  {
+    "id": "gal_car_logos_48",
+    "name": "Rivian",
+    "description": "Rivian是美国著名的新能源皮卡及SUV制造商品牌。",
+    "image": "/images/car-logos/rivian.png"
+  },
+  {
+    "id": "gal_car_logos_49",
+    "name": "路特斯",
+    "description": "路特斯（Lotus，又译莲花）是著名的跑车品牌，现已全面拥抱电动化。",
+    "image": "/images/car-logos/lotus.png"
+  },
+  {
+    "id": "gal_car_logos_50",
+    "name": "讴歌",
+    "description": "讴歌（Acura）是本田的高端品牌，标志像是一个机械卡钳。",
+    "image": "/images/car-logos/acura.png"
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "id": "gal_fruits_1",
+    "name": "苹果",
+    "description": "苹果是最常见的温带水果，果皮有红色、黄色或绿色，富含膳食纤维。",
+    "image": "/images/fruits/apple.webp"
+  },
+  {
+    "id": "gal_fruits_2",
+    "name": "香蕉",
+    "description": "香蕉是热带水果，果皮黄色，果肉柔软甜腻，富含钾元素。",
+    "image": "/images/fruits/banana.webp"
+  },
+  {
+    "id": "gal_fruits_3",
+    "name": "橙子",
+    "description": "橙子表皮橙黄色，果肉多汁，富含维生素C，是常见的柑橘类水果。",
+    "image": "/images/fruits/orange.webp"
+  },
+  {
+    "id": "gal_fruits_4",
+    "name": "梨",
+    "description": "梨的果肉白色细嫩多汁，清甜爽口，有润肺止咳的功效。",
+    "image": "/images/fruits/pear.webp"
+  },
+  {
+    "id": "gal_fruits_5",
+    "name": "葡萄",
+    "description": "葡萄成串生长，有绿色、红色和紫色等品种，可鲜食或酿酒。",
+    "image": "/images/fruits/grape.webp"
+  },
+  {
+    "id": "gal_fruits_6",
+    "name": "西瓜",
+    "description": "西瓜外皮绿色，果肉红色多汁，是夏季消暑的经典水果。",
+    "image": "/images/fruits/watermelon.webp"
+  },
+  {
+    "id": "gal_fruits_7",
+    "name": "草莓",
+    "description": "草莓表面有细小种子，果实鲜红，香甜可口，是常见的浆果。",
+    "image": "/images/fruits/strawberry.webp"
+  },
+  {
+    "id": "gal_fruits_8",
+    "name": "芒果",
+    "description": "芒果是热带水果之王，果肉金黄色，味道香甜，富含胡萝卜素。",
+    "image": "/images/fruits/mango.webp"
+  },
+  {
+    "id": "gal_fruits_9",
+    "name": "菠萝",
+    "description": "菠萝外皮有鳞片状突起，果肉黄色多汁，味道酸甜，含有菠萝蛋白酶。",
+    "image": "/images/fruits/pineapple.webp"
+  },
+  {
+    "id": "gal_fruits_10",
+    "name": "猕猴桃",
+    "description": "猕猴桃表皮有毛，切开后内部一般呈绿色或黄色，富含维生素C。",
+    "image": "/images/fruits/kiwi.webp"
+  },
+  {
+    "id": "gal_fruits_11",
+    "name": "柠檬",
+    "description": "柠檬味道极酸，富含维生素C，常用于调味或制作饮品。",
+    "image": "/images/fruits/lemon.webp"
+  },
+  {
+    "id": "gal_fruits_12",
+    "name": "桃子",
+    "description": "桃子果皮有细绒毛，果肉多汁香甜，有白肉和黄肉之分。",
+    "image": "/images/fruits/peach.webp"
+  },
+  {
+    "id": "gal_fruits_13",
+    "name": "李子",
+    "description": "李子果皮光滑，有紫色、红色或黄色，味道酸甜，营养丰富。",
+    "image": "/images/fruits/plum.webp"
+  },
+  {
+    "id": "gal_fruits_14",
+    "name": "樱桃",
+    "description": "樱桃果实小巧圆润，颜色鲜红，味道甜美，是早熟水果。",
+    "image": "/images/fruits/cherry.webp"
+  },
+  {
+    "id": "gal_fruits_15",
+    "name": "哈密瓜",
+    "description": "哈密瓜是新疆特产，外皮有网纹，果肉橙黄色，清甜香浓。",
+    "image": "/images/fruits/cantaloupe.webp"
+  },
+  {
+    "id": "gal_fruits_16",
+    "name": "荔枝",
+    "description": "荔枝外壳红色有鳞，果肉白色晶莹，味道甘甜，素有岭南佳果之称。",
+    "image": "/images/fruits/litchi.webp"
+  },
+  {
+    "id": "gal_fruits_17",
+    "name": "龙眼",
+    "description": "龙眼又称桂圆，果壳黄褐色，果肉白色透明，味甜，有补益心脾的功效。",
+    "image": "/images/fruits/longan.webp"
+  },
+  {
+    "id": "gal_fruits_18",
+    "name": "石榴",
+    "description": "石榴外皮坚硬，内有大量晶莹红色的籽，口感酸甜，抗氧化能力强。",
+    "image": "/images/fruits/pomegranate.webp"
+  },
+  {
+    "id": "gal_fruits_19",
+    "name": "柿子",
+    "description": "柿子成熟后呈橙红色，果肉软糯香甜，含有大量单宁，未熟时不可食用。",
+    "image": "/images/fruits/persimmon.webp"
+  },
+  {
+    "id": "gal_fruits_20",
+    "name": "柚子",
+    "description": "柚子是柑橘类中个头最大的，果肉有白色和粉红色，微苦回甘。",
+    "image": "/images/fruits/pomelo.webp"
+  },
+  {
+    "id": "gal_fruits_21",
+    "name": "山楂",
+    "description": "山楂果实红色，味道酸涩，常用于制作山楂片、果汁，有消食化积的功效。",
+    "image": "/images/fruits/hawthorn.webp"
+  },
+  {
+    "id": "gal_fruits_22",
+    "name": "红枣",
+    "description": "红枣色泽红润，味道甘甜，有补气养血的功效，是常用的药食两用食材。",
+    "image": "/images/fruits/red_date.webp"
+  },
+  {
+    "id": "gal_fruits_23",
+    "name": "枇杷",
+    "description": "枇杷果实金黄，果肉橙色多汁，略带酸味，有润肺止咳的功效。",
+    "image": "/images/fruits/loquat.webp"
+  },
+  {
+    "id": "gal_fruits_24",
+    "name": "杨梅",
+    "description": "杨梅表面颗粒状，颜色深红，汁多味甜，是江南特色水果。",
+    "image": "/images/fruits/waxberry.webp"
+  },
+  {
+    "id": "gal_fruits_25",
+    "name": "无花果",
+    "description": "无花果外表梨形，内部有许多细小的种子，口感绵软香甜，富含膳食纤维。",
+    "image": "/images/fruits/fig.webp"
+  },
+  {
+    "id": "gal_fruits_26",
+    "name": "桑葚",
+    "description": "桑葚是桑树的果实，成熟后呈深紫色，味道酸甜，富含花青素。",
+    "image": "/images/fruits/mulberry.webp"
+  },
+  {
+    "id": "gal_fruits_27",
+    "name": "金桔",
+    "description": "金桔是柑橘类最小的品种，果皮可以直接食用，味道甘甜，有化痰止咳的功效。",
+    "image": "/images/fruits/kumquat.webp"
+  },
+  {
+    "id": "gal_fruits_28",
+    "name": "百香果",
+    "description": "百香果外皮紫色或黄色，果肉橙黄色，味道酸甜浓郁，香气独特。",
+    "image": "/images/fruits/passion_fruit.webp"
+  },
+  {
+    "id": "gal_fruits_29",
+    "name": "火龙果",
+    "description": "火龙果外皮鲜红，上有绿色鳞片，果肉白色或红色，内有细小黑色种子。",
+    "image": "/images/fruits/pitaya.webp"
+  },
+  {
+    "id": "gal_fruits_30",
+    "name": "山竹",
+    "description": "山竹被称为水果皇后，外壳紫色坚硬，果肉白色软嫩，味道清甜微酸。",
+    "image": "/images/fruits/mangosteen.webp"
+  },
+  {
+    "id": "gal_fruits_31",
+    "name": "榴莲",
+    "description": "榴莲被称为水果之王，外壳多刺，果肉黄色奶油状，气味浓烈独特。",
+    "image": "/images/fruits/durian.webp"
+  },
+  {
+    "id": "gal_fruits_32",
+    "name": "木瓜",
+    "description": "木瓜果肉橙红色，质地柔软，味道香甜，含有木瓜蛋白酶，有助消化。",
+    "image": "/images/fruits/papaya.webp"
+  },
+  {
+    "id": "gal_fruits_33",
+    "name": "番石榴",
+    "description": "番石榴外皮绿色，果肉白色或红色，味道清甜，富含维生素C。",
+    "image": "/images/fruits/guava.webp"
+  },
+  {
+    "id": "gal_fruits_34",
+    "name": "杨桃",
+    "description": "杨桃横截面呈五角星形状，果皮黄绿色，口感清脆微酸。",
+    "image": "/images/fruits/carambola.webp"
+  },
+  {
+    "id": "gal_fruits_35",
+    "name": "莲雾",
+    "description": "莲雾外形呈钟状，色泽鲜红，果肉白色多汁，口感清爽微甜。",
+    "image": "/images/fruits/wax_apple.webp"
+  },
+  {
+    "id": "gal_fruits_36",
+    "name": "牛油果",
+    "description": "牛油果外皮深绿或黑色，果肉绿黄色，口感绵滑，富含健康的不饱和脂肪酸。",
+    "image": "/images/fruits/avocado.webp"
+  },
+  {
+    "id": "gal_fruits_37",
+    "name": "释迦",
+    "description": "释迦果表面有多个瘤状突起，果肉白色，味道香甜浓郁，因形似佛头而得名。",
+    "image": "/images/fruits/sugar-apple.webp"
+  },
+  {
+    "id": "gal_fruits_38",
+    "name": "红毛丹",
+    "description": "红毛丹外壳有软刺，颜色鲜红，果肉白色透明，味道甜美，与荔枝类似。",
+    "image": "/images/fruits/rambutan.webp"
+  },
+  {
+    "id": "gal_fruits_39",
+    "name": "黄皮",
+    "description": "黄皮是岭南特色水果，果皮黄色，果肉白色，味道酸甜，有消食化滞的功效。",
+    "image": "/images/fruits/wampee.webp"
+  },
+  {
+    "id": "gal_fruits_40",
+    "name": "椰青",
+    "description": "椰青是未成熟的椰子，含有清凉的椰子水，是天然的解暑饮品。",
+    "image": "/images/fruits/young_coconut.webp"
+  },
+  {
+    "id": "gal_fruits_41",
+    "name": "芭蕉",
+    "description": "芭蕉与香蕉外形相似，但更短粗，果肉更甜，淀粉含量更高。",
+    "image": "/images/fruits/plantain.webp"
+  },
+  {
+    "id": "gal_fruits_42",
+    "name": "蓝莓",
+    "description": "蓝莓是小型浆果，颜色蓝紫色，富含花青素，有保护视力的功效。",
+    "image": "/images/fruits/blueberry.webp"
+  },
+  {
+    "id": "gal_fruits_43",
+    "name": "黑加仑",
+    "description": "黑加仑又称黑醋栗，果实黑色小巧，味道酸涩，富含维生素C和花青素。",
+    "image": "/images/fruits/blackcurrant.webp"
+  },
+  {
+    "id": "gal_fruits_44",
+    "name": "蔓越莓",
+    "description": "蔓越莓颜色鲜红，味道极酸，常用于制作果汁或果干，有预防泌尿道感染的功效。",
+    "image": "/images/fruits/cranberry.webp"
+  },
+  {
+    "id": "gal_fruits_45",
+    "name": "西梅",
+    "description": "西梅是欧洲李的干制品，颜色深紫，味道酸甜，富含膳食纤维，有助于通便。",
+    "image": "/images/fruits/prune.webp"
+  },
+  {
+    "id": "gal_fruits_46",
+    "name": "油桃",
+    "description": "油桃是桃子的变种，果皮光滑无毛，颜色鲜艳，口感比桃子更脆。",
+    "image": "/images/fruits/nectarine.webp"
+  },
+  {
+    "id": "gal_fruits_47",
+    "name": "杏",
+    "description": "杏果皮橙黄色，果肉橙色，味道酸甜，含有丰富的胡萝卜素和维生素。",
+    "image": "/images/fruits/apricot.webp"
+  },
+  {
+    "id": "gal_fruits_48",
+    "name": "圣女果",
+    "description": "圣女果又称小番茄，果实小巧圆润，颜色有红、黄等，味道酸甜多汁。",
+    "image": "/images/fruits/cherry_tomato.webp"
+  },
+  {
+    "id": "gal_fruits_49",
+    "name": "香瓜",
+    "description": "香瓜果皮黄白色，果肉清甜多汁，香气宜人，是夏季常见水果。",
+    "image": "/images/fruits/muskmelon.webp"
+  },
+  {
+    "id": "gal_fruits_50",
+    "name": "白兰瓜",
+    "description": "白兰瓜是甘肃特产，果皮白色光滑，果肉白绿色，清甜爽口。",
+    "image": "/images/fruits/honeydew_melon.webp"
+  },
+  {
+    "id": "gal_fruits_51",
+    "name": "雪莲果",
+    "description": "雪莲果外形似红薯，果肉白色脆爽，味道清甜，富含菊糖，有助于肠道健康。",
+    "image": "/images/fruits/yacon.webp"
+  },
+  {
+    "id": "gal_fruits_52",
+    "name": "荸荠",
+    "description": "荸荠又称马蹄，外皮棕褐色，果肉白色脆嫩，多汁清甜，常用于烹饪。",
+    "image": "/images/fruits/water_chestnut.webp"
+  },
+  {
+    "id": "gal_fruits_53",
+    "name": "菱角",
+    "description": "菱角外壳坚硬有角，果肉白色，质地粉糯，常煮熟食用，是水生植物的果实。",
+    "image": "/images/fruits/water_caltrop.webp"
+  },
+  {
+    "id": "gal_fruits_54",
+    "name": "甘蔗",
+    "description": "甘蔗茎秆粗壮，含有大量甜汁，是制糖的重要原料，也可直接咀嚼食用。",
+    "image": "/images/fruits/sugarcane.webp"
+  },
+  {
+    "id": "gal_fruits_55",
+    "name": "青提",
+    "description": "青提是绿色葡萄品种，果粒大而饱满，皮薄肉脆，味道清甜爽口。",
+    "image": "/images/fruits/green_grape.webp"
+  },
+  {
+    "id": "gal_fruits_56",
+    "name": "红提",
+    "description": "红提是红色葡萄品种，颗粒饱满，皮薄肉脆，甜度高，是优质鲜食葡萄。",
+    "image": "/images/fruits/red_grape.webp"
+  },
+  {
+    "id": "gal_fruits_57",
+    "name": "黑提",
+    "description": "黑提是紫黑色葡萄品种，果皮深紫，富含花青素，甜中带涩。",
+    "image": "/images/fruits/black_grape.webp"
+  },
+  {
+    "id": "gal_fruits_58",
+    "name": "芦柑",
+    "description": "芦柑是福建特产柑橘品种，果皮橙红，易剥，果肉汁多味甜，无核或少核。",
+    "image": "/images/fruits/tangerine.webp"
+  },
+  {
+    "id": "gal_fruits_59",
+    "name": "蜜橘",
+    "description": "蜜橘是小型柑橘，果皮薄易剥，果肉细嫩多汁，甜度高，是冬季常见水果。",
+    "image": "/images/fruits/mandarin_orange.webp"
+  }
+]

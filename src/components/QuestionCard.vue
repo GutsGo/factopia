@@ -158,18 +158,9 @@ watch(() => props.question.id, () => {
   }
 }, { immediate: true })
 
-// NOTE: MVP 为了轻量不直接引入实际音频资源文件，只做Audio对象预埋和逻辑分支
+// 音频播放已经移至 settingsStore
 function playSound(type: 'right' | 'wrong') {
-  if (!settingsStore.soundEnabled) return
-  try {
-    if (type === 'right') {
-      // 假设这是正确音效：const popAudio = new Audio('data:audio/mp3;base64,...'); popAudio.play()
-    } else {
-      // 假设这是错误音效：const failAudio = new Audio('data:audio/mp3;base64,...'); failAudio.play()
-    }
-  } catch (e) {
-    // 忽略音频播放被阻塞导致的报错
-  }
+  settingsStore.playSound(type)
 }
 
 function selectOption(option: any) {
@@ -193,11 +184,20 @@ function selectOption(option: any) {
   }, 500)
 
   emit('answer', isCorrect.value)
+  
+  // 滚动到下一题按钮
+  setTimeout(() => {
+    const nextBtn = document.querySelector('.next-btn')
+    if (nextBtn) {
+      nextBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    }
+  }, 100)
 }
 
 function emitNext() {
   imageLoaded.value = false // 立即清理上一题的显示状态
   emit('next')
+  window.scrollTo({ top: 0, behavior: 'instant' })
 }
 </script>
 
@@ -230,7 +230,7 @@ function emitNext() {
 .header-top {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: -1rem;
+  margin-bottom: 1.5rem;
   position: relative;
   z-index: 10;
 }
@@ -246,6 +246,24 @@ function emitNext() {
   padding: 5px;
   line-height: 1;
   filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+@media (max-width: 600px) {
+  .card-inner {
+    padding: 1.5rem;
+  }
+  .header-top {
+    margin-bottom: 0.8rem; /* 移动端间距 */
+  }
+  .favorite-btn {
+    font-size: 1.8rem;
+  }
+  .question-header {
+    margin-bottom: 1rem;
+  }
+  .image-wrapper {
+    margin-bottom: 1rem;
+  }
 }
 
 .favorite-btn:hover {

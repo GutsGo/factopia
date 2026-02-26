@@ -12,14 +12,29 @@ const path = require('path');
 const TASKS = [
   // 在这里配置多个任务
   {
-    dir: '/Users/alien/Downloads/split_images_1772028581842',
+    dir: '/Users/alien/Downloads/fl1',
     names:
-      'Durian, papaya, guava, carambola, wax apple, avocado, sugar-apple, rambutan, wampee, young coconut, plantain, blueberry, blackcurrant, cranberry, prune',
+      "Ranunculus, Sweet Alyssum, Lobelia erinus, Columbine, Larkspur, Lupin, Four o'clock flower, Cypress Vine, Phlox, Soapwort, Lychnis, Silene armeria, Carnation, Strawflower, Forget-me-not",
   },
   {
-    dir: '/Users/alien/Downloads/split_images_1772028671631',
+    dir: '/Users/alien/Downloads/fl2',
     names:
-      'nectarine, apricot, cherry tomato, muskmelon, honeydew melon, yacon, water chestnut, water caltrop, sugarcane, pomelo, green grape, red grape, black grape, tangerine, mandarin orange',
+      'Salvia splendens, Tagetes erecta, Tagetes patula, Zinnia elegans, Cosmos bipinnatus, Cosmos sulphureus, Impatiens balsamina, Catharanthus roseus, Petunia hybrida, Verbena hybrida, Antirrhinum majus, Fuchsia hybrida, Primula malacoides, Cyclamen persicum, Senecio cruentus',
+  },
+  {
+    dir: '/Users/alien/Downloads/fl3',
+    names:
+      "Gerbera, African Violet, Snake Plant, Agave, Yucca, Yucca gloriosa, Crinum asiaticum, Cordyline fruticosa, Dragon's Blood Tree, Traveler's Palm, Plantain, Banana Flower, Heliconia, Ginger Lily, Canna Lily",
+  },
+  {
+    dir: '/Users/alien/Downloads/fl4',
+    names:
+      'Edgeworthia chrysantha, Daphne odora, Buddleja lindleyana, Cleome spinosa, Jacaranda mimosifolia, Delonix regia, Erythrina variegata, Viburnum odoratissimum, Viburnum macrocephalum, Weigela florida, Kolkwitzia amabilis, Abelia biflora, Abelia chinensis, Hamamelis mollis, Corylopsis sinensis',
+  },
+  {
+    dir: '/Users/alien/Downloads/fl5',
+    names:
+      'Aquilegia, Calceolaria, Calceolaria, Justicia brandegeeana, Pachystachys lutea, Jatropha multifida, Pentas lanceolata, Plumbago auriculata, Plumbago indica, Plumbago zeylanica, Jasminum polyanthum, Thunbergia erecta, Thunbergia grandiflora, Andrographis paniculata, Justicia procumbens',
   },
 ];
 

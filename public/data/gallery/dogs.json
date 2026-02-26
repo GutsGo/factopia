@@ -1,0 +1,140 @@
+[
+  {
+    "id": "gal_dogs_1",
+    "name": "金毛寻回犬",
+    "description": "金毛寻回犬温顺聪慧，常被用作导盲犬和家庭宠物。",
+    "image": "/images/dogs/golden_retriever.webp"
+  },
+  {
+    "id": "gal_dogs_2",
+    "name": "哈士奇",
+    "description": "哈士奇精力充沛，外形酷似狼，也被戏称为“二哈”。",
+    "image": "/images/dogs/siberian_husky.webp"
+  },
+  {
+    "id": "gal_dogs_3",
+    "name": "柯基",
+    "description": "柯基以短腿和丰满的臀部闻名，曾是英国王室的宠物。",
+    "image": "/images/dogs/corgi.webp"
+  },
+  {
+    "id": "gal_dogs_4",
+    "name": "比熊",
+    "description": "比熊外形像白色的棉花糖，性格欢快黏人。",
+    "image": "/images/dogs/bichon_frise.webp"
+  },
+  {
+    "id": "gal_dogs_5",
+    "name": "柴犬",
+    "description": "柴犬来自日本，性格机警且独立，常带有倔强的一面。",
+    "image": "/images/dogs/shiba_inu.webp"
+  },
+  {
+    "id": "gal_dogs_6",
+    "name": "德国牧羊犬",
+    "description": "德国牧羊犬忠诚勇敢，常作为警犬、军犬或搜救犬服役。",
+    "image": "/images/dogs/german_shepherd.webp"
+  },
+  {
+    "id": "gal_dogs_7",
+    "name": "雪纳瑞",
+    "description": "雪纳瑞拥有标志性的“小老头”胡须和眉毛，勇敢且警惕。",
+    "image": "/images/dogs/schnauzer.webp"
+  },
+  {
+    "id": "gal_dogs_8",
+    "name": "巴哥犬",
+    "description": "巴哥犬脸部有明显褶皱，性格开朗，非常喜欢与人互动。",
+    "image": "/images/dogs/pug.webp"
+  },
+  {
+    "id": "gal_dogs_9",
+    "name": "比格犬",
+    "description": "比格犬嗅觉极其灵敏，是优秀的狩猎犬，叫声清脆洪亮。",
+    "image": "/images/dogs/beagle.webp"
+  },
+  {
+    "id": "gal_dogs_10",
+    "name": "约克夏",
+    "description": "约克夏拥有丝一般柔滑的长毛，体型虽小但充满勇气。",
+    "image": "/images/dogs/yorkshire_terrier.webp"
+  },
+  {
+    "id": "gal_dogs_11",
+    "name": "吉娃娃",
+    "description": "吉娃娃世界上体型最小的犬种之一，警惕性高且动作敏捷。",
+    "image": "/images/dogs/chihuahua.webp"
+  },
+  {
+    "id": "gal_dogs_12",
+    "name": "杜宾",
+    "description": "杜宾线条优美、动作敏捷，是极其优秀的护卫犬。",
+    "image": "/images/dogs/doberman_pinscher.webp"
+  },
+  {
+    "id": "gal_dogs_13",
+    "name": "伯恩山",
+    "description": "伯恩山拥有漂亮的三色毛发，性格温顺，原产于瑞士。",
+    "image": "/images/dogs/bernese_mountain_dog.webp"
+  },
+  {
+    "id": "gal_dogs_14",
+    "name": "蝴蝶犬",
+    "description": "蝴蝶犬耳朵上的长毛犹如翩翩起舞的蝴蝶，灵动而可爱。",
+    "image": "/images/dogs/papillon.webp"
+  },
+  {
+    "id": "gal_dogs_15",
+    "name": "英国斗牛犬",
+    "description": "英国斗牛犬外表显得有些凶猛但内心非常温柔，是英国的标志性犬种。",
+    "image": "/images/dogs/english_bulldog.webp"
+  },
+  {
+    "id": "gal_dogs_16",
+    "name": "古代英国牧羊犬",
+    "description": "古代英国牧羊犬毛发长且浓密，经常遮住眼睛，性格温和友善。",
+    "image": "/images/dogs/old_english_sheepdog.webp"
+  },
+  {
+    "id": "gal_dogs_17",
+    "name": "圣伯纳",
+    "description": "圣伯纳著名的阿尔卑斯山雪地救援犬，体型庞大且充满耐心。",
+    "image": "/images/dogs/saint_bernard.webp"
+  },
+  {
+    "id": "gal_dogs_18",
+    "name": "银狐犬",
+    "description": "银狐犬外貌与萨摩耶相似但体型较小，纯白美丽，机警活泼。",
+    "image": "/images/dogs/silver_fox_dog.webp"
+  },
+  {
+    "id": "gal_dogs_19",
+    "name": "比特犬",
+    "description": "比特犬肌肉发达，痛觉神经相对迟钝，战斗力极强。",
+    "image": "/images/dogs/pit_bull_terrier.webp"
+  },
+  {
+    "id": "gal_dogs_20",
+    "name": "惠比特",
+    "description": "惠比特外形像缩小版的灵缇，同样擅长短距离奔跑，性格温和安静。",
+    "image": "/images/dogs/whippet.webp"
+  },
+  {
+    "id": "gal_dogs_21",
+    "name": "牛头梗",
+    "description": "牛头梗头部呈独特的卵形，面部没有凹陷，性格活泼有时很固执。",
+    "image": "/images/dogs/bull_terrier.webp"
+  },
+  {
+    "id": "gal_dogs_22",
+    "name": "贝灵顿梗",
+    "description": "贝灵顿梗外形像一只温顺的小绵羊，但其实拥有梗犬的勇敢与敏捷。",
+    "image": "/images/dogs/bedlington_terrier.webp"
+  },
+  {
+    "id": "gal_dogs_23",
+    "name": "斑点狗（大麦町犬）",
+    "description": "斑点狗（大麦町犬）身上布满独特的黑白斑点，常在历史上与消防站联系在一起。",
+    "image": "/images/dogs/dalmatian.webp"
+  }
+]

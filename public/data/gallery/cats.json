@@ -1,0 +1,146 @@
+[
+  {
+    "id": "gal_cats_1",
+    "name": "英国短毛猫",
+    "description": "英国短毛猫（British Shorthair）以圆润的脸庞、密实的蓝灰色短毛著称，是世界最受欢迎的猫品种之一，性格温顺独立。",
+    "image": "/images/cats/british_shorthair.webp"
+  },
+  {
+    "id": "gal_cats_2",
+    "name": "美国短毛猫",
+    "description": "美国短毛猫（American Shorthair）以经典银色虎斑纹最为知名，体型中等健壮，由早期欧洲移民携带至北美，是优秀的家庭伴侣猫。",
+    "image": "/images/cats/american_shorthair.webp"
+  },
+  {
+    "id": "gal_cats_3",
+    "name": "布偶猫",
+    "description": "布偶猫（Ragdoll）因被抱起时会像布偶一样放松而得名，拥有迷人的蓝色眼睛和重点色半长毛，性格温顺亲人，是大型家庭猫的代表品种。",
+    "image": "/images/cats/ragdoll.webp"
+  },
+  {
+    "id": "gal_cats_4",
+    "name": "暹罗猫",
+    "description": "暹罗猫（Siamese）是最古老的猫品种之一，源自泰国，以重点色花纹和清澈的蓝色杏仁眼著称，性格活泼健谈，是最爱叫唤互动的猫咪之一。",
+    "image": "/images/cats/siamese.webp"
+  },
+  {
+    "id": "gal_cats_5",
+    "name": "缅因猫",
+    "description": "缅因猫（Maine Coon）是美国最古老的自然猫品种，体型巨大，长毛浓密，耳尖有山猫式丛毛，尾巴如羽毛般华美，因性格友善亲人被誉为猫中犬。",
+    "image": "/images/cats/maine_coon.webp"
+  },
+  {
+    "id": "gal_cats_6",
+    "name": "波斯猫",
+    "description": "波斯猫（Persian）是世界最古老的长毛猫品种之一，以浓密华丽的长毛、极扁平的面部和温顺优雅的气质著称，被誉为猫中贵族。",
+    "image": "/images/cats/persian.webp"
+  },
+  {
+    "id": "gal_cats_7",
+    "name": "异国短毛猫（加菲猫）",
+    "description": "异国短毛猫（Exotic Shorthair）由波斯猫与美国短毛猫杂交培育，继承波斯猫的扁脸特征但毛发更短易打理，因外形酷似漫画角色加菲猫而广受喜爱。",
+    "image": "/images/cats/exotic_shorthair.webp"
+  },
+  {
+    "id": "gal_cats_8",
+    "name": "俄罗斯蓝猫",
+    "description": "俄罗斯蓝猫（Russian Blue）以其独特的蓝灰色双层短毛和深绿色眼睛著称，性格害羞敏感但对主人忠诚，在俄罗斯民间传说中被视为能带来好运的猫咪。",
+    "image": "/images/cats/russian_blue.webp"
+  },
+  {
+    "id": "gal_cats_9",
+    "name": "金吉拉猫",
+    "description": "金吉拉猫（Chinchilla）是波斯猫的变种，以银白色毛发搭配黑色或金色毛尖形成独特金属光泽著称，面部精致秀气，眼睛通常为翠绿色，气质高雅迷人。",
+    "image": "/images/cats/chinchilla.webp"
+  },
+  {
+    "id": "gal_cats_10",
+    "name": "孟买猫",
+    "description": "孟买猫（Bombay）全身覆盖光亮的纯黑短毛，搭配铜金色眼睛，外形酷似小型黑豹，由缅甸猫与美国短毛猫杂交培育，性格聪明活泼亲人。",
+    "image": "/images/cats/bombay.webp"
+  },
+  {
+    "id": "gal_cats_11",
+    "name": "德文卷毛猫",
+    "description": "德文卷毛猫（Devon Rex）以卷曲的短毛、超大耳朵和独特的精灵脸型著称，毛质纤细柔软，性格活泼好奇，喜欢黏着主人，常被亲切地称为精灵猫。",
+    "image": "/images/cats/devon_rex.webp"
+  },
+  {
+    "id": "gal_cats_12",
+    "name": "斯芬克斯无毛猫",
+    "description": "斯芬克斯猫（Sphynx）是最著名的无毛猫品种，皮肤上仅有一层极细绒毛，皱纹明显，体温偏高，性格极度亲人热情，常被描述为像狗一样的猫。",
+    "image": "/images/cats/sphynx.webp"
+  },
+  {
+    "id": "gal_cats_13",
+    "name": "苏格兰折耳猫",
+    "description": "苏格兰折耳猫（Scottish Fold）因天然基因突变导致耳朵软骨向前折叠而得名，圆脸折耳的外形极具辨识度，但该基因也可能引发关节问题，需关注健康护理。",
+    "image": "/images/cats/scottish_fold.webp"
+  },
+  {
+    "id": "gal_cats_14",
+    "name": "孟加拉豹猫",
+    "description": "孟加拉豹猫（Bengal）由家猫与野生亚洲豹猫杂交培育而来，拥有野性的豹纹斑点或大理石花纹，毛发柔软有光泽，性格活泼好动，是少数喜欢玩水的家猫品种。",
+    "image": "/images/cats/bengal.webp"
+  },
+  {
+    "id": "gal_cats_15",
+    "name": "伯曼猫",
+    "description": "伯曼猫（Birman）又称缅甸圣猫，最显著特征是四爪纯白（白手套），兼具重点色半长毛和蓝色眼睛，传说源自缅甸寺庙，性格温顺安静，举止优雅。",
+    "image": "/images/cats/birman.webp"
+  },
+  {
+    "id": "gal_cats_16",
+    "name": "阿比西尼亚猫",
+    "description": "阿比西尼亚猫（Abyssinian）以特有的勾状毛色（每根毛上有多个深浅层次）著称，体型修长，性格好奇活泼，运动能力极强，被誉为猫中运动员。",
+    "image": "/images/cats/abyssinian.webp"
+  },
+  {
+    "id": "gal_cats_17",
+    "name": "柯尼斯卷毛猫",
+    "description": "柯尼斯卷毛猫（Cornish Rex）源自英国康沃尔，毛发仅有底绒层并呈规则波浪卷曲，体型修长，耳大腿长，性格外向活泼，非常喜欢奔跑和互动玩耍。",
+    "image": "/images/cats/cornish_rex.webp"
+  },
+  {
+    "id": "gal_cats_18",
+    "name": "挪威森林猫",
+    "description": "挪威森林猫（Norwegian Forest Cat）是北欧古老猫种，拥有浓密的双层防水被毛以适应严寒气候，体型大而结实，性格独立，对家人友善，曾是维京人船上的工作猫。",
+    "image": "/images/cats/norwegian_forest_cat.webp"
+  },
+  {
+    "id": "gal_cats_19",
+    "name": "美国卷耳猫",
+    "description": "美国卷耳猫（American Curl）因天然基因突变导致耳朵向后卷曲而得名，于1981年在美国加州首次发现，卷耳程度越大越受重视，性格活泼外向，喜欢与人互动。",
+    "image": "/images/cats/american_curl.webp"
+  },
+  {
+    "id": "gal_cats_20",
+    "name": "土耳其安哥拉猫",
+    "description": "土耳其安哥拉猫（Turkish Angora）是世界最古老的长毛猫品种之一，源自土耳其安卡拉，毛发丝般顺滑，白色个体常见鸳鸯眼（一蓝一琥珀），优雅灵动。",
+    "image": "/images/cats/turkish_angora.webp"
+  },
+  {
+    "id": "gal_cats_21",
+    "name": "埃及猫",
+    "description": "埃及猫（Egyptian Mau）是少数天然拥有斑点纹的家猫品种，也是最快的家猫之一（时速可超过45公里），在古埃及文化中被视为神圣动物，额头有独特的圣甲虫纹路。",
+    "image": "/images/cats/egyptian_mau.webp"
+  },
+  {
+    "id": "gal_cats_22",
+    "name": "索马里猫",
+    "description": "索马里猫（Somali）是阿比西尼亚猫的长毛变种，拥有相同的勾状毛色，但毛发更长更蓬松，尾巴毛量丰富，形似小狐狸，性格活泼爱探索，精力充沛。",
+    "image": "/images/cats/somali.webp"
+  },
+  {
+    "id": "gal_cats_23",
+    "name": "曼基康矮脚猫",
+    "description": "曼基康猫（Munchkin）因基因突变导致四肢极短而著称，外形酷似腊肠犬，故称猫界腊肠狗，尽管四肢短小，奔跑仍然灵活，性格外向友好，适合家庭饲养。",
+    "image": "/images/cats/munchkin.webp"
+  },
+  {
+    "id": "gal_cats_24",
+    "name": "缅甸猫",
+    "description": "缅甸猫（Burmese）原产缅甸，以光滑紧密的深棕（黑貂色）短毛和圆润金色眼睛著称，性格活泼热情，极度依恋主人，常被描述为永远长不大的小猫。",
+    "image": "/images/cats/burmese.webp"
+  }
+]

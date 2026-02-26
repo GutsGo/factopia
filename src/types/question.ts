@@ -1,5 +1,12 @@
 export type QuestionType = 'single_image_to_text' | 'true_false_image' | 'single_text_to_image';
 
+export interface GalleryItem {
+  id: string;
+  name: string;
+  image?: string;
+  description: string;
+}
+
 export interface Question {
   id: string | number;
   type: QuestionType;
@@ -21,6 +28,7 @@ export interface CategoryData {
   id: string;
   name: string;
   icon: string;
+  groupId?: string;
   levels: Level[];
 }
 
