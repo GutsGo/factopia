@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
-    "update-levels": "node scripts/update_levels.js"
+    "preview": "pnpm run build && wrangler dev",
+    "update-levels": "node scripts/update_levels.js",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
     "@vueuse/core": "^14.2.1",
@@ -16,6 +17,7 @@
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.25.5",
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.2",
     "@vue/tsconfig": "^0.8.1",
@@ -26,6 +28,7 @@
     "vite": "^7.3.1",
     "vite-plugin-pwa": "^1.2.0",
     "vitest": "^4.0.18",
-    "vue-tsc": "^3.1.5"
+    "vue-tsc": "^3.1.5",
+    "wrangler": "^4.68.1"
   }
 }
