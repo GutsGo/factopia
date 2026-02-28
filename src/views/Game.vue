@@ -277,7 +277,7 @@ function getQuestionExplanation(qId: string) {
   font-weight: bold;
   color: #5E4C41;
   box-shadow: 0 4px 0 rgba(94, 76, 65, 0.1);
-  line-height: 1.2;
+  line-height: 1;
 }
 .pill span {
   font-size: 1.1rem;

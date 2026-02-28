@@ -67,8 +67,13 @@
           :style="{ borderColor: getCategoryColor(categoryId) }"
           @click="openGalleryModal(item)"
         >
-          <div v-if="item.image" class="gallery-img-wrap">
-            <img :src="resolveImageUrl(item.image)" :alt="item.name" loading="lazy" />
+          <div v-if="item.image" class="gallery-img-wrap" :class="{ 'is-emoji': !isUrl(item.image) }">
+            <template v-if="isUrl(item.image)">
+              <img :src="resolveImageUrl(item.image)" :alt="item.name" loading="lazy" />
+            </template>
+            <template v-else>
+              <div class="f-emoji">{{ item.image }}</div>
+            </template>
           </div>
           <div class="gallery-name" :class="{ 'no-img': !item.image }">{{ item.name }}</div>
         </div>
@@ -83,11 +88,17 @@
         <div class="gallery-modal-content fade-in-up" @click.stop>
           <button class="close-btn" @click="closeGalleryModal">✕</button>
           <h2 class="modal-title">{{ selectedGalleryItem.name }}</h2>
-          <div v-if="selectedGalleryItem.image" class="modal-img-wrap">
-             <img :src="resolveImageUrl(selectedGalleryItem.image)" :alt="selectedGalleryItem.name" />
+          <div v-if="selectedGalleryItem.image" class="modal-img-wrap" :class="{ 'is-emoji': !isUrl(selectedGalleryItem.image) }">
+            <template v-if="isUrl(selectedGalleryItem.image)">
+              <img :src="resolveImageUrl(selectedGalleryItem.image)" :alt="selectedGalleryItem.name" />
+            </template>
+            <template v-else>
+              <div class="modal-emoji">{{ selectedGalleryItem.image }}</div>
+            </template>
           </div>
           <div class="modal-desc-container">
             <p class="modal-desc">{{ selectedGalleryItem.description }}</p>
+            <div class="fact-box mt-2" v-if="selectedGalleryItem.fact"><strong>💡 科普：</strong> {{ selectedGalleryItem.fact }}</div>
           </div>
         </div>
       </div>
@@ -100,7 +111,7 @@ import { ref, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { fetchCategories } from '@/data/questions'
 import { fetchGallery } from '@/data/gallery'
-import { resolveImageUrl } from '@/utils/assets'
+import { resolveImageUrl, isUrl } from '@/utils/assets'
 import { useProgressStore } from '@/stores/useProgressStore'
 import type { CategoryData, GalleryItem } from '@/types/question'
 
@@ -129,7 +140,16 @@ const categoryColors: Record<string, string> = {
   cats: '#D3C6E6',
   fruits: '#FFBE98',
   solar_terms: '#C9E493',
-  traditional_instruments: '#EEA8B2'
+  traditional_instruments: '#EEA8B2',
+  wild_animals: '#F9C0AB',
+  marine_life: '#A3DDF8',
+  insects: '#E2CA76',
+  dinosaurs: '#B2D8C1',
+  vegetables: '#A7E49D',
+  chinese_food: '#F8B691',
+  space_exploration: '#D2C4ED',
+  medical_guide: '#F2B8D2',
+  psychology_effects: '#CBB2EB'
 }
 
 const getCategoryColor = (id: string) => {
@@ -382,10 +402,20 @@ function playLevel(levelId: string, index: number) {
   border: 2px solid #EAEAEA;
 }
 
+.gallery-img-wrap.is-emoji {
+  background: transparent;
+  border: none;
+}
+
 .gallery-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.f-emoji {
+  font-size: 3rem;
+  display: inline-block;
 }
 
 .gallery-name {
@@ -574,12 +604,24 @@ function playLevel(levelId: string, index: number) {
   overflow: hidden;
   margin-bottom: 1.5rem;
   border: 3px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img-wrap.is-emoji {
+  border: none;
+  background: transparent;
 }
 
 .modal-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.modal-emoji {
+  font-size: 5rem;
 }
 
 .modal-desc-container {
@@ -596,6 +638,20 @@ function playLevel(levelId: string, index: number) {
   line-height: 1.6;
   margin: 0;
   font-weight: 600;
+}
+
+.fact-box {
+  background: #E8F4F8;
+  color: #1A5276;
+  border: 1px dashed #A3D1E6;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.mt-2 {
+  margin-top: 1rem;
 }
 
 /* Animations */

@@ -8,8 +8,13 @@
             {{ isFavorite ? '⭐' : '☆' }}
           </button>
         </div>
+        <!-- 纯文本情景题 -->
+        <div v-if="question.type === 'text'" class="text-scenario-wrapper cute-shadow">
+          <p class="scenario-text">{{ question.text || question.prompt }}</p>
+        </div>
+
         <!-- 兼容 URL 或者 emoji -->
-        <div v-if="question.image || !imageLoaded" class="image-wrapper cute-shadow">
+        <div v-else-if="question.image || !imageLoaded" class="image-wrapper cute-shadow">
           <!-- 加载转圈动画 -->
           <div v-if="!imageLoaded" class="loader-container">
             <div class="loader"></div>
@@ -32,11 +37,11 @@
             </template>
           </template>
         </div>
-        <h2 class="question-title">{{ question.prompt }}</h2>
+        <h2 class="question-title" v-if="question.type !== 'text'">{{ question.prompt }}</h2>
       </div>
 
       <div class="options-container">
-        <template v-if="question.type === 'single_image_to_text' || question.type === 'single_text_to_image'">
+        <template v-if="question.type === 'single_image_to_text' || question.type === 'single_text_to_image' || question.type === 'text'">
           <button
             v-for="(option, index) in question.options"
             :key="index"
@@ -95,6 +100,9 @@
           </div>
           <div v-if="question.explanation" class="explanation cute-box">
             <strong>💡 解析：</strong> {{ question.explanation }}
+          </div>
+          <div v-if="question.fact" class="explanation cute-box fact-box">
+            <strong>💡 科普：</strong> {{ question.fact }}
           </div>
           <button class="next-btn cute-btn" @click="emitNext">下一题 ➔</button>
         </div>
@@ -227,10 +235,9 @@ function emitNext() {
 }
 
 .header-top {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1.5rem;
-  position: relative;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
   z-index: 10;
 }
 
@@ -252,7 +259,8 @@ function emitNext() {
     padding: 1.5rem;
   }
   .header-top {
-    margin-bottom: 0.8rem; /* 移动端间距 */
+    top: -0.5rem;
+    right: -0.5rem;
   }
   .favorite-btn {
     font-size: 1.8rem;
@@ -297,6 +305,57 @@ function emitNext() {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-scenario-wrapper {
+  background-color: #FAFAFA;
+  background-image: 
+    linear-gradient(90deg, transparent 40px, #FFB6B9 40px, #FFB6B9 42px, transparent 42px),
+    repeating-linear-gradient(#FAFAFA 0px, #FAFAFA 32px, #BAE1F5 32px, #BAE1F5 33px);
+  background-position: 0 8px;
+  border: 2px solid #5E4C41;
+  border-radius: 8px 16px 16px 8px;
+  padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  box-shadow: 2px 2px 0 rgba(94, 76, 65, 0.1);
+}
+
+.text-scenario-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FFFDF8;
+  border: 2px solid #5E4C41;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.text-scenario-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 24px;
+  left: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FFFDF8;
+  border: 2px solid #5E4C41;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.scenario-text {
+  font-size: 1.15rem;
+  color: #3D312A;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  position: relative;
+  top: -4px;
 }
 
 .loader-container {
@@ -454,6 +513,11 @@ function emitNext() {
   margin-bottom: 1.5rem;
   text-align: left;
   line-height: 1.6;
+}
+
+.fact-box {
+  background: #E8F4F8;
+  color: #1A5276;
 }
 
 .next-btn {

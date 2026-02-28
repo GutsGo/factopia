@@ -1,20 +1,23 @@
-export type QuestionType = 'single_image_to_text' | 'true_false_image' | 'single_text_to_image';
+export type QuestionType = 'single_image_to_text' | 'true_false_image' | 'single_text_to_image' | 'text';
 
 export interface GalleryItem {
   id: string;
   name: string;
   image?: string;
   description: string;
+  fact?: string;
 }
 
 export interface Question {
   id: string | number;
   type: QuestionType;
   prompt: string; // 题干/问题描述
+  text?: string; // 文本题目特有的情景/描述文字
   image?: string; // 对应之前的 emojiPlaceholder 或具体的图片 URL
   options?: string[]; // 选择题选项，如果是 text_to_image，选项其实也是 image/emoji string
   answer: string | boolean; // 答案
   explanation?: string; // 解析
+  fact?: string; // 科普辟谣冷知识等
   difficulty?: number; // 难度系数
 }
 

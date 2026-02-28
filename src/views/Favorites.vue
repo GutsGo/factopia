@@ -35,9 +35,13 @@
               <div class="f-emoji">{{ item.question.image }}</div>
             </template>
           </div>
+          <div class="f-image-container" v-else-if="item.question?.type === 'text'">
+            <div class="f-emoji text-emoji">📝</div>
+          </div>
 
           <div class="f-answer" v-if="item.question">正确答案: <span>{{ formatAnswer(item.question) }}</span></div>
-          <div class="f-explain" v-if="item.question?.explanation">{{ item.question.explanation }}</div>
+          <div class="f-explain" v-if="item.question?.explanation"><strong>💡 解析：</strong> {{ item.question.explanation }}</div>
+          <div class="f-explain fact-box" v-if="item.question?.fact"><strong>💡 科普：</strong> {{ item.question.fact }}</div>
         </div>
       </div>
     </main>
@@ -297,6 +301,13 @@ onMounted(() => {
   background: #FDF5E6;
   padding: 1rem;
   border-radius: 10px;
+  margin-top: 0.8rem;
+}
+
+.fact-box {
+  background: #E8F4F8;
+  color: #1A5276;
+  border: 1px dashed #A3D1E6;
 }
 
 .state-view {
