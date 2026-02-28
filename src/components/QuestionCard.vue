@@ -1,13 +1,14 @@
 <template>
   <div class="question-card" :class="{ 'shake': animState === 'wrong', 'pop': animState === 'right' }">
     <div class="card-inner">
+      <div class="card-actions">
+        <button class="favorite-btn" :class="{ active: isFavorite }" @click="toggleFav" title="收藏/取消收藏">
+          <span class="fav-icon">{{ isFavorite ? '⭐' : '☆' }}</span>
+          <span class="fav-text">{{ isFavorite ? '已收藏' : '收藏' }}</span>
+        </button>
+      </div>
+
       <div class="question-header">
-        <div class="header-top">
-          <!-- 这里使用 emoji 简单实现星形按钮 -->
-          <button class="favorite-btn" :class="{ active: isFavorite }" @click="toggleFav" title="收藏/取消收藏">
-            {{ isFavorite ? '⭐' : '☆' }}
-          </button>
-        </div>
         <!-- 纯文本情景题 -->
         <div v-if="question.type === 'text'" class="text-scenario-wrapper cute-shadow">
           <p class="scenario-text">{{ question.text || question.prompt }}</p>
@@ -45,12 +46,16 @@
           <button
             v-for="(option, index) in question.options"
             :key="index"
-            class="option-btn cute-btn"
-            :class="{ 
-              'selected': selectedOption === option,
-              'correct': hasAnswered && option === question.answer,
-              'wrong': hasAnswered && selectedOption === option && option !== question.answer
-            }"
+            class="option-btn cute-btn has-letter"
+            :class="[
+              `dopamine-bg-${index % 4}`,
+              { 
+                'selected': selectedOption === option,
+                'correct': hasAnswered && option === question.answer,
+                'wrong': hasAnswered && selectedOption === option && option !== question.answer
+              }
+            ]"
+            :data-letter="String.fromCharCode(65 + index)"
             :disabled="hasAnswered"
             @click="selectOption(option)"
           >
@@ -92,7 +97,7 @@
         </template>
       </div>
 
-      <transition name="fade">
+      <transition name="feedback">
         <div v-if="hasAnswered" class="feedback-section">
           <div class="result-text" :class="isCorrect ? 'text-success' : 'text-error'">
             <span>{{ isCorrect ? '🎉 回答正确 (+10分)' : '❌ 回答错误 (-3分)' }}</span>
@@ -226,6 +231,7 @@ function emitNext() {
   border-radius: 20px;
   padding: 2.5rem;
   background: #FFFDF8;
+  position: relative;
 }
 
 .question-header {
@@ -234,36 +240,65 @@ function emitNext() {
   position: relative;
 }
 
-.header-top {
+.card-actions {
   position: absolute;
-  top: -1rem;
-  right: -1rem;
+  top: 1rem;
+  right: 1rem;
   z-index: 10;
 }
 
 .favorite-btn {
-  background: none;
-  border: none;
-  font-size: 2.2rem;
+  background: #FFFDF8;
+  border: 2px solid #5E4C41;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  color: #8E705B;
+  font-weight: 800;
   cursor: pointer;
   outline: none;
-  color: #CFD8DC;
-  transition: all 0.2s;
-  padding: 5px;
-  line-height: 1;
-  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+  box-shadow: 0 3px 0 rgba(94, 76, 65, 0.1);
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.favorite-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 rgba(94, 76, 65, 0.15);
+}
+
+.favorite-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 rgba(94, 76, 65, 0.1);
+}
+
+.favorite-btn.active {
+  background: #FFF9E6;
+  color: #D35400;
+  border-color: #F8B182;
+}
+
+.fav-icon {
+  font-size: 1rem;
 }
 
 @media (max-width: 600px) {
   .card-inner {
     padding: 1.5rem;
+    padding-top: 3rem;
   }
-  .header-top {
-    top: -0.5rem;
-    right: -0.5rem;
+  .card-actions {
+    top: 0.8rem;
+    right: 0.8rem;
   }
   .favorite-btn {
-    font-size: 1.8rem;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+  .fav-icon {
+    font-size: 0.9rem;
   }
   .question-header {
     margin-bottom: 1rem;
@@ -271,19 +306,6 @@ function emitNext() {
   .image-wrapper {
     margin-bottom: 1rem;
   }
-}
-
-.favorite-btn:hover {
-  transform: scale(1.1);
-}
-
-.favorite-btn:active {
-  transform: scale(0.9);
-}
-
-.favorite-btn.active {
-  color: #F1C40F;
-  animation: popIn 0.3s;
 }
 
 .emoji-wrapper {
@@ -308,54 +330,47 @@ function emitNext() {
 }
 
 .text-scenario-wrapper {
-  background-color: #FAFAFA;
+  background-color: #FEF9EB;
   background-image: 
-    linear-gradient(90deg, transparent 40px, #FFB6B9 40px, #FFB6B9 42px, transparent 42px),
-    repeating-linear-gradient(#FAFAFA 0px, #FAFAFA 32px, #BAE1F5 32px, #BAE1F5 33px);
-  background-position: 0 8px;
+    linear-gradient(90deg, transparent 46px, rgba(232, 90, 127, 0.4) 46px, rgba(232, 90, 127, 0.4) 48px, transparent 48px),
+    repeating-linear-gradient(transparent, transparent 31px, rgba(163, 209, 230, 0.5) 31px, rgba(163, 209, 230, 0.5) 32px);
+  background-size: 100% 100%, 100% 32px;
+  background-position: 0 0, 0 8px;
   border: 2px solid #5E4C41;
-  border-radius: 8px 16px 16px 8px;
-  padding: 1.5rem 1.5rem 1.5rem 3.5rem;
-  margin-bottom: 1.5rem;
+  border-radius: 4px 16px 16px 4px;
+  padding: 1.8rem 1.5rem 1.5rem 4.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
   text-align: left;
   position: relative;
-  box-shadow: 2px 2px 0 rgba(94, 76, 65, 0.1);
+  box-shadow: 4px 4px 0 rgba(94, 76, 65, 0.1);
 }
 
+/* 顶部半透明胶带 Washi tape */
 .text-scenario-wrapper::before {
   content: '';
   position: absolute;
-  top: 24px;
-  left: 12px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #FFFDF8;
-  border: 2px solid #5E4C41;
-  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
-}
-
-.text-scenario-wrapper::after {
-  content: '';
-  position: absolute;
-  bottom: 24px;
-  left: 12px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #FFFDF8;
-  border: 2px solid #5E4C41;
-  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 110px;
+  height: 28px;
+  background-color: rgba(163, 209, 230, 0.7); /* 淡蓝色胶带 */
+  border: 1px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  box-shadow: 1px 2px 3px rgba(94, 76, 65, 0.1);
+  backdrop-filter: blur(1px);
+  z-index: 2;
 }
 
 .scenario-text {
   font-size: 1.15rem;
   color: #3D312A;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 32px; /* Must securely match background-size */
   margin: 0;
   position: relative;
-  top: -4px;
+  top: -2px; /* Micro adjustment to sit text on ruled lines */
 }
 
 .loader-container {
@@ -436,28 +451,109 @@ function emitNext() {
   box-shadow: 0 2px 0 rgba(94, 76, 65, 0.1);
 }
 
+/* 多巴胺配色与纹理 */
+.dopamine-bg-0 {
+  background-color: #FFF2F5;
+  background-image: 
+    radial-gradient(#FFE0E6 20%, transparent 20%), 
+    radial-gradient(#FFE0E6 20%, transparent 20%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.option-btn.dopamine-bg-0:not(:disabled):hover { background-color: #FFE0E6; }
+
+.dopamine-bg-1 {
+  background-color: #F0F9FF;
+  background-image: 
+    radial-gradient(#E0F2FE 20%, transparent 20%), 
+    radial-gradient(#E0F2FE 20%, transparent 20%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.option-btn.dopamine-bg-1:not(:disabled):hover { background-color: #E0F2FE; }
+
+.dopamine-bg-2 {
+  background-color: #FFFBEB;
+  background-image: 
+    radial-gradient(#FEF3C7 20%, transparent 20%), 
+    radial-gradient(#FEF3C7 20%, transparent 20%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.option-btn.dopamine-bg-2:not(:disabled):hover { background-color: #FEF3C7; }
+
+.dopamine-bg-3 {
+  background-color: #F5F3FF;
+  background-image: 
+    radial-gradient(#EDE9FE 20%, transparent 20%), 
+    radial-gradient(#EDE9FE 20%, transparent 20%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.option-btn.dopamine-bg-3:not(:disabled):hover { background-color: #EDE9FE; }
+
+/* 带字母选项的前置 ::before */
+.option-btn.has-letter {
+  position: relative;
+  padding-left: 3.8rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.option-btn.has-letter::before {
+  content: attr(data-letter);
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: #FFFDF8;
+  border: 2px solid #5E4C41;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #5E4C41;
+  box-shadow: 2px 2px 0 rgba(94, 76, 65, 0.1);
+}
+
+@media (max-width: 600px) {
+  .option-btn.has-letter {
+    padding-left: 3.2rem;
+  }
+  .option-btn.has-letter::before {
+    left: 0.8rem;
+    width: 26px;
+    height: 26px;
+    font-size: 0.95rem;
+  }
+}
+
 .option-image {
   max-height: 50px;
   object-fit: contain;
 }
 
 .option-btn.selected {
-  background: #FFFDF8;
+  background: #FFFDF8 !important;
   border-color: #F8B182;
   color: #D35400;
 }
 
 .option-btn.correct {
-  background: rgba(132, 172, 80, 0.15);
+  background: #E8F5E9 !important;
   border-color: #84AC50;
-  color: #84AC50;
+  color: #2E7D32;
   opacity: 1;
 }
 
 .option-btn.wrong {
-  background: rgba(231, 76, 60, 0.1);
+  background: #FFEBEE !important;
   border-color: #E74C3C;
-  color: #E74C3C;
+  color: #C62828;
 }
 
 .option-btn:disabled {
@@ -551,5 +647,14 @@ function emitNext() {
 @keyframes popIn {
   0% { transform: scale(0.8); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
+}
+
+.feedback-enter-active {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feedback-enter-from {
+  opacity: 0;
+  transform: translateY(-15px) scale(0.95);
 }
 </style>
