@@ -165,7 +165,7 @@
         ]
       }
     ],
-    "groupId": "science"
+    "groupId": "nature"
   },
   {
     "id": "flags",
@@ -488,7 +488,7 @@
         ]
       }
     ],
-    "groupId": "geo"
+    "groupId": "nature"
   },
   {
     "id": "flowers",
@@ -2580,320 +2580,158 @@
         "id": "level_1",
         "name": "初级难度",
         "questionIds": [
-          "dino_1",
-          "dino_2",
-          "dino_3",
-          "dino_4",
-          "dino_5",
-          "dino_6",
-          "dino_7",
-          "dino_8",
-          "dino_9",
-          "dino_10"
+          "ds_q1",
+          "ds_q2",
+          "ds_q3",
+          "ds_q4",
+          "ds_q5",
+          "ds_q6",
+          "ds_q7",
+          "ds_q8",
+          "ds_q9",
+          "ds_q10"
         ]
       },
       {
         "id": "level_2",
         "name": "第 2 关",
         "questionIds": [
-          "dino_11",
-          "dino_12",
-          "dino_13",
-          "dino_14",
-          "dino_15",
-          "dino_16",
-          "dino_17",
-          "dino_18",
-          "dino_19",
-          "dino_20"
+          "ds_q11",
+          "ds_q12",
+          "ds_q13",
+          "ds_q14",
+          "ds_q15",
+          "ds_q16",
+          "ds_q17",
+          "ds_q18",
+          "ds_q19",
+          "ds_q20"
         ]
       },
       {
         "id": "level_3",
         "name": "第 3 关",
         "questionIds": [
-          "dino_21",
-          "dino_22",
-          "dino_23",
-          "dino_24",
-          "dino_25",
-          "dino_26",
-          "dino_27",
-          "dino_28",
-          "dino_29",
-          "dino_30"
+          "ds_q21",
+          "ds_q22",
+          "ds_q23",
+          "ds_q24",
+          "ds_q25",
+          "ds_q26",
+          "ds_q27",
+          "ds_q28",
+          "ds_q29",
+          "ds_q30"
         ]
       },
       {
         "id": "level_4",
         "name": "第 4 关",
         "questionIds": [
-          "dino_31",
-          "dino_32",
-          "dino_33",
-          "dino_34",
-          "dino_35",
-          "dino_36",
-          "dino_37",
-          "dino_38",
-          "dino_39",
-          "dino_40"
+          "ds_q31",
+          "ds_q32",
+          "ds_q33",
+          "ds_q34",
+          "ds_q35",
+          "ds_q36",
+          "ds_q37",
+          "ds_q38",
+          "ds_q39",
+          "ds_q40"
         ]
       },
       {
         "id": "level_5",
         "name": "第 5 关",
         "questionIds": [
-          "dino_41",
-          "dino_42",
-          "dino_43",
-          "dino_44",
-          "dino_45",
-          "dino_46",
-          "dino_47",
-          "dino_48",
-          "dino_49",
-          "dino_50"
+          "ds_q41",
+          "ds_q42",
+          "ds_q43",
+          "ds_q44",
+          "ds_q45",
+          "ds_q46",
+          "ds_q47",
+          "ds_q48",
+          "ds_q49",
+          "ds_q50"
         ]
       },
       {
         "id": "level_6",
         "name": "第 6 关",
         "questionIds": [
-          "dino_51",
-          "dino_52",
-          "dino_53",
-          "dino_54",
-          "dino_55",
-          "dino_56",
-          "dino_57",
-          "dino_58",
-          "dino_59",
-          "dino_60"
+          "ds_q51",
+          "ds_q52",
+          "ds_q53",
+          "ds_q54",
+          "ds_q55",
+          "ds_q56",
+          "ds_q57",
+          "ds_q58",
+          "ds_q59",
+          "ds_q60"
         ]
       },
       {
         "id": "level_7",
         "name": "第 7 关",
         "questionIds": [
-          "dino_61",
-          "dino_62",
-          "dino_63",
-          "dino_64",
-          "dino_65",
-          "dino_66",
-          "dino_67",
-          "dino_68",
-          "dino_69",
-          "dino_70"
+          "ds_q61",
+          "ds_q62",
+          "ds_q63",
+          "ds_q64",
+          "ds_q65",
+          "ds_q66",
+          "ds_q67",
+          "ds_q68",
+          "ds_q69",
+          "ds_q70"
         ]
       },
       {
         "id": "level_8",
         "name": "第 8 关",
         "questionIds": [
-          "dino_71",
-          "dino_72",
-          "dino_73",
-          "dino_74",
-          "dino_75",
-          "dino_76",
-          "dino_77",
-          "dino_78",
-          "dino_79",
-          "dino_80"
+          "ds_q71",
+          "ds_q72",
+          "ds_q73",
+          "ds_q74",
+          "ds_q75",
+          "ds_q76",
+          "ds_q77",
+          "ds_q78",
+          "ds_q79",
+          "ds_q80"
         ]
       },
       {
         "id": "level_9",
         "name": "第 9 关",
         "questionIds": [
-          "dino_81",
-          "dino_82",
-          "dino_83",
-          "dino_84",
-          "dino_85",
-          "dino_86",
-          "dino_87",
-          "dino_88",
-          "dino_89",
-          "dino_90"
+          "ds_q81",
+          "ds_q82",
+          "ds_q83",
+          "ds_q84",
+          "ds_q85",
+          "ds_q86",
+          "ds_q87",
+          "ds_q88",
+          "ds_q89",
+          "ds_q90"
         ]
       },
       {
         "id": "level_10",
         "name": "第 10 关",
         "questionIds": [
-          "dino_91",
-          "dino_92",
-          "dino_93",
-          "dino_94",
-          "dino_95",
-          "dino_96",
-          "dino_97",
-          "dino_98",
-          "dino_99",
-          "dino_100"
-        ]
-      },
-      {
-        "id": "level_11",
-        "name": "第 11 关",
-        "questionIds": [
-          "dino_101",
-          "dino_102",
-          "dino_103",
-          "dino_104",
-          "dino_105",
-          "dino_106",
-          "dino_107",
-          "dino_108",
-          "dino_109",
-          "dino_110"
-        ]
-      },
-      {
-        "id": "level_12",
-        "name": "第 12 关",
-        "questionIds": [
-          "dino_111",
-          "dino_112",
-          "dino_113",
-          "dino_114",
-          "dino_115",
-          "dino_116",
-          "dino_117",
-          "dino_118",
-          "dino_119",
-          "dino_120"
-        ]
-      },
-      {
-        "id": "level_13",
-        "name": "第 13 关",
-        "questionIds": [
-          "dino_121",
-          "dino_122",
-          "dino_123",
-          "dino_124",
-          "dino_125",
-          "dino_126",
-          "dino_127",
-          "dino_128",
-          "dino_129",
-          "dino_130"
-        ]
-      },
-      {
-        "id": "level_14",
-        "name": "第 14 关",
-        "questionIds": [
-          "dino_131",
-          "dino_132",
-          "dino_133",
-          "dino_134",
-          "dino_135",
-          "dino_136",
-          "dino_137",
-          "dino_138",
-          "dino_139",
-          "dino_140"
-        ]
-      },
-      {
-        "id": "level_15",
-        "name": "第 15 关",
-        "questionIds": [
-          "dino_141",
-          "dino_142",
-          "dino_143",
-          "dino_144",
-          "dino_145",
-          "dino_146",
-          "dino_147",
-          "dino_148",
-          "dino_149",
-          "dino_150"
-        ]
-      },
-      {
-        "id": "level_16",
-        "name": "第 16 关",
-        "questionIds": [
-          "dino_151",
-          "dino_152",
-          "dino_153",
-          "dino_154",
-          "dino_155",
-          "dino_156",
-          "dino_157",
-          "dino_158",
-          "dino_159",
-          "dino_160"
-        ]
-      },
-      {
-        "id": "level_17",
-        "name": "第 17 关",
-        "questionIds": [
-          "dino_161",
-          "dino_162",
-          "dino_163",
-          "dino_164",
-          "dino_165",
-          "dino_166",
-          "dino_167",
-          "dino_168",
-          "dino_169",
-          "dino_170"
-        ]
-      },
-      {
-        "id": "level_18",
-        "name": "第 18 关",
-        "questionIds": [
-          "dino_171",
-          "dino_172",
-          "dino_173",
-          "dino_174",
-          "dino_175",
-          "dino_176",
-          "dino_177",
-          "dino_178",
-          "dino_179",
-          "dino_180"
-        ]
-      },
-      {
-        "id": "level_19",
-        "name": "第 19 关",
-        "questionIds": [
-          "dino_181",
-          "dino_182",
-          "dino_183",
-          "dino_184",
-          "dino_185",
-          "dino_186",
-          "dino_187",
-          "dino_188",
-          "dino_189",
-          "dino_190"
-        ]
-      },
-      {
-        "id": "level_20",
-        "name": "第 20 关",
-        "questionIds": [
-          "dino_191",
-          "dino_192",
-          "dino_193",
-          "dino_194",
-          "dino_195",
-          "dino_196",
-          "dino_197",
-          "dino_198",
-          "dino_199",
-          "dino_200"
+          "ds_q91",
+          "ds_q92",
+          "ds_q93",
+          "ds_q94",
+          "ds_q95",
+          "ds_q96",
+          "ds_q97",
+          "ds_q98"
         ]
       }
     ],
@@ -2908,320 +2746,200 @@
         "id": "level_1",
         "name": "初级难度",
         "questionIds": [
-          "veg_1",
-          "veg_2",
-          "veg_3",
-          "veg_4",
-          "veg_5",
-          "veg_6",
-          "veg_7",
-          "veg_8",
-          "veg_9",
-          "veg_10"
+          "veg_q1",
+          "veg_q2",
+          "veg_q3",
+          "veg_q4",
+          "veg_q5",
+          "veg_q6",
+          "veg_q7",
+          "veg_q8",
+          "veg_q9",
+          "veg_q10"
         ]
       },
       {
         "id": "level_2",
         "name": "第 2 关",
         "questionIds": [
-          "veg_11",
-          "veg_12",
-          "veg_13",
-          "veg_14",
-          "veg_15",
-          "veg_16",
-          "veg_17",
-          "veg_18",
-          "veg_19",
-          "veg_20"
+          "veg_q11",
+          "veg_q12",
+          "veg_q13",
+          "veg_q14",
+          "veg_q15",
+          "veg_q16",
+          "veg_q17",
+          "veg_q18",
+          "veg_q19",
+          "veg_q20"
         ]
       },
       {
         "id": "level_3",
         "name": "第 3 关",
         "questionIds": [
-          "veg_21",
-          "veg_22",
-          "veg_23",
-          "veg_24",
-          "veg_25",
-          "veg_26",
-          "veg_27",
-          "veg_28",
-          "veg_29",
-          "veg_30"
+          "veg_q21",
+          "veg_q22",
+          "veg_q23",
+          "veg_q24",
+          "veg_q25",
+          "veg_q26",
+          "veg_q27",
+          "veg_q28",
+          "veg_q29",
+          "veg_q30"
         ]
       },
       {
         "id": "level_4",
         "name": "第 4 关",
         "questionIds": [
-          "veg_31",
-          "veg_32",
-          "veg_33",
-          "veg_34",
-          "veg_35",
-          "veg_36",
-          "veg_37",
-          "veg_38",
-          "veg_39",
-          "veg_40"
+          "veg_q31",
+          "veg_q32",
+          "veg_q33",
+          "veg_q34",
+          "veg_q35",
+          "veg_q36",
+          "veg_q37",
+          "veg_q38",
+          "veg_q39",
+          "veg_q40"
         ]
       },
       {
         "id": "level_5",
         "name": "第 5 关",
         "questionIds": [
-          "veg_41",
-          "veg_42",
-          "veg_43",
-          "veg_44",
-          "veg_45",
-          "veg_46",
-          "veg_47",
-          "veg_48",
-          "veg_49",
-          "veg_50"
+          "veg_q41",
+          "veg_q42",
+          "veg_q43",
+          "veg_q44",
+          "veg_q45",
+          "veg_q46",
+          "veg_q47",
+          "veg_q48",
+          "veg_q49",
+          "veg_q50"
         ]
       },
       {
         "id": "level_6",
         "name": "第 6 关",
         "questionIds": [
-          "veg_51",
-          "veg_52",
-          "veg_53",
-          "veg_54",
-          "veg_55",
-          "veg_56",
-          "veg_57",
-          "veg_58",
-          "veg_59",
-          "veg_60"
+          "veg_q51",
+          "veg_q52",
+          "veg_q53",
+          "veg_q54",
+          "veg_q55",
+          "veg_q56",
+          "veg_q57",
+          "veg_q58",
+          "veg_q59",
+          "veg_q60"
         ]
       },
       {
         "id": "level_7",
         "name": "第 7 关",
         "questionIds": [
-          "veg_61",
-          "veg_62",
-          "veg_63",
-          "veg_64",
-          "veg_65",
-          "veg_66",
-          "veg_67",
-          "veg_68",
-          "veg_69",
-          "veg_70"
+          "veg_q61",
+          "veg_q62",
+          "veg_q63",
+          "veg_q64",
+          "veg_q65",
+          "veg_q66",
+          "veg_q67",
+          "veg_q68",
+          "veg_q69",
+          "veg_q70"
         ]
       },
       {
         "id": "level_8",
         "name": "第 8 关",
         "questionIds": [
-          "veg_71",
-          "veg_72",
-          "veg_73",
-          "veg_74",
-          "veg_75",
-          "veg_76",
-          "veg_77",
-          "veg_78",
-          "veg_79",
-          "veg_80"
+          "veg_q71",
+          "veg_q72",
+          "veg_q73",
+          "veg_q74",
+          "veg_q75",
+          "veg_q76",
+          "veg_q77",
+          "veg_q78",
+          "veg_q79",
+          "veg_q80"
         ]
       },
       {
         "id": "level_9",
         "name": "第 9 关",
         "questionIds": [
-          "veg_81",
-          "veg_82",
-          "veg_83",
-          "veg_84",
-          "veg_85",
-          "veg_86",
-          "veg_87",
-          "veg_88",
-          "veg_89",
-          "veg_90"
+          "veg_q81",
+          "veg_q82",
+          "veg_q83",
+          "veg_q84",
+          "veg_q85",
+          "veg_q86",
+          "veg_q87",
+          "veg_q88",
+          "veg_q89",
+          "veg_q90"
         ]
       },
       {
         "id": "level_10",
         "name": "第 10 关",
         "questionIds": [
-          "veg_91",
-          "veg_92",
-          "veg_93",
-          "veg_94",
-          "veg_95",
-          "veg_96",
-          "veg_97",
-          "veg_98",
-          "veg_99",
-          "veg_100"
+          "veg_q91",
+          "veg_q92",
+          "veg_q93",
+          "veg_q94",
+          "veg_q95",
+          "veg_q96",
+          "veg_q97",
+          "veg_q98",
+          "veg_q99",
+          "veg_q100"
         ]
       },
       {
         "id": "level_11",
         "name": "第 11 关",
         "questionIds": [
-          "veg_101",
-          "veg_102",
-          "veg_103",
-          "veg_104",
-          "veg_105",
-          "veg_106",
-          "veg_107",
-          "veg_108",
-          "veg_109",
-          "veg_110"
+          "veg_q101",
+          "veg_q102",
+          "veg_q103",
+          "veg_q104",
+          "veg_q105",
+          "veg_q106",
+          "veg_q107",
+          "veg_q108",
+          "veg_q109",
+          "veg_q110"
         ]
       },
       {
         "id": "level_12",
         "name": "第 12 关",
         "questionIds": [
-          "veg_111",
-          "veg_112",
-          "veg_113",
-          "veg_114",
-          "veg_115",
-          "veg_116",
-          "veg_117",
-          "veg_118",
-          "veg_119",
-          "veg_120"
+          "veg_q111",
+          "veg_q112",
+          "veg_q113",
+          "veg_q114",
+          "veg_q115",
+          "veg_q116",
+          "veg_q117",
+          "veg_q118",
+          "veg_q119",
+          "veg_q120"
         ]
       },
       {
         "id": "level_13",
         "name": "第 13 关",
         "questionIds": [
-          "veg_121",
-          "veg_122",
-          "veg_123",
-          "veg_124",
-          "veg_125",
-          "veg_126",
-          "veg_127",
-          "veg_128",
-          "veg_129",
-          "veg_130"
-        ]
-      },
-      {
-        "id": "level_14",
-        "name": "第 14 关",
-        "questionIds": [
-          "veg_131",
-          "veg_132",
-          "veg_133",
-          "veg_134",
-          "veg_135",
-          "veg_136",
-          "veg_137",
-          "veg_138",
-          "veg_139",
-          "veg_140"
-        ]
-      },
-      {
-        "id": "level_15",
-        "name": "第 15 关",
-        "questionIds": [
-          "veg_141",
-          "veg_142",
-          "veg_143",
-          "veg_144",
-          "veg_145",
-          "veg_146",
-          "veg_147",
-          "veg_148",
-          "veg_149",
-          "veg_150"
-        ]
-      },
-      {
-        "id": "level_16",
-        "name": "第 16 关",
-        "questionIds": [
-          "veg_151",
-          "veg_152",
-          "veg_153",
-          "veg_154",
-          "veg_155",
-          "veg_156",
-          "veg_157",
-          "veg_158",
-          "veg_159",
-          "veg_160"
-        ]
-      },
-      {
-        "id": "level_17",
-        "name": "第 17 关",
-        "questionIds": [
-          "veg_161",
-          "veg_162",
-          "veg_163",
-          "veg_164",
-          "veg_165",
-          "veg_166",
-          "veg_167",
-          "veg_168",
-          "veg_169",
-          "veg_170"
-        ]
-      },
-      {
-        "id": "level_18",
-        "name": "第 18 关",
-        "questionIds": [
-          "veg_171",
-          "veg_172",
-          "veg_173",
-          "veg_174",
-          "veg_175",
-          "veg_176",
-          "veg_177",
-          "veg_178",
-          "veg_179",
-          "veg_180"
-        ]
-      },
-      {
-        "id": "level_19",
-        "name": "第 19 关",
-        "questionIds": [
-          "veg_181",
-          "veg_182",
-          "veg_183",
-          "veg_184",
-          "veg_185",
-          "veg_186",
-          "veg_187",
-          "veg_188",
-          "veg_189",
-          "veg_190"
-        ]
-      },
-      {
-        "id": "level_20",
-        "name": "第 20 关",
-        "questionIds": [
-          "veg_191",
-          "veg_192",
-          "veg_193",
-          "veg_194",
-          "veg_195",
-          "veg_196",
-          "veg_197",
-          "veg_198",
-          "veg_199",
-          "veg_200"
+          "veg_q121",
+          "veg_q122"
         ]
       }
     ],
@@ -3882,5 +3600,669 @@
       }
     ],
     "groupId": "science"
+  },
+  {
+    "id": "renting_traps",
+    "name": "租房避坑指南",
+    "icon": "🏠",
+    "groupId": "adulting",
+    "levels": [
+      {
+        "id": "level_1",
+        "name": "新手租客",
+        "questionIds": [
+          "rht_q1",
+          "rht_q2",
+          "rht_q3",
+          "rht_q4",
+          "rht_q5",
+          "rht_q6",
+          "rht_q7",
+          "rht_q8",
+          "rht_q9",
+          "rht_q10"
+        ]
+      },
+      {
+        "id": "level_2",
+        "name": "第 2 关",
+        "questionIds": [
+          "rht_q11",
+          "rht_q12",
+          "rht_q13",
+          "rht_q14",
+          "rht_q15",
+          "rht_q16",
+          "rht_q17",
+          "rht_q18",
+          "rht_q19",
+          "rht_q20"
+        ]
+      },
+      {
+        "id": "level_3",
+        "name": "第 3 关",
+        "questionIds": [
+          "rht_q21",
+          "rht_q22",
+          "rht_q23",
+          "rht_q24",
+          "rht_q25",
+          "rht_q26",
+          "rht_q27",
+          "rht_q28",
+          "rht_q29",
+          "rht_q30"
+        ]
+      },
+      {
+        "id": "level_4",
+        "name": "第 4 关",
+        "questionIds": [
+          "rht_q31",
+          "rht_q32",
+          "rht_q33",
+          "rht_q34",
+          "rht_q35",
+          "rht_q36",
+          "rht_q37",
+          "rht_q38",
+          "rht_q39",
+          "rht_q40"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workplace_social_security",
+    "name": "职场与社保指南",
+    "icon": "💼",
+    "levels": [
+      {
+        "id": "level_1",
+        "name": "第 1 关",
+        "questionIds": [
+          "wps_q1",
+          "wps_q2",
+          "wps_q3",
+          "wps_q4",
+          "wps_q5",
+          "wps_q6",
+          "wps_q7",
+          "wps_q8",
+          "wps_q9",
+          "wps_q10"
+        ]
+      },
+      {
+        "id": "level_2",
+        "name": "第 2 关",
+        "questionIds": [
+          "wps_q11",
+          "wps_q12",
+          "wps_q13",
+          "wps_q14",
+          "wps_q15",
+          "wps_q16",
+          "wps_q17",
+          "wps_q18",
+          "wps_q19",
+          "wps_q20"
+        ]
+      },
+      {
+        "id": "level_3",
+        "name": "第 3 关",
+        "questionIds": [
+          "wps_q21",
+          "wps_q22",
+          "wps_q23",
+          "wps_q24",
+          "wps_q25",
+          "wps_q26",
+          "wps_q27",
+          "wps_q28",
+          "wps_q29",
+          "wps_q30"
+        ]
+      },
+      {
+        "id": "level_4",
+        "name": "第 4 关",
+        "questionIds": [
+          "wps_q31",
+          "wps_q32",
+          "wps_q33",
+          "wps_q34",
+          "wps_q35",
+          "wps_q36",
+          "wps_q37",
+          "wps_q38",
+          "wps_q39",
+          "wps_q40"
+        ]
+      },
+      {
+        "id": "level_5",
+        "name": "第 5 关",
+        "questionIds": [
+          "wps_q41",
+          "wps_q42",
+          "wps_q43",
+          "wps_q44",
+          "wps_q45",
+          "wps_q46",
+          "wps_q47",
+          "wps_q48",
+          "wps_q49",
+          "wps_q50"
+        ]
+      }
+    ],
+    "groupId": "adulting"
+  },
+  {
+    "id": "finance_economics",
+    "name": "小白理财与经济学",
+    "icon": "💰",
+    "levels": [
+      {
+        "id": "level_1",
+        "name": "第 1 关",
+        "questionIds": [
+          "rht_q1",
+          "rht_q2",
+          "rht_q3",
+          "rht_q4",
+          "rht_q5",
+          "rht_q6",
+          "rht_q7",
+          "rht_q8",
+          "rht_q9",
+          "rht_q10"
+        ]
+      },
+      {
+        "id": "level_2",
+        "name": "第 2 关",
+        "questionIds": [
+          "rht_q11",
+          "rht_q12",
+          "rht_q13",
+          "rht_q14",
+          "rht_q15",
+          "rht_q16",
+          "rht_q17",
+          "rht_q18",
+          "rht_q19",
+          "rht_q20"
+        ]
+      },
+      {
+        "id": "level_3",
+        "name": "第 3 关",
+        "questionIds": [
+          "rht_q21",
+          "rht_q22",
+          "rht_q23",
+          "rht_q24",
+          "rht_q25",
+          "rht_q26",
+          "rht_q27",
+          "rht_q28",
+          "rht_q29",
+          "rht_q30"
+        ]
+      },
+      {
+        "id": "level_4",
+        "name": "第 4 关",
+        "questionIds": [
+          "rht_q31",
+          "rht_q32",
+          "rht_q33",
+          "rht_q34",
+          "rht_q35",
+          "rht_q36",
+          "rht_q37",
+          "rht_q38",
+          "rht_q39",
+          "rht_q40"
+        ]
+      },
+      {
+        "id": "level_5",
+        "name": "第 5 关",
+        "questionIds": [
+          "rht_q41",
+          "rht_q42",
+          "rht_q43",
+          "rht_q44",
+          "rht_q45",
+          "rht_q46",
+          "rht_q47",
+          "rht_q48",
+          "rht_q49",
+          "rht_q50"
+        ]
+      },
+      {
+        "id": "level_6",
+        "name": "第 6 关",
+        "questionIds": [
+          "rht_q51",
+          "rht_q52",
+          "rht_q53",
+          "rht_q54",
+          "rht_q55",
+          "rht_q56",
+          "rht_q57",
+          "rht_q58",
+          "rht_q59",
+          "rht_q60"
+        ]
+      },
+      {
+        "id": "level_7",
+        "name": "第 7 关",
+        "questionIds": [
+          "rht_q61",
+          "rht_q62",
+          "rht_q63",
+          "rht_q64",
+          "rht_q65",
+          "rht_q66",
+          "rht_q67",
+          "rht_q68",
+          "rht_q69",
+          "rht_q70"
+        ]
+      },
+      {
+        "id": "level_8",
+        "name": "第 8 关",
+        "questionIds": [
+          "rht_q71",
+          "rht_q72",
+          "rht_q73",
+          "rht_q74",
+          "rht_q75",
+          "rht_q76",
+          "rht_q77",
+          "rht_q78",
+          "rht_q79",
+          "rht_q80"
+        ]
+      },
+      {
+        "id": "level_9",
+        "name": "第 9 关",
+        "questionIds": [
+          "rht_q81",
+          "rht_q82",
+          "rht_q83",
+          "rht_q84",
+          "rht_q85",
+          "rht_q86",
+          "rht_q87",
+          "rht_q88",
+          "rht_q89",
+          "rht_q90"
+        ]
+      },
+      {
+        "id": "level_10",
+        "name": "第 10 关",
+        "questionIds": [
+          "rht_q91",
+          "rht_q92",
+          "rht_q93",
+          "rht_q94",
+          "rht_q95",
+          "rht_q96",
+          "rht_q97",
+          "rht_q98",
+          "rht_q99",
+          "rht_q100"
+        ]
+      },
+      {
+        "id": "level_11",
+        "name": "第 11 关",
+        "questionIds": [
+          "rht_q101",
+          "rht_q102",
+          "rht_q103",
+          "rht_q104",
+          "rht_q105",
+          "rht_q106",
+          "rht_q107",
+          "rht_q108",
+          "rht_q109",
+          "rht_q110"
+        ]
+      }
+    ],
+    "groupId": "adulting"
+  },
+  {
+    "id": "medical_guide",
+    "name": "医疗健康指南",
+    "icon": "🏥",
+    "levels": [
+      {
+        "id": "level_1",
+        "name": "第 1 关",
+        "questionIds": [
+          "med_q1",
+          "med_q2",
+          "med_q3",
+          "med_q4",
+          "med_q5",
+          "med_q6",
+          "med_q7",
+          "med_q8",
+          "med_q9",
+          "med_q10"
+        ]
+      },
+      {
+        "id": "level_2",
+        "name": "第 2 关",
+        "questionIds": [
+          "med_q11",
+          "med_q12",
+          "med_q13",
+          "med_q14",
+          "med_q15",
+          "med_q16",
+          "med_q17",
+          "med_q18",
+          "med_q19",
+          "med_q20"
+        ]
+      },
+      {
+        "id": "level_3",
+        "name": "第 3 关",
+        "questionIds": [
+          "med_q21",
+          "med_q22",
+          "med_q23",
+          "med_q24",
+          "med_q25",
+          "med_q26",
+          "med_q27",
+          "med_q28",
+          "med_q29",
+          "med_q30"
+        ]
+      },
+      {
+        "id": "level_4",
+        "name": "第 4 关",
+        "questionIds": [
+          "med_q31",
+          "med_q32",
+          "med_q33",
+          "med_q34",
+          "med_q35",
+          "med_q36",
+          "med_q37",
+          "med_q38",
+          "med_q39",
+          "med_q40"
+        ]
+      },
+      {
+        "id": "level_5",
+        "name": "第 5 关",
+        "questionIds": [
+          "med_q41",
+          "med_q42",
+          "med_q43",
+          "med_q44",
+          "med_q45",
+          "med_q46",
+          "med_q47",
+          "med_q48",
+          "med_q49",
+          "med_q50"
+        ]
+      },
+      {
+        "id": "level_6",
+        "name": "第 6 关",
+        "questionIds": [
+          "med_q51",
+          "med_q52",
+          "med_q53",
+          "med_q54",
+          "med_q55",
+          "med_q56",
+          "med_q57",
+          "med_q58",
+          "med_q59",
+          "med_q60"
+        ]
+      },
+      {
+        "id": "level_7",
+        "name": "第 7 关",
+        "questionIds": [
+          "med_q61",
+          "med_q62",
+          "med_q63",
+          "med_q64",
+          "med_q65",
+          "med_q66",
+          "med_q67",
+          "med_q68",
+          "med_q69",
+          "med_q70"
+        ]
+      },
+      {
+        "id": "level_8",
+        "name": "第 8 关",
+        "questionIds": [
+          "med_q71",
+          "med_q72",
+          "med_q73",
+          "med_q74",
+          "med_q75",
+          "med_q76",
+          "med_q77",
+          "med_q78",
+          "med_q79",
+          "med_q80"
+        ]
+      },
+      {
+        "id": "level_9",
+        "name": "第 9 关",
+        "questionIds": [
+          "med_q81",
+          "med_q82",
+          "med_q83",
+          "med_q84",
+          "med_q85",
+          "med_q86",
+          "med_q87",
+          "med_q88",
+          "med_q89",
+          "med_q90"
+        ]
+      }
+    ],
+    "groupId": "adulting"
+  },
+  {
+    "id": "psychology_effects",
+    "name": "心理学效应",
+    "icon": "🧠",
+    "levels": [
+      {
+        "id": "level_1",
+        "name": "第 1 关",
+        "questionIds": [
+          "psy_q1",
+          "psy_q2",
+          "psy_q3",
+          "psy_q4",
+          "psy_q5",
+          "psy_q6",
+          "psy_q7",
+          "psy_q8",
+          "psy_q9",
+          "psy_q10"
+        ]
+      },
+      {
+        "id": "level_2",
+        "name": "第 2 关",
+        "questionIds": [
+          "psy_q11",
+          "psy_q12",
+          "psy_q13",
+          "psy_q14",
+          "psy_q15",
+          "psy_q16",
+          "psy_q17",
+          "psy_q18",
+          "psy_q19",
+          "psy_q20"
+        ]
+      },
+      {
+        "id": "level_3",
+        "name": "第 3 关",
+        "questionIds": [
+          "psy_q21",
+          "psy_q22",
+          "psy_q23",
+          "psy_q24",
+          "psy_q25",
+          "psy_q26",
+          "psy_q27",
+          "psy_q28",
+          "psy_q29",
+          "psy_q30"
+        ]
+      },
+      {
+        "id": "level_4",
+        "name": "第 4 关",
+        "questionIds": [
+          "psy_q31",
+          "psy_q32",
+          "psy_q33",
+          "psy_q34",
+          "psy_q35",
+          "psy_q36",
+          "psy_q37",
+          "psy_q38",
+          "psy_q39",
+          "psy_q40"
+        ]
+      },
+      {
+        "id": "level_5",
+        "name": "第 5 关",
+        "questionIds": [
+          "psy_q41",
+          "psy_q42",
+          "psy_q43",
+          "psy_q44",
+          "psy_q45",
+          "psy_q46",
+          "psy_q47",
+          "psy_q48",
+          "psy_q49",
+          "psy_q50"
+        ]
+      },
+      {
+        "id": "level_6",
+        "name": "第 6 关",
+        "questionIds": [
+          "psy_q51",
+          "psy_q52",
+          "psy_q53",
+          "psy_q54",
+          "psy_q55",
+          "psy_q56",
+          "psy_q57",
+          "psy_q58",
+          "psy_q59",
+          "psy_q60"
+        ]
+      },
+      {
+        "id": "level_7",
+        "name": "第 7 关",
+        "questionIds": [
+          "psy_q61",
+          "psy_q62",
+          "psy_q63",
+          "psy_q64",
+          "psy_q65",
+          "psy_q66",
+          "psy_q67",
+          "psy_q68",
+          "psy_q69",
+          "psy_q70"
+        ]
+      },
+      {
+        "id": "level_8",
+        "name": "第 8 关",
+        "questionIds": [
+          "psy_q71",
+          "psy_q72",
+          "psy_q73",
+          "psy_q74",
+          "psy_q75",
+          "psy_q76",
+          "psy_q77",
+          "psy_q78",
+          "psy_q79",
+          "psy_q80"
+        ]
+      },
+      {
+        "id": "level_9",
+        "name": "第 9 关",
+        "questionIds": [
+          "psy_q81",
+          "psy_q82",
+          "psy_q83",
+          "psy_q84",
+          "psy_q85",
+          "psy_q86",
+          "psy_q87",
+          "psy_q88",
+          "psy_q89",
+          "psy_q90"
+        ]
+      },
+      {
+        "id": "level_10",
+        "name": "第 10 关",
+        "questionIds": [
+          "psy_q91",
+          "psy_q92",
+          "psy_q93",
+          "psy_q94",
+          "psy_q95",
+          "psy_q96",
+          "psy_q97",
+          "psy_q98",
+          "psy_q99",
+          "psy_q100"
+        ]
+      }
+    ],
+    "groupId": "mind_blowing"
   }
 ]
