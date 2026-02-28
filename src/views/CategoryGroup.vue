@@ -50,17 +50,20 @@ const categories = ref<CategoryData[]>([])
 const groupId = String(route.params.id)
 
 const groupMap: Record<string, {name: string, icon: string}> = {
-  nature: { name: '自然与生物', icon: '🌿' },
-  life: { name: '生活饮食', icon: '🍔' },
-  geo: { name: '人文地标', icon: '🌍' },
-  science: { name: '科学探索', icon: '🚀' },
+  nature: { name: '自然生态', icon: '🌿' },
+  mind_blowing: { name: '高呼牛逼', icon: '🤯' },
+  adulting: { name: '成人必知', icon: '👔' },
+  humanity: { name: '人类与文化', icon: '🎭' },
   others: { name: '其他分项', icon: '📦' }
 }
 
 const groupInfo = computed(() => groupMap[groupId] || groupMap.others)
 
 const displayItems = computed(() => {
-  return categories.value.filter(c => c.groupId === groupId || (groupId === 'others' && !c.groupId))
+  if (groupId === 'others') {
+    return categories.value.filter(c => !c.groupId || c.groupId === 'others' || !groupMap[c.groupId])
+  }
+  return categories.value.filter(c => c.groupId === groupId)
 })
 
 const categoryColors: Record<string, string> = {
@@ -82,7 +85,9 @@ const categoryColors: Record<string, string> = {
   dinosaurs: '#B2D8C1',
   vegetables: '#A7E49D',
   chinese_food: '#F8B691',
-  space_exploration: '#D2C4ED'
+  space_exploration: '#D2C4ED',
+  medical_guide: '#F2B8D2',
+  psychology_effects: '#CBB2EB'
 }
 
 const getCategoryColor = (id: string) => {

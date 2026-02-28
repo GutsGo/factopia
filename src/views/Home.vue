@@ -94,14 +94,14 @@
 
             <!-- 更多卡片 -->
             <router-link
-              v-if="group.items.length > 3"
+              v-if="group.items.length > limit"
               :to="`/group/${group.id}`"
               class="category-card more-card"
               :style="{ '--theme-color': '#EAEAEA' }"
             >
               <div class="card-inner">
                 <div class="icon">➔</div>
-                <h2>查看全部</h2>
+                <h2>全部</h2>
               </div>
             </router-link>
           </div>
@@ -113,7 +113,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { fetchCategories } from '@/data/questions'
 import { useSettingsStore } from '@/stores/useSettingsStore'
 import { useProgressStore } from '@/stores/useProgressStore'
@@ -127,10 +127,10 @@ interface CategoryGroup {
 }
 
 const groups = ref<CategoryGroup[]>([
-  { id: 'nature', name: '自然与生物', icon: '🌿', items: [] },
-  { id: 'life', name: '生活饮食', icon: '🍔', items: [] },
-  { id: 'geo', name: '人文地标', icon: '🌍', items: [] },
-  { id: 'science', name: '科学探索', icon: '🚀', items: [] },
+  { id: 'nature', name: '自然生态', icon: '🌿', items: [] },
+  { id: 'mind_blowing', name: '高呼牛逼', icon: '🤯', items: [] },
+  { id: 'adulting', name: '成人必知', icon: '👔', items: [] },
+  { id: 'humanity', name: '人类与文化', icon: '🎭', items: [] },
   { id: 'others', name: '其他分项', icon: '📦', items: [] }
 ])
 
@@ -139,6 +139,23 @@ const settingsStore = useSettingsStore()
 const progressStore = useProgressStore()
 
 const logoColors = ['#F6A8C2', '#F8B182', '#A3D1E6', '#B8C2CC', '#F6A8C2', '#A3D1E6', '#F8B182', '#A3D1E6']
+
+const limit = ref(3);
+const isDesktop = ref(true);
+
+const updateDevice = () => {
+  isDesktop.value = window.innerWidth >= 500;
+  limit.value = isDesktop.value ? 4 : 3;
+};
+
+onMounted(() => {
+  updateDevice();
+  window.addEventListener('resize', updateDevice);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateDevice);
+});
 
 const categoryColors: Record<string, string> = {
   car_logos: '#9BC7DE',
@@ -159,7 +176,9 @@ const categoryColors: Record<string, string> = {
   dinosaurs: '#B2D8C1',
   vegetables: '#A7E49D',
   chinese_food: '#F8B691',
-  space_exploration: '#D2C4ED'
+  space_exploration: '#D2C4ED',
+  medical_guide: '#F2B8D2',
+  psychology_effects: '#CBB2EB'
 }
 
 const getCategoryColor = (id: string) => {
@@ -182,8 +201,8 @@ const getDisplayItems = (group: CategoryGroup) => {
   const sorted = [...group.items].sort((a, b) => {
     return getCategoryProgress(b) - getCategoryProgress(a);
   });
-  if (sorted.length <= 3) return sorted;
-  return sorted.slice(0, 3);
+  if (sorted.length <= limit.value) return sorted;
+  return sorted.slice(0, limit.value);
 };
 
 onMounted(async () => {
@@ -484,33 +503,43 @@ onMounted(async () => {
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 0.35fr;
   gap: 0.6rem;
 }
 
-.more-card .icon {
-  font-size: 1.8rem;
+.category-card.more-card {
+  padding: 4px;
+}
+.category-card.more-card .icon {
+  font-size: 1.2rem;
   color: #8E705B;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
-.more-card h2 {
+.category-card.more-card h2 {
   color: #8E705B;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  white-space: normal !important;
+  margin: 0;
+  padding: 0;
 }
-.more-card .card-inner {
+.category-card.more-card .card-inner {
   box-shadow: none;
   border: 2px dashed rgba(94, 76, 65, 0.2);
   justify-content: center;
-}
-.more-card:hover .card-inner {
-  border-color: rgba(94, 76, 65, 0.4);
-}
-.more-card .card-inner {
+  padding: 0.5rem 0.2rem;
   background: #FDFDFD;
+}
+.category-card.more-card:hover .card-inner {
+  border-color: rgba(94, 76, 65, 0.4);
 }
 
 @media (min-width: 500px) {
   .categories-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.35fr;
     gap: 1.5rem;
   }
 }
@@ -608,10 +637,7 @@ onMounted(async () => {
     max-width: 100%;
     padding: 0 2px;
   }
-  .more-card .icon {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-  }
+
 }
 
 .card-footer {
