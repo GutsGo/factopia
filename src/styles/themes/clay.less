@@ -1,0 +1,178 @@
+/* ============================================
+   Factopia 黏土拟态风主题 (Claymorphism)
+   ============================================ */
+[data-theme="clay"] {
+  /* 页面底色 - 暖沙色/米色 */
+  --theme-bg: #F4EBE1;
+
+  /* 卡片基底 - 非常暖的奶白色 */
+  --theme-card-bg: #FAFAF7;
+  --theme-card-inner: #FAFAF7;
+
+  /* 文字 */
+  --theme-text-main: #4A4036;
+  --theme-text-secondary: #5A4F44;
+  --theme-text-light: #8A7F73;
+  --theme-text-muted: #9F9487;
+
+  /* 边框 - 黏土风通常不需要边线，全靠阴影 */
+  --theme-border-color: transparent;
+  --theme-border-width: 0px;
+  --theme-border-width-sm: 0px;
+  --theme-border-width-xs: 0px;
+  --theme-category-card-border: none;
+  --theme-category-card-bg: transparent;
+  --theme-category-card-padding: 0;
+  --theme-level-card-border: none;
+  --theme-gallery-card-border: none;
+
+  /* 圆角 - 显著的极度圆润 */
+  --theme-radius-sm: 16px;
+  --theme-radius-md: 24px;
+  --theme-radius-lg: 32px;
+
+  /* 阴影 - 黏土精髓：内外结合的膨胀立体感 */
+  /* 主卡片：外部软阴影 + 内部亮高光 + 内部暗部，模拟粘土厚重感 */
+  --theme-shadow-card: 
+    8px 8px 16px rgba(193, 178, 163, 0.4),
+    -4px -4px 10px rgba(255, 255, 255, 0.7),
+    inset 2px 2px 6px rgba(255, 255, 255, 1),
+    inset -2px -2px 6px rgba(180, 160, 140, 0.15);
+    
+  --theme-shadow-card-hover: 
+    12px 12px 24px rgba(193, 178, 163, 0.45),
+    -6px -6px 14px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 6px rgba(255, 255, 255, 1),
+    inset -2px -2px 6px rgba(180, 160, 140, 0.15);
+    
+  --theme-shadow-card-active: 
+    2px 2px 4px rgba(193, 178, 163, 0.4),
+    -1px -1px 3px rgba(255, 255, 255, 0.7),
+    inset 4px 4px 8px rgba(180, 160, 140, 0.2),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+
+  /* 按钮的小黏土阴影 */
+  --theme-shadow-btn: 
+    4px 4px 8px rgba(193, 178, 163, 0.4),
+    -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset 1px 1px 3px rgba(255, 255, 255, 1),
+    inset -1px -1px 3px rgba(180, 160, 140, 0.15);
+    
+  --theme-shadow-btn-hover: 
+    6px 6px 12px rgba(193, 178, 163, 0.45),
+    -3px -3px 8px rgba(255, 255, 255, 0.8),
+    inset 1px 1px 3px rgba(255, 255, 255, 1),
+    inset -1px -1px 3px rgba(180, 160, 140, 0.15);
+    
+  --theme-shadow-btn-active: 
+    inset 3px 3px 6px rgba(180, 160, 140, 0.2),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+
+  /* 内部阴影凹陷（如进度条轨道） */
+  --theme-shadow-inner: 
+    inset 3px 3px 6px rgba(193, 178, 163, 0.3), 
+    inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+
+  --theme-shadow-panel: 
+    6px 6px 16px rgba(193, 178, 163, 0.35),
+    -3px -3px 10px rgba(255, 255, 255, 0.7),
+    inset 2px 2px 4px rgba(255, 255, 255, 1),
+    inset -2px -2px 4px rgba(180, 160, 140, 0.1);
+
+  /* 按钮交互偏移 */
+  --theme-hover-transform: translateY(-2px);
+  --theme-active-transform: translateY(2px);
+
+  /* 功能色 - 马卡龙低饱和高明度 */
+  --theme-success: #82D196;
+  --theme-error: #FF8F8F;
+  --theme-accent: #8AB4F8;
+  --theme-highlight: #FFB366;
+  --theme-info: #7FD1E6;
+  --theme-warning: #FFD966;
+
+  /* 按钮颜色 */
+  --theme-btn-bg: #FAFAF7;
+  --theme-btn-primary-bg: #8AB4F8;
+  --theme-btn-secondary-bg: #F0EBE1;
+  --theme-btn-settings-bg: #FAFAF7;
+  --theme-btn-settings-accent: #FAFAF7;
+  --theme-btn-settings-border: transparent;
+  --theme-fav-active-bg: #FFF5D1;
+  --theme-fav-active-border: transparent;
+  --theme-tab-active-bg: #5A4F44;
+  --theme-tab-active-text: #FAFAF7;
+  --theme-btn-disabled-bg: #EAE5DB;
+
+  /* 选项色板 */
+  --theme-opt-0: #FFE6EA;
+  --theme-opt-0-hover: #FFD1D9;
+  --theme-opt-0-bar: #FF8BA0;
+  --theme-opt-0-dot: #FFD1D9;
+  --theme-opt-1: #E6F3FF;
+  --theme-opt-1-hover: #Cce6FF;
+  --theme-opt-1-bar: #66B2FF;
+  --theme-opt-1-dot: #Cce6FF;
+  --theme-opt-2: #FFF4CC;
+  --theme-opt-2-hover: #FFE699;
+  --theme-opt-2-bar: #FFC233;
+  --theme-opt-2-dot: #FFE699;
+  --theme-opt-3: #F0E6FF;
+  --theme-opt-3-hover: #E0CCFF;
+  --theme-opt-3-bar: #B266FF;
+  --theme-opt-3-dot: #E0CCFF;
+
+  /* 选项样式 */
+  --theme-opt-border: none;
+  --theme-opt-shadow: 
+    4px 4px 8px rgba(193, 178, 163, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.8),
+    inset 1px 1px 2px rgba(255, 255, 255, 1),
+    inset -1px -1px 2px rgba(180, 160, 140, 0.1);
+  --theme-opt-shadow-hover: 
+    6px 6px 12px rgba(193, 178, 163, 0.4),
+    -6px -6px 12px rgba(255, 255, 255, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 1),
+    inset -1px -1px 2px rgba(180, 160, 140, 0.1);
+  --theme-opt-bar-width: 6px;
+  --theme-opt-bg-size: 20px 20px;
+  --theme-opt-bg-position: 0 0, 10px 10px;
+
+  /* 反馈色 */
+  --theme-correct-bg: #EAF7ED;
+  --theme-correct-border: transparent;
+  --theme-wrong-bg: #FFEDED;
+  --theme-wrong-border: transparent;
+
+  /* 特殊色 */
+  --theme-badge-bg: #8AB4F8;
+  --theme-fact-bg: #EAF2FF;
+  --theme-fact-color: #4A7AB0;
+  --theme-explain-bg: #F5EFEB;
+
+  /* Logo */
+  --theme-logo-font: "FredokaOne", "Nunito", "Comic Sans MS", "PingFang SC", sans-serif;
+  --theme-logo-filter: url(#clay-logo-filter);
+  --theme-logo-stroke: 2px transparent;
+  --theme-logo-shadow: none;
+
+  /* 进度条 */
+  --theme-progress-bg: #EAE5DB;
+  --theme-progress-border: none;
+
+  /* Modal */
+  --theme-overlay-bg: rgba(74, 64, 54, 0.3);
+
+  /* 统计卡特殊色 */
+  --theme-stat-total-bg: #FFF5D1;
+  --theme-stat-accuracy-bg: #EAF7ED;
+  --theme-stat-eval-bg: #F5EFEB;
+  --theme-circle-bg-stroke: #EAE5DB;
+  --theme-circle-fill-stroke: #82D196;
+
+  /* 笔记本场景样式 */
+  --theme-scenario-bg: #FAFAF7;
+  --theme-scenario-line-color: rgba(193, 178, 163, 0.3);
+  --theme-scenario-margin-color: rgba(255, 143, 143, 0.4);
+  --theme-scenario-tape-bg: rgba(138, 180, 248, 0.5);
+}

@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 import { useLocalStorage } from '@vueuse/core';
 import { watch } from 'vue';
 
-export type ThemeName = 'pixel' | 'modern';
+export type ThemeName = 'pixel' | 'modern' | 'clay';
 
 /**
  * 主题切换 Store
@@ -16,9 +16,11 @@ export const useThemeStore = defineStore('theme', () => {
     currentTheme.value = name;
   }
 
-  /** 在像素风和现代风之间切换 */
+  /** 在三种风格之间切换: 像素 -> 现代 -> 黏土 -> 像素 */
   function toggleTheme() {
-    currentTheme.value = currentTheme.value === 'pixel' ? 'modern' : 'pixel';
+    const themes: ThemeName[] = ['pixel', 'modern', 'clay'];
+    const currentIndex = themes.indexOf(currentTheme.value);
+    currentTheme.value = themes[(currentIndex + 1) % themes.length];
   }
 
   /** 将当前主题应用到 DOM */
