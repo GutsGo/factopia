@@ -91,7 +91,7 @@ function selectOption(option: any) {
   settingsStore.playSound(isCorrect.value ? 'right' : 'wrong')
   setTimeout(() => { animState.value = 'idle' }, 500)
   emit('answer', isCorrect.value)
-  setTimeout(() => { document.querySelector('.next-btn')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }) }, 100)
+  setTimeout(() => { document.querySelector('.next-btn')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) }, 300)
 }
 
 function emitNext() { imageLoaded.value = false; emit('next'); window.scrollTo({ top: 0, behavior: 'instant' }) }
