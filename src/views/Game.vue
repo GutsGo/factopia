@@ -1,11 +1,6 @@
 <template>
   <div class="game-container">
-    <div class="background-scenery">
-      <div class="cloud-group" style="top: 10%; right: 10%; transform: scale(0.6);">
-        <div class="cloud cloud-main"></div>
-      </div>
-      <div class="hill hill-bg"></div>
-    </div>
+
 
     <header class="game-header">
       <button class="back-btn cute-btn" @click="goBack">← 返回</button>
@@ -233,32 +228,7 @@ function getQuestionExplanation(qId: string) {
   z-index: 1;
 }
 
-/* Background elements matching home */
-.background-scenery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-  background-color: #FDF5E6;
-}
-.cloud-group {
-  position: absolute;
-  filter: drop-shadow(2px 0 0 #5E4C41) 
-          drop-shadow(-2px 0 0 #5E4C41) 
-          drop-shadow(0 2px 0 #5E4C41) 
-          drop-shadow(0 -2px 0 #5E4C41);
-}
-.cloud { background: white; border-radius: 50px; position: relative; }
-.cloud::before, .cloud::after { content: ''; position: absolute; background: white; border-radius: 50%; }
-.cloud-main { width: 140px; height: 50px; }
-.cloud-main::before { width: 70px; height: 70px; top: -35px; left: 20px; }
-.cloud-main::after { width: 50px; height: 50px; top: -20px; right: 25px; }
 
-.hill { position: absolute; border-radius: 50%; opacity: 0.5; }
-.hill-bg { bottom: -30vh; left: -10vw; width: 120vw; height: 40vh; background-color: #C5DCA0; }
 
 
 .game-header {

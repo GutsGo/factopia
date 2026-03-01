@@ -29,7 +29,7 @@ body {
     Helvetica,
     Arial,
     sans-serif;
-  background-color: var(--bg-color);
+  background-color: transparent; /* 为了让抽象背景图案透上来 */
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;

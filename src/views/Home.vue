@@ -1,21 +1,6 @@
 <template>
   <div class="home-container">
-    <!-- Background scenery -->
-    <div class="background-scenery">
-      <!-- Clouds -->
-      <div class="cloud-group" style="top: 15%; left: 10%; transform: scale(0.8);">
-        <div class="cloud cloud-main"></div>
-      </div>
-      <div class="cloud-group" style="top: 25%; left: 80%; transform: scale(0.6);">
-        <div class="cloud cloud-main"></div>
-      </div>
-      
-      <!-- Tiny decorative elements can go here -->
 
-      <!-- Hills -->
-      <div class="hill hill-bg"></div>
-      <div class="hill hill-fg"></div>
-    </div>
 
     <!-- Main Content -->
     <div class="content">
@@ -69,6 +54,13 @@
               <span class="emoji">{{ group.icon }}</span>
               <h2>{{ group.name }}</h2>
             </div>
+            <router-link
+              v-if="group.items.length > limit"
+              :to="`/group/${group.id}`"
+              class="view-more-btn"
+            >
+              查看全部 <span class="arrow">➔</span>
+            </router-link>
           </div>
           <div class="categories-grid">
             <router-link 
@@ -89,19 +81,6 @@
                   </div>
                   <svg class="star-icon" viewBox="0 0 24 24" fill="#FFCF40"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 </div>
-              </div>
-            </router-link>
-
-            <!-- 更多卡片 -->
-            <router-link
-              v-if="group.items.length > limit"
-              :to="`/group/${group.id}`"
-              class="category-card more-card"
-              :style="{ '--theme-color': '#EAEAEA' }"
-            >
-              <div class="card-inner">
-                <div class="icon">➔</div>
-                <h2>全部</h2>
               </div>
             </router-link>
           </div>
@@ -227,79 +206,7 @@ onMounted(async () => {
   z-index: 1;
 }
 
-/* Base resets specifically for app view to match our overall theme if globals don't */
-:global(body) {
-  background-color: #FDF4E5 !important;
-  color: #5E4C41;
-}
 
-/* Background Scenery Elements */
-.background-scenery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-  background-color: #FDF5E6;
-}
-
-/* Clouds with dropshadow for outline */
-.cloud-group {
-  position: absolute;
-  filter: drop-shadow(2px 0 0 #5E4C41) 
-          drop-shadow(-2px 0 0 #5E4C41) 
-          drop-shadow(0 2px 0 #5E4C41) 
-          drop-shadow(0 -2px 0 #5E4C41);
-}
-.cloud {
-  background: white;
-  border-radius: 50px;
-  position: relative;
-}
-.cloud::before, .cloud::after {
-  content: '';
-  position: absolute;
-  background: white;
-  border-radius: 50%;
-}
-.cloud-main {
-  width: 140px;
-  height: 50px;
-}
-.cloud-main::before {
-  width: 70px;
-  height: 70px;
-  top: -35px;
-  left: 20px;
-}
-.cloud-main::after {
-  width: 50px;
-  height: 50px;
-  top: -20px;
-  right: 25px;
-}
-
-/* Hills */
-.hill {
-  position: absolute;
-  border-radius: 50%;
-}
-.hill-bg {
-  bottom: -20vh;
-  left: -10vw;
-  width: 120vw;
-  height: 40vh;
-  background-color: #C5DCA0;
-}
-.hill-fg {
-  bottom: -25vh;
-  right: -10vw;
-  width: 80vw;
-  height: 45vh;
-  background-color: #ACD17C;
-}
 
 /* Main Layout */
 .content {
@@ -482,6 +389,7 @@ onMounted(async () => {
   padding: 0 0.5rem 1rem 0.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-title {
@@ -501,45 +409,46 @@ onMounted(async () => {
   margin: 0;
 }
 
-.categories-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 0.35fr;
-  gap: 0.6rem;
+.view-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #FDFDFD;
+  border: 2px solid #5E4C41;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  color: #5E4C41;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 0 rgba(94, 76, 65, 0.1);
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.category-card.more-card {
-  padding: 4px;
+.view-more-btn:hover {
+  background: #FAFAFA;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 0 rgba(94, 76, 65, 0.15);
 }
-.category-card.more-card .icon {
-  font-size: 1.2rem;
-  color: #8E705B;
-  font-weight: bold;
-  margin-bottom: 0.4rem;
+
+.view-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 0 rgba(94, 76, 65, 0.1);
 }
-.category-card.more-card h2 {
-  color: #8E705B;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: 2px;
-  line-height: 1.2;
-  white-space: normal !important;
-  margin: 0;
-  padding: 0;
+
+.view-more-btn .arrow {
+  font-size: 0.8rem;
 }
-.category-card.more-card .card-inner {
-  box-shadow: none;
-  border: 2px dashed rgba(94, 76, 65, 0.2);
-  justify-content: center;
-  padding: 0.5rem 0.2rem;
-  background: #FDFDFD;
-}
-.category-card.more-card:hover .card-inner {
-  border-color: rgba(94, 76, 65, 0.4);
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
 }
 
 @media (min-width: 500px) {
   .categories-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 0.35fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
 }
