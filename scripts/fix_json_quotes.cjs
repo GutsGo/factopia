@@ -17,7 +17,7 @@ if (args.length === 0 || args.includes('-h') || args.includes('--help')) {
 }
 
 const filePathArg = args[0];
-const replaceSingleQuotes = args.includes('--replace-single');
+const replaceSingleQuotes = args.includes('--rs');
 
 const filePath = path.resolve(process.cwd(), filePathArg);
 
