@@ -23,7 +23,9 @@ function fnv1aHash(str: string): number {
  */
 export function getCategoryColor(categoryId: string): string {
   const hash = fnv1aHash(categoryId);
-  const isModern = typeof document !== 'undefined' && document.documentElement.getAttribute('data-theme') === 'modern';
+  const theme = typeof document !== 'undefined' ? document.documentElement.getAttribute('data-theme') : 'pixel';
+  const isModern = theme === 'modern';
+  const isClay = theme === 'clay';
 
   // 多巴胺核心色相池：粉(340)、蓝(205)、黄(50)、橙(15)、绿(155)、紫(275)
   const dopamineHues = [340, 205, 50, 15, 155, 275];
@@ -33,8 +35,17 @@ export function getCategoryColor(categoryId: string): string {
 
   // 现代风：莫兰迪色调（低饱和、中低亮度），更稳重
   // 像素风：粉彩（中等饱和、高亮度），更清新
-  const s = isModern ? 50 + ((hash >> 8) % 11) : 55 + ((hash >> 8) % 16);
-  const l = isModern ? 70 + ((hash >> 16) % 11) : 80 + ((hash >> 16) % 6);
+  // 黏土风：厚实的橡皮泥色彩（中高饱和、中等明度），更具立体感
+  let s = 55 + ((hash >> 8) % 16);
+  let l = 80 + ((hash >> 16) % 6);
+
+  if (isModern) {
+    s = 50 + ((hash >> 8) % 11);
+    l = 70 + ((hash >> 16) % 11);
+  } else if (isClay) {
+    s = 65 + ((hash >> 8) % 15);
+    l = 68 + ((hash >> 16) % 10);
+  }
 
   return `hsl(${h.toFixed(1)}, ${s}%, ${l}%)`;
 }
