@@ -1,5 +1,51 @@
 <template>
-  <div class="abstract-background">
+  <!-- 像素风背景 -->
+  <div v-if="currentTheme === 'pixel'" class="pixel-background">
+    <!-- 天空层 -->
+    <div class="sky"></div>
+    
+    <!-- 像素云朵 -->
+    <div class="clouds">
+      <div class="pixel-cloud cloud-1">
+        <div class="cloud-row r1"></div>
+        <div class="cloud-row r2"></div>
+        <div class="cloud-row r3"></div>
+      </div>
+      <div class="pixel-cloud cloud-2">
+        <div class="cloud-row r1"></div>
+        <div class="cloud-row r2"></div>
+        <div class="cloud-row r3"></div>
+      </div>
+      <div class="pixel-cloud cloud-3">
+        <div class="cloud-row r1"></div>
+        <div class="cloud-row r2"></div>
+        <div class="cloud-row r3"></div>
+      </div>
+    </div>
+
+    <!-- 像素太阳 -->
+    <div class="pixel-sun">
+      <div class="sun-body"></div>
+      <div class="sun-ray ray-top"></div>
+      <div class="sun-ray ray-right"></div>
+      <div class="sun-ray ray-bottom"></div>
+      <div class="sun-ray ray-left"></div>
+    </div>
+
+    <!-- 像素星星装饰 -->
+    <div class="pixel-star star-1">✦</div>
+    <div class="pixel-star star-2">✦</div>
+    <div class="pixel-star star-3">✦</div>
+
+    <!-- 像素草地 -->
+    <div class="pixel-hills">
+      <div class="hill hill-back"></div>
+      <div class="hill hill-front"></div>
+    </div>
+  </div>
+
+  <!-- 现代风背景 -->
+  <div v-else class="abstract-background">
     <!-- 纸张纹理层 -->
     <div class="noise-overlay"></div>
 
@@ -35,7 +81,6 @@
       </svg>
       
       <svg class="shape blob-rm-blue" viewBox="0 0 150 200" xmlns="http://www.w3.org/2000/svg">
-        <!-- 靠右边截断的圆弧 -->
         <path d="M150,20 C100,20 40,60 30,120 C20,170 80,200 150,200 Z" fill="#7E9FB6" />
       </svg>
       
@@ -48,130 +93,253 @@
       <svg class="shape line-right" viewBox="0 0 250 500" xmlns="http://www.w3.org/2000/svg">
         <path d="M250,50 C180,60 80,120 100,220 C120,320 20,380 0,450" fill="none" stroke="#BA9D8F" stroke-width="2" />
       </svg>
-
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-// 纯展示的背景组件，无需复杂逻辑
+import { computed } from 'vue';
+import { useThemeStore } from '@/stores/useThemeStore';
+
+const themeStore = useThemeStore();
+const currentTheme = computed(() => themeStore.currentTheme);
 </script>
 
-<style scoped>
+<style scoped lang="less">
+/* ============================================
+   像素风背景
+   ============================================ */
+.pixel-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  image-rendering: pixelated;
+
+  .sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      #87CEEB 0%,
+      #B0E0F6 40%,
+      #D4EFFC 70%,
+      #E8F4FD 100%
+    );
+  }
+
+  .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+  }
+
+  .pixel-cloud {
+    position: absolute;
+    animation: float-cloud 30s linear infinite;
+
+    @media (max-width: 500px) {
+      transform: scale(0.8) !important;
+    }
+
+    .cloud-row {
+      display: flex;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background: white;
+      margin-left: -16px;
+
+      &.r1 {
+        margin-left: 0;
+        box-shadow: 16px 0 0 white, 32px 0 0 white;
+      }
+
+      &.r2, &.r3 {
+        box-shadow: 16px 0 0 white, 32px 0 0 white, 48px 0 0 white, 64px 0 0 white;
+      }
+    }
+
+    &.cloud-1 { top: 8%; left: 10%; transform: scale(1.5); }
+    &.cloud-2 { top: 15%; left: 55%; transform: scale(1.2); animation-delay: -10s; }
+    &.cloud-3 { top: 5%; left: 78%; transform: scale(1); animation-delay: -20s; }
+  }
+
+  .pixel-sun {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+
+    @media (max-width: 500px) {
+      top: 2%;
+      right: 5%;
+    }
+
+    .sun-body {
+      width: 48px;
+      height: 48px;
+      background: #FFD93D;
+      border: 4px solid #F4A900;
+      image-rendering: pixelated;
+
+      @media (max-width: 500px) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .sun-ray {
+      position: absolute;
+      background: #FFD93D;
+      image-rendering: pixelated;
+
+      &.ray-top {
+        width: 8px;
+        height: 16px;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &.ray-right {
+        width: 16px;
+        height: 8px;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &.ray-bottom {
+        width: 8px;
+        height: 16px;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &.ray-left {
+        width: 16px;
+        height: 8px;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .pixel-star {
+    position: absolute;
+    color: #FFD93D;
+    font-size: 20px;
+    animation: twinkle 2s ease-in-out infinite;
+    image-rendering: pixelated;
+
+    &.star-1 { top: 10%; left: 20%; animation-delay: 0s; }
+    &.star-2 { top: 18%; right: 30%; font-size: 14px; animation-delay: 0.7s; }
+    &.star-3 { top: 6%; left: 45%; font-size: 16px; animation-delay: 1.4s; }
+  }
+
+  .pixel-hills {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+
+    .hill {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      image-rendering: pixelated;
+
+      &-back {
+        height: 100%;
+        background: #5a8f29;
+        clip-path: polygon(
+          0% 60%, 5% 50%, 10% 42%, 15% 36%, 20% 32%, 25% 30%, 30% 32%, 35% 36%, 40% 33%, 45% 28%, 
+          50% 25%, 55% 28%, 60% 32%, 65% 30%, 70% 26%, 75% 28%, 80% 32%, 85% 38%, 90% 42%, 95% 50%, 
+          100% 55%, 100% 100%, 0% 100%
+        );
+      }
+
+      &-front {
+        height: 80%;
+        background: #6db33f;
+        clip-path: polygon(
+          0% 70%, 5% 62%, 10% 55%, 15% 50%, 20% 48%, 25% 50%, 30% 55%, 35% 52%, 40% 45%, 45% 40%, 
+          50% 38%, 55% 42%, 60% 48%, 65% 52%, 70% 50%, 75% 45%, 80% 48%, 85% 55%, 90% 60%, 95% 65%, 
+          100% 70%, 100% 100%, 0% 100%
+        );
+      }
+    }
+  }
+}
+
+@keyframes float-cloud {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(30px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* ============================================
+   现代风背景
+   ============================================ */
 .abstract-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0; /* 改为 0，因为很多父级上下文会导致负 index 的层被隐藏。同时内容层的 z-index 都至少是 1 */
-  background-color: #F8F5EF; /* 图片中的纸张底色 */
-  overflow: hidden;
-  pointer-events: none; /* 确保不阻挡点击 */
-}
-
-/* 噪点纹理增加纸张质感 */
-.noise-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.25;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  mix-blend-mode: multiply;
-  z-index: 1;
-}
-
-.shapes-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
   z-index: 0;
-}
+  background-color: #F8F5EF;
+  overflow: hidden;
+  pointer-events: none;
 
-/* 绝对定位形状，响应式尺寸。这里使用相对单位 vh / vw 以便拉伸 */
-.shape {
-  position: absolute;
-}
+  .noise-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
 
-/* ======= 左侧 ======= */
-.blob-tl-orange {
-  top: 0;
-  left: 0;
-  width: 35vmin;
-  height: auto;
-  min-width: 200px;
-}
+  .shapes-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 
-.blob-tl-peach {
-  top: 25%;
-  left: -5%;
-  width: 25vmin;
-  height: auto;
-  min-width: 150px;
-}
+    .shape {
+      position: absolute;
+    }
 
-.blob-bl-blue {
-  bottom: -5%;
-  left: -5%;
-  width: 45vmin;
-  height: auto;
-  min-width: 220px;
-}
+    /* 左侧 */
+    .blob-tl-orange { top: 0; left: 0; width: 40vw; max-width: 280px; }
+    .blob-tl-peach { top: 5%; left: 0; width: 25vw; max-width: 180px; }
+    .blob-bl-blue { bottom: 0; left: 0; width: 45vw; max-width: 320px; }
+    .line-left { top: 0; left: 2%; width: 30vw; max-width: 250px; height: 100vh; }
 
-.line-left {
-  top: 15%;
-  left: -2%;
-  width: 25vmin;
-  height: 70vmin;
-}
-
-/* ======= 右侧 ======= */
-.blob-tr-mustard {
-  top: 0;
-  right: 0;
-  width: 30vmin;
-  height: auto;
-  min-width: 180px;
-}
-
-.blob-rm-peach {
-  top: 35%;
-  right: 5%;
-  width: 18vmin;
-  height: auto;
-  min-width: 120px;
-}
-
-.blob-rm-blue {
-  top: 40%;
-  right: 0;
-  width: 15vmin;
-  height: auto;
-  min-width: 100px;
-}
-
-.blob-br-mustard {
-  bottom: -10%;
-  right: -5%;
-  width: 50vmin;
-  height: auto;
-  min-width: 250px;
-}
-
-.line-right {
-  top: 45%;
-  right: 0;
-  width: 15vmin;
-  height: 40vmin;
-}
-
-/* 针对很宽或很高的屏幕做一些微调，确保它们分布平滑 */
-@media (max-width: 768px) {
-  .blob-tr-mustard { width: 40vmin; }
-  .blob-tl-orange { width: 45vmin; }
-  .blob-bl-blue { width: 55vmin; }
-  .blob-br-mustard { width: 60vmin; }
+    /* 右侧 */
+    .blob-tr-mustard { top: 0; right: 0; width: 40vw; max-width: 280px; }
+    .blob-rm-peach { top: 45%; right: 0; width: 25vw; max-width: 180px; }
+    .blob-rm-blue { top: 55%; right: 0; width: 18vw; max-width: 140px; }
+    .blob-br-mustard { bottom: 0; right: 0; width: 50vw; max-width: 380px; }
+    .line-right { top: 20%; right: 3%; width: 28vw; max-width: 220px; height: 60vh; }
+  }
 }
 </style>

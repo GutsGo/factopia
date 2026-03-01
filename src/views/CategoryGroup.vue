@@ -1,7 +1,7 @@
 <template>
   <div class="group-container">
     <header class="page-header">
-      <button class="back-btn cute-btn" @click="goBack">← 返回</button>
+      <button class="back-btn pixel-btn" @click="goBack">← 返回</button>
       <div class="title-container">
         <span class="emoji">{{ groupInfo?.icon }}</span>
         <h1>{{ groupInfo?.name || '所有分类' }}</h1>
@@ -15,18 +15,18 @@
         :key="cat.id" 
         :to="`/levels/${cat.id}`" 
         class="category-card"
-        :style="{ '--theme-color': getCategoryColor(cat.id) }"
+        :style="{ '--card-color': getCategoryColor(cat.id) }"
       >
         <div class="card-inner">
-          <div class="icon-wrapper">
+          <div class="icon-box">
             <div class="icon">{{ cat.icon }}</div>
           </div>
           <h2>{{ cat.name }}</h2>
-          <div class="card-footer">
-            <div class="progress-bar">
+          <div class="card-bottom">
+            <div class="progress-track">
               <div class="progress-fill" :style="{ width: `${getCategoryProgress(cat)}%` }"></div>
             </div>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="#FFCF40"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="star-svg" viewBox="0 0 24 24" fill="#FFCF40"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
         </div>
       </router-link>
@@ -40,6 +40,7 @@ import { ref, onMounted, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { fetchCategories } from '@/data/questions'
 import { useProgressStore } from '@/stores/useProgressStore'
+import { getCategoryColor } from '@/utils/categoryColor'
 import type { CategoryData } from '@/types/question'
 
 const router = useRouter()
@@ -66,266 +67,208 @@ const displayItems = computed(() => {
   return categories.value.filter(c => c.groupId === groupId)
 })
 
-const categoryColors: Record<string, string> = {
-  car_logos: '#9BC7DE',
-  flags: '#B7E0AF',
-  company_logos: '#C0B7E1',
-  flowers: '#F0ADD1',
-  crops: '#F4B5A5',
-  landmarks: '#EED98A',
-  chinese_cities: '#99E1D9',
-  dogs: '#E8CAAC',
-  cats: '#D3C6E6',
-  fruits: '#FFBE98',
-  solar_terms: '#C9E493',
-  traditional_instruments: '#EEA8B2',
-  wild_animals: '#F9C0AB',
-  marine_life: '#A3DDF8',
-  insects: '#E2CA76',
-  dinosaurs: '#B2D8C1',
-  vegetables: '#A7E49D',
-  chinese_food: '#F8B691',
-  space_exploration: '#D2C4ED',
-  medical_guide: '#F2B8D2',
-  psychology_effects: '#CBB2EB'
-}
 
-const getCategoryColor = (id: string) => {
-  return categoryColors[id] || '#9BC7DE'
-}
 
 const getCategoryProgress = (cat: CategoryData) => {
   if (!cat.levels || cat.levels.length === 0) return 0;
-  let completedCount = 0;
-  cat.levels.forEach((lvl) => {
-    const key = `${cat.id}_${lvl.id}`;
-    if (progressStore.unlockedLevels[key] && progressStore.unlockedLevels[key].score > 0) {
-      completedCount++;
-    }
+  let n = 0;
+  cat.levels.forEach(lvl => {
+    const k = `${cat.id}_${lvl.id}`;
+    if ((progressStore.unlockedLevels[k]?.score ?? 0) > 0) n++;
   });
-  return Math.round((completedCount / cat.levels.length) * 100);
+  return Math.round((n / cat.levels.length) * 100);
 }
 
 const goBack = () => {
-  if (window.history.state && window.history.state.back) {
-    router.back()
-  } else {
-    router.replace('/')
-  }
+  if (window.history.state?.back) router.back()
+  else router.replace('/')
 }
 
-onMounted(async () => {
-  categories.value = await fetchCategories()
-})
+onMounted(async () => { categories.value = await fetchCategories() })
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .group-container {
   padding: 1.5rem 1rem;
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto;
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 600px) {
+    max-width: 900px;
+  }
 }
 
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--theme-text-secondary);
+    margin: 0;
+  }
 }
 
-.cute-btn {
-  background: #FFFDF8;
-  border: 2px solid #5E4C41;
-  padding: 0.5rem 1.2rem;
-  border-radius: 999px;
-  color: #5E4C41;
+.pixel-btn {
+  background: var(--theme-btn-bg);
+  border: var(--theme-border-width) solid var(--theme-border-color);
+  border-radius: var(--theme-radius-sm);
+  padding: 0.5rem 1rem;
+  color: var(--theme-text-secondary);
   font-weight: 800;
-  box-shadow: 0 4px 0 rgba(94, 76, 65, 0.1);
-  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-size: 0.95rem;
+  box-shadow: var(--theme-shadow-btn);
+  transition: transform 0.15s, box-shadow 0.15s;
   cursor: pointer;
-}
 
-.cute-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 0 rgba(94, 76, 65, 0.15);
-}
-
-.cute-btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 rgba(94, 76, 65, 0.1);
+  &:hover {
+    transform: var(--theme-hover-transform);
+    box-shadow: var(--theme-shadow-btn-hover);
+  }
+  &:active {
+    transform: var(--theme-active-transform);
+    box-shadow: var(--theme-shadow-btn-active);
+  }
 }
 
 .title-container {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-}
+  gap: 0.5rem;
 
-.title-container .emoji {
-  font-size: 1.8rem;
-}
-
-.page-header h1 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #5E4C41;
-  margin: 0;
+  .emoji {
+    font-size: 1.5rem;
+  }
 }
 
 .spacer {
-  width: 88px; /* Balance the header flex */
+  width: 80px;
 }
 
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.8rem;
-  max-width: 850px;
-  margin: 0 auto;
-}
+  gap: 0.6rem;
 
-@media (min-width: 500px) {
-  .categories {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 1.5rem;
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
   }
 }
 
-/* Category Card styles (same as Home.vue) */
 .category-card {
-  background: var(--theme-color);
-  border-radius: 20px; 
-  padding: 8px;
+  background: var(--theme-category-card-bg, var(--card-color));
+  padding: var(--theme-category-card-padding, 5px);
   text-decoration: none;
-  box-shadow: inset 0 2px 0 rgba(255,255,255,0.4), 
-              inset 0 -3px 0 rgba(0,0,0,0.1), 
-              0 6px 12px rgba(94, 76, 65, 0.08);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: var(--theme-category-card-border);
+  border-radius: var(--theme-radius-md);
+  box-shadow: var(--theme-shadow-card);
+  transition: transform 0.15s, box-shadow 0.15s;
   display: flex;
   flex-direction: column;
-}
 
-.category-card:hover {
-  transform: translateY(-5px);
-  box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 
-              inset 0 -3px 0 rgba(0,0,0,0.1), 
-              0 10px 20px rgba(94, 76, 65, 0.12);
+  &:hover {
+    transform: var(--theme-hover-transform);
+    box-shadow: var(--theme-shadow-card-hover);
+  }
+  &:active {
+    transform: var(--theme-active-transform);
+    box-shadow: var(--theme-shadow-card-active);
+  }
+
+  h2 {
+    font-size: 0.95rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+    color: var(--theme-text-muted);
+    text-align: center;
+
+    @media (min-width: 600px) {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .card-inner {
-  background: #FFFFFF;
-  border-radius: 14px; 
+  background: var(--theme-card-inner);
+  border: var(--theme-border-width-sm) solid var(--theme-border-color);
+  border-radius: var(--theme-radius-sm);
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.2rem 0.5rem 0.8rem 0.5rem;
-  transition: background-color 0.3s;
-  box-shadow: 4px 4px 4px rgba(94, 76, 65, 0.1);
+  padding: 1rem 0.4rem 0.6rem;
+  box-shadow: var(--theme-shadow-inner);
+
+  @media (min-width: 600px) {
+    padding: 1.3rem 0.6rem 0.8rem;
+  }
 }
 
-.category-card:hover .card-inner {
-  background: #FAFAFA;
-}
-
-.icon-wrapper {
-  width: 60px;
-  height: 60px;
-  border-radius: 14px;
-  background-color: var(--theme-color);
+.icon-box {
+  width: 52px;
+  height: 52px;
+  background: var(--card-color);
+  border: var(--theme-border-width-sm) solid var(--theme-border-color);
+  border-radius: var(--theme-radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.8rem;
-  box-shadow: inset 0 2px 0 rgba(255,255,255,0.3), inset 0 -3px 0 rgba(0,0,0,0.1);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 0.6rem;
+  box-shadow: var(--theme-shadow-btn);
+
+  @media (min-width: 600px) {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+    @media (min-width: 600px) {
+      font-size: 2rem;
+    }
+  }
 }
 
-.category-card:hover .icon-wrapper {
-  transform: scale(1.08);
-}
-
-.icon {
-  font-size: 2rem;
-  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
-}
-
-.category-card h2 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin: 0 0 0.8rem 0;
-  color: #5C5552;
-}
-
-.card-footer {
-  width: 80%;
+.card-bottom {
+  width: 85%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 4px;
 }
 
-.progress-bar {
+.progress-track {
   flex: 1;
   height: 6px;
-  background-color: #E6E6E6;
-  border-radius: 3px;
+  background: var(--theme-progress-bg);
+  border: var(--theme-progress-border);
+  border-radius: var(--theme-radius-sm);
   overflow: hidden;
-  margin-right: 8px;
 }
 
 .progress-fill {
-  background-color: var(--theme-color);
   height: 100%;
-  border-radius: 3px;
-  filter: brightness(0.85);
+  background: var(--card-color);
+  filter: brightness(0.82);
+  border-radius: var(--theme-radius-sm);
 }
 
-.star-icon {
+.star-svg {
   width: 14px;
   height: 14px;
-}
-
-@media (min-width: 500px) {
-  .category-card {
-    padding: 10px;
-    border-radius: 24px;
-  }
-  .card-inner {
-    padding: 1.5rem 0.8rem 1rem 0.8rem;
-    border-radius: 16px;
-  }
-  .icon-wrapper {
-    width: 68px;
-    height: 68px;
-    border-radius: 16px;
-    margin-bottom: 1rem;
-  }
-  .icon {
-    font-size: 2.2rem;
-  }
-  .category-card h2 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  .progress-bar {
-    height: 8px;
-    border-radius: 4px;
-  }
-  .progress-fill {
-    border-radius: 4px;
-  }
-  .star-icon {
-    width: 18px;
-    height: 18px;
-  }
+  flex-shrink: 0;
 }
 
 .loading {
   text-align: center;
-  color: #8E705B;
-  font-weight: bold;
+  color: var(--theme-text-secondary);
+  font-weight: 800;
 }
 </style>

@@ -19,22 +19,27 @@ onMounted(() => {
   </router-view>
 </template>
 
-<style>
+<style lang="less">
 /* 全局基础样式 */
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #F8F5EF; /* 与 AbstractBackground 颜色一致 */
+  /* 跟随主题自动切换 */
+  background-color: var(--theme-bg);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
+// 路由切换动画
+.fade {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.3s ease;
+  }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+  }
 }
 </style>
