@@ -35,7 +35,7 @@
             {{ settingsStore.soundEnabled ? '🔊 开' : '🔇 关' }}
           </button>
           <button class="settings-btn theme-btn" @click="themeStore.toggleTheme">
-            {{ themeStore.currentTheme === 'pixel' ? '🎮 像素' : '✨ 现代' }}
+            {{ themeStore.currentTheme === 'pixel' ? '🎮 像素' : themeStore.currentTheme === 'modern' ? '✨ 现代' : '🧶 黏土' }}
           </button>
         </div>
         <div class="global-stats">
@@ -53,7 +53,6 @@
         >
           <div class="section-header">
             <div class="header-title">
-              <span class="emoji">{{ group.icon }}</span>
               <h2>{{ group.name }}</h2>
             </div>
             <!-- 查看全部 -->
@@ -91,6 +90,41 @@
       </main>
       <div v-else class="loading">正在加载数据...</div>
     </div>
+
+    <!-- 黏土风 3D SVG 滤镜定义 -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
+      <defs>
+        <filter id="clay-logo-filter" x="-50%" y="-50%" width="200%" height="200%">
+          <!-- 核心：生成 3D 哑光感 (Matte Texture) -->
+          <feGaussianBlur in="SourceAlpha" stdDeviation="2.5" result="blur" />
+          <feSpecularLighting in="blur" surfaceScale="4" specularConstant="0.5" specularExponent="10" lighting-color="#ffffff" result="specOut">
+            <fePointLight x="-20" y="-30" z="80" />
+          </feSpecularLighting>
+          <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+          
+          <!-- 内部暗部阴影 (Inner Shadow) -->
+          <feOffset dx="2" dy="2" in="SourceAlpha" result="offset" />
+          <feGaussianBlur in="offset" stdDeviation="2" result="blur2" />
+          <feComposite in="SourceAlpha" in2="blur2" operator="out" result="innerShadow" />
+          <feFlood flood-color="black" flood-opacity="0.15" result="flood" />
+          <feComposite in="flood" in2="innerShadow" operator="in" result="innerShadowColor" />
+
+          <!-- 底部外部阴影 (Drop Shadow) -->
+          <feOffset dx="4" dy="4" in="SourceAlpha" result="offsetOuter" />
+          <feGaussianBlur in="offsetOuter" stdDeviation="3" result="blurOuter" />
+          <feFlood flood-color="black" flood-opacity="0.25" result="floodOuter" />
+          <feComposite in="floodOuter" in2="blurOuter" operator="in" result="dropShadow" />
+
+          <!-- 合并所有图层 -->
+          <feMerge>
+            <feMergeNode in="dropShadow" />
+            <feMergeNode in="SourceGraphic" />
+            <feMergeNode in="innerShadowColor" />
+            <feMergeNode in="specOut" />
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
   </div>
 </template>
 
@@ -219,6 +253,8 @@ onMounted(async () => {
     font-weight: 900;
     margin-bottom: 0.5rem;
     letter-spacing: 3px;
+    font-family: var(--theme-logo-font, inherit);
+    filter: var(--theme-logo-filter, none);
     -webkit-text-stroke: var(--theme-logo-stroke);
     text-shadow: var(--theme-logo-shadow);
 
