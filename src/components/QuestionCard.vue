@@ -47,7 +47,7 @@
             <span>{{ isCorrect ? '🎉 回答正确 (+10分)' : '❌ 回答错误 (-3分)' }}</span>
             <span v-if="isCorrect && quizStore.comboCount >= 3" class="combo">🔥连击 +5</span>
           </div>
-          <div v-if="question.explanation" class="explain-box">💡 <strong>解析：</strong>{{ question.explanation }}</div>
+          <div v-if="question.explanation && question.explanation.trim() !== ''" class="explain-box">💡 <strong>解析：</strong>{{ question.explanation }}</div>
           <div v-if="question.fact" class="explain-box fact-box">💡 <strong>科普：</strong>{{ question.fact }}</div>
           <button class="next-btn" @click="emitNext">下一题 ➔</button>
         </div>
